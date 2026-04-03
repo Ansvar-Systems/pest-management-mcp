@@ -1,0 +1,17 @@
+{
+  "mcp_name": "Pest Management MCP",
+  "jurisdiction": "GB",
+  "build_date": "2026-04-03",
+  "pests": {
+    "total": 30,
+    "diseases": 13,
+    "insect_pests": 8,
+    "weeds": 9
+  },
+  "symptoms": 103,
+  "treatments": 60,
+  "ipm_guidance": 10,
+  "approved_products": 20,
+  "fts_entries": 133,
+  "source_hash": "efe8a03d56f5a722"
+}
