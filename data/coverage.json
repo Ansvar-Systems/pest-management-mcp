@@ -3,15 +3,15 @@
   "jurisdiction": "GB",
   "build_date": "2026-04-03",
   "pests": {
-    "total": 30,
-    "diseases": 13,
-    "insect_pests": 8,
-    "weeds": 9
+    "total": 84,
+    "diseases": 43,
+    "insect_pests": 20,
+    "weeds": 21
   },
-  "symptoms": 103,
-  "treatments": 60,
-  "ipm_guidance": 10,
-  "approved_products": 20,
-  "fts_entries": 133,
-  "source_hash": "efe8a03d56f5a722"
+  "symptoms": 251,
+  "treatments": 157,
+  "ipm_guidance": 19,
+  "approved_products": 54,
+  "fts_entries": 335,
+  "source_hash": "ee6fbb26de376c0c"
 }
