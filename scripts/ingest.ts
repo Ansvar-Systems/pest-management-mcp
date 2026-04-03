@@ -1,5 +1,5 @@
 /**
- * Pest Management MCP — Data Ingestion Script
+ * UK Pest Management MCP — Data Ingestion Script
  *
  * Sources:
  * 1. AHDB Knowledge Library — pest, disease, and weed profiles (reference data)
@@ -2231,7 +2231,7 @@ function ingest(db: Database): void {
 
   // Write coverage.json
   const coverage = {
-    mcp_name: 'Pest Management MCP',
+    mcp_name: 'UK Pest Management MCP',
     jurisdiction: 'GB',
     build_date: now,
     pests: {

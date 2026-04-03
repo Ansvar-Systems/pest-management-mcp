@@ -11,7 +11,7 @@ concurrency:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: pest-management-mcp
+  IMAGE_NAME: uk-pest-management-mcp
 
 permissions:
   contents: read

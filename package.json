@@ -1,11 +1,11 @@
 {
-  "name": "@ansvar/pest-management-mcp",
+  "name": "@ansvar/uk-pest-management-mcp",
   "version": "0.1.0",
   "description": "UK pest, disease, and weed management via MCP -- identification, treatment, IPM guidance, symptom diagnosis",
   "type": "module",
   "main": "dist/server.js",
   "bin": {
-    "pest-management-mcp": "dist/server.js"
+    "uk-pest-management-mcp": "dist/server.js"
   },
   "scripts": {
     "build": "tsc",
@@ -27,7 +27,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ansvar-systems/pest-management-mcp"
+    "url": "https://github.com/ansvar-systems/uk-pest-management-mcp"
   },
   "homepage": "https://ansvar.eu/open-agriculture",
   "engines": {

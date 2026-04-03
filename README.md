@@ -1,7 +1,7 @@
-# Pest Management MCP
+# UK Pest Management MCP
 
-[![CI](https://github.com/ansvar-systems/pest-management-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/ansvar-systems/pest-management-mcp/actions/workflows/ci.yml)
-[![GHCR](https://github.com/ansvar-systems/pest-management-mcp/actions/workflows/ghcr-build.yml/badge.svg)](https://github.com/ansvar-systems/pest-management-mcp/actions/workflows/ghcr-build.yml)
+[![CI](https://github.com/ansvar-systems/uk-pest-management-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/ansvar-systems/uk-pest-management-mcp/actions/workflows/ci.yml)
+[![GHCR](https://github.com/ansvar-systems/uk-pest-management-mcp/actions/workflows/ghcr-build.yml/badge.svg)](https://github.com/ansvar-systems/uk-pest-management-mcp/actions/workflows/ghcr-build.yml)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 UK pest, disease, and weed management via the [Model Context Protocol](https://modelcontextprotocol.io). Identify crop threats, get treatment options, IPM guidance, and run symptom-based differential diagnosis -- all from your AI assistant.
@@ -23,7 +23,7 @@ Add to `claude_desktop_config.json`:
   "mcpServers": {
     "pest-management": {
       "command": "npx",
-      "args": ["-y", "@ansvar/pest-management-mcp"]
+      "args": ["-y", "@ansvar/uk-pest-management-mcp"]
     }
   }
 }
@@ -32,25 +32,25 @@ Add to `claude_desktop_config.json`:
 ### Claude Code
 
 ```bash
-claude mcp add pest-management npx @ansvar/pest-management-mcp
+claude mcp add uk-pest-management npx @ansvar/uk-pest-management-mcp
 ```
 
 ### Streamable HTTP (remote)
 
 ```
-https://mcp.ansvar.eu/pest-management/mcp
+https://mcp.ansvar.eu/uk-pest-management/mcp
 ```
 
 ### Docker (self-hosted)
 
 ```bash
-docker run -p 3000:3000 ghcr.io/ansvar-systems/pest-management-mcp:latest
+docker run -p 3000:3000 ghcr.io/ansvar-systems/uk-pest-management-mcp:latest
 ```
 
 ### npm (stdio)
 
 ```bash
-npx @ansvar/pest-management-mcp
+npx @ansvar/uk-pest-management-mcp
 ```
 
 ## Example Queries

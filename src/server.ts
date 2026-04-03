@@ -19,7 +19,7 @@ import { handleSearchCropThreats } from './tools/search-crop-threats.js';
 import { handleIdentifyFromSymptoms } from './tools/identify-from-symptoms.js';
 import { handleGetApprovedProducts } from './tools/get-approved-products.js';
 
-const SERVER_NAME = 'pest-management-mcp';
+const SERVER_NAME = 'uk-pest-management-mcp';
 const SERVER_VERSION = '0.1.0';
 
 const TOOLS = [

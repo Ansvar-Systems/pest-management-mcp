@@ -1,5 +1,5 @@
 schema_version: "1.0"
-mcp_name: "Pest Management MCP"
+mcp_name: "UK Pest Management MCP"
 category: "domain_intelligence"
 
 sources:
