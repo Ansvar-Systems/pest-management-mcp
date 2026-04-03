@@ -1,25 +1,15 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.ansvar-systems/uk-pest-management",
-  "description": "UK pest, disease, and weed management via MCP. 338 organisms, 854 symptoms, symptom-based differential diagnosis, IPM guidance, CRD-approved products. AHDB data.",
+  "name": "io.github.Ansvar-Systems/uk-pest-management",
+  "description": "UK pest, disease, and weed management \u2014 symptom diagnosis, IPM, approved products",
   "repository": {
-    "url": "https://github.com/ansvar-systems/uk-pest-management-mcp",
+    "url": "https://github.com/Ansvar-Systems/uk-pest-management-mcp",
     "source": "github"
   },
   "version": "0.1.0",
-  "packages": [
-    {
-      "registryType": "npm",
-      "identifier": "@ansvar/uk-pest-management-mcp",
-      "version": "0.1.0",
-      "transport": {
-        "type": "stdio"
-      }
-    }
-  ],
   "remotes": [
     {
-      "transportType": "streamable-http",
+      "type": "streamable-http",
       "url": "https://mcp.ansvar.eu/uk-pest-management/mcp"
     }
   ]
