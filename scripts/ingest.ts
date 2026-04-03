@@ -880,6 +880,466 @@ const DISEASES: Pest[] = [
     economic_impact: 'Yield losses of 5-15% in severe years. More common than Cercospora in the UK due to cooler climate. Often co-managed with other foliar diseases in fungicide programmes. Reduced efficacy of some fungicides reported.',
     images_description: 'Small pale brown angular spots on sugar beet leaf surface',
   },
+
+  // ── Expansion: Cereal Diseases ──────────────────────────────────
+
+  {
+    id: 'wheat-streak-mosaic-virus',
+    name: 'Wheat Streak Mosaic Virus',
+    common_names: ['WSMV', 'Wheat streak mosaic'],
+    pest_type: 'disease',
+    description: 'Viral disease of wheat transmitted by the wheat curl mite (Aceria tosichella). Causes yellow streaking and mosaic patterns on leaves, stunting, and reduced grain fill. Sporadic in the UK but can cause significant losses where present.',
+    lifecycle: 'Virus persists in volunteer wheat and grasses. Wheat curl mite vectors acquire the virus while feeding and transmit it to new wheat plants. Mites spread by wind. Warm dry autumns favour mite activity and virus spread.',
+    identification: 'Yellow to light green streaks running parallel to leaf veins. Mosaic patterns on young leaves. Stunted plants with poor tillering. Leaves may become chlorotic and curl. Laboratory ELISA testing required for confirmation.',
+    crops_affected: ['wheat', 'winter wheat', 'spring wheat'],
+    risk_factors: 'Volunteer wheat near new crops, warm dry autumn, early drilling, presence of wheat curl mite, grass bridges between crops',
+    economic_impact: 'Yield losses of 10-70% in heavily infected crops. Sporadic in the UK climate but more frequent in warm autumns. Control of volunteer wheat is the primary management tool.',
+    images_description: 'Yellow streaks and mosaic pattern on wheat leaf running parallel to veins',
+  },
+
+  {
+    id: 'barley-stripe',
+    name: 'Barley Stripe',
+    common_names: ['Pyrenophora graminea', 'Drechslera graminea'],
+    pest_type: 'disease',
+    description: 'Seed-borne fungal disease of barley caused by Pyrenophora graminea. Produces long pale yellow stripes on leaves that turn brown and split. Infected plants are stunted with poor ear emergence. Controlled by seed treatment.',
+    lifecycle: 'Seed-borne mycelium infects the coleoptile at germination. Fungus grows systemically within the plant. Symptoms appear on emerging leaves as pale stripes. Spores produced on dead tissue infect developing grain during flowering.',
+    identification: 'Long pale yellow to brown stripes running the full length of the leaf. Stripes darken and tissue splits along the stripe. Severely infected plants stunted with twisted leaves. Ears may fail to emerge or be partially enclosed in the boot.',
+    crops_affected: ['barley', 'winter barley', 'spring barley'],
+    risk_factors: 'Untreated seed, farm-saved seed, cool moist conditions at germination, susceptible varieties',
+    economic_impact: 'Yield losses of 5-20% where untreated seed carries high infection levels. Seed treatments provide near-complete control. Rarely significant where certified seed or effective seed treatment is used.',
+    images_description: 'Long pale yellow stripes running full length of barley leaf with brown tissue splitting',
+  },
+
+  {
+    id: 'halo-spot',
+    name: 'Halo Spot',
+    common_names: ['Selenophoma donacis'],
+    pest_type: 'disease',
+    description: 'Foliar disease of barley caused by Selenophoma donacis. Produces small pale spots with a dark border and characteristic pale halo. Common in the UK but usually of minor economic importance. Can be confused with Ramularia.',
+    lifecycle: 'Survives on crop debris and seed. Conidia produced in wet weather and splash-dispersed to upper leaves. Multiple infection cycles during the growing season. Favoured by cool wet conditions in spring and early summer.',
+    identification: 'Small (1-3mm) circular pale spots with a dark brown border and a broader pale green or yellow halo around the lesion. Distinguished from Ramularia by the distinct halo. Pycnidia visible under magnification in older lesions.',
+    crops_affected: ['barley', 'winter barley', 'spring barley'],
+    risk_factors: 'Cool wet springs, dense crops, susceptible varieties, minimum tillage retaining debris',
+    economic_impact: 'Usually minor — yield losses rarely exceed 5%. Can be locally significant in wet seasons on susceptible varieties. Often controlled incidentally by fungicides applied for other diseases.',
+    images_description: 'Small pale spots with dark border and characteristic yellow halo on barley leaf',
+  },
+
+  {
+    id: 'tan-spot',
+    name: 'Tan Spot',
+    common_names: ['Pyrenophora tritici-repentis', 'Yellow leaf spot'],
+    pest_type: 'disease',
+    description: 'Foliar disease of wheat caused by Pyrenophora tritici-repentis. Produces tan-coloured oval lesions with a yellow border and dark centre. Increasing in the UK with reduced tillage and continuous wheat. Can cause significant yield loss.',
+    lifecycle: 'Pseudothecia on stubble release ascospores in autumn and spring. Conidia produced on leaf lesions cause secondary spread. Rain-splashed up the canopy. Favoured by minimum tillage systems that retain infected stubble on the surface.',
+    identification: 'Oval to lens-shaped tan lesions with a yellow border and small dark spot at the centre. Lesions expand to 10-15mm. Can coalesce into large necrotic areas. Distinguished from Septoria by the yellow border and dark centre spot.',
+    crops_affected: ['wheat', 'winter wheat', 'spring wheat'],
+    risk_factors: 'Continuous wheat, minimum tillage, infected stubble, wet weather in spring, susceptible varieties',
+    economic_impact: 'Yield losses of 5-15% in high-pressure years. Increasing in reduced-tillage systems. Responds to fungicides used for Septoria. Ploughing buries inoculum and breaks the disease cycle.',
+    images_description: 'Oval tan lesions with yellow border and dark centre spot on wheat leaf',
+  },
+
+  {
+    id: 'wheat-spindle-streak-mosaic-virus',
+    name: 'Wheat Spindle Streak Mosaic Virus',
+    common_names: ['WSSMV'],
+    pest_type: 'disease',
+    description: 'Soil-borne viral disease of wheat transmitted by the plasmodiophorid Polymyxa graminis. Causes spindle-shaped yellow streaks on leaves in spring. Usually transient — symptoms disappear as temperatures rise. Most common on heavy soils.',
+    lifecycle: 'Resting spores of the vector Polymyxa graminis persist in soil for decades. Zoospores infect wheat roots in autumn and winter, transmitting the virus. Symptoms appear in cool spring weather (5-15C) and fade above 20C.',
+    identification: 'Spindle-shaped (tapering at both ends) yellow to light green streaks on leaves. Most visible in March-April during cool spells. Symptoms fade in warm weather. Plants may show general yellowing and slight stunting. Confirm by ELISA.',
+    crops_affected: ['wheat', 'winter wheat'],
+    risk_factors: 'Heavy clay soils, waterlogged conditions, continuous wheat, cool wet springs, presence of Polymyxa graminis vector in soil',
+    economic_impact: 'Usually limited — yield losses of 2-5% because symptoms are transient. Can be more significant on heavy waterlogged soils with continuous wheat. No chemical control available; variety resistance is the main tool.',
+    images_description: 'Spindle-shaped yellow streaks on wheat leaf in cool spring conditions',
+  },
+
+  {
+    id: 'soil-borne-wheat-mosaic-virus',
+    name: 'Soil-borne Wheat Mosaic Virus',
+    common_names: ['SBWMV', 'Soil-borne mosaic'],
+    pest_type: 'disease',
+    description: 'Soil-borne viral disease of wheat transmitted by Polymyxa graminis. Causes mosaic and mottling on leaves in spring. Similar biology to wheat spindle streak mosaic virus. Reported in the UK since the 1990s on heavy clay soils.',
+    lifecycle: 'Transmitted by resting spores of Polymyxa graminis in soil. Root infection occurs in autumn-winter in wet conditions. Virus replicates in root cells and moves systemically to leaves. Symptoms appear in cool spring weather.',
+    identification: 'Light green to yellow mosaic mottling on leaves. Irregular patches of pale and dark green. Most visible in spring during cool weather. Plants may show slight stunting. Distinguished from WSSMV by mosaic pattern rather than spindle streaks. Confirm by ELISA.',
+    crops_affected: ['wheat', 'winter wheat'],
+    risk_factors: 'Heavy clay soils, poor drainage, continuous wheat, cool wet spring, soil pH above 7',
+    economic_impact: 'Yield losses of 5-15% in confirmed fields. No chemical control. Resistant varieties available. Avoid continuous wheat on infested land. Once established, Polymyxa resting spores persist in soil for 20+ years.',
+    images_description: 'Mosaic mottling pattern of pale and dark green patches on wheat leaf',
+  },
+
+  // ── Expansion: Potato Diseases ─────────────────────────────────
+
+  {
+    id: 'potato-virus-y',
+    name: 'Potato Virus Y',
+    common_names: ['PVY'],
+    pest_type: 'disease',
+    description: 'Most important viral disease of potatoes worldwide. Transmitted by aphids (non-persistently) and through infected seed tubers. Multiple strains including PVYO, PVYN, and PVYNTN. Causes mosaic, leaf drop, and tuber necrotic ringspot depending on strain and variety.',
+    lifecycle: 'Survives in infected seed tubers and volunteer potatoes. Aphids acquire the virus within seconds of probing an infected plant and transmit it to healthy plants during brief probes. Non-persistent transmission — insecticides cannot prevent spread.',
+    identification: 'Leaf mosaic (light and dark green patches), vein clearing, leaf rugosity (crinkling), leaf drop (PVYN strains). Tuber necrotic ringspot in PVYNTN strains — depressed necrotic rings on tuber surface. Stunted plants. Confirm by ELISA.',
+    crops_affected: ['potatoes'],
+    risk_factors: 'Infected seed tubers, high aphid pressure, proximity to virus sources, susceptible varieties, warm dry conditions favouring aphid flight',
+    economic_impact: 'Yield losses of 10-80% depending on strain and variety. Seed certification schemes set maximum PVY tolerance levels. Tuber necrotic ringspot reduces marketable yield of table and processing potatoes.',
+    images_description: 'Potato leaf showing mosaic pattern with crinkling and necrotic ringspot on tuber surface',
+  },
+
+  {
+    id: 'potato-leafroll-virus',
+    name: 'Potato Leafroll Virus',
+    common_names: ['PLRV'],
+    pest_type: 'disease',
+    description: 'Important viral disease of potatoes transmitted persistently by the peach-potato aphid (Myzus persicae). Causes upward rolling of leaflets, chlorosis, and net necrosis of tubers. Persistent transmission means aphids need extended feeding — insecticides can reduce spread.',
+    lifecycle: 'Persists in infected seed tubers. Aphids acquire the virus during prolonged feeding (hours) on infected plants. Virus circulates in the aphid before it becomes infective. Transmitted to new plants during subsequent feeding. Persistent transmission.',
+    identification: 'Upward rolling of upper leaflets giving a cupped appearance. Leaflets become leathery and pale with purple or red discolouration. Net necrosis — brown streaks visible when tuber is cut longitudinally. Stunted plants with stiff erect habit.',
+    crops_affected: ['potatoes'],
+    risk_factors: 'Infected seed tubers, high Myzus persicae population, late aphid control, proximity to infected crops, warm autumn extending aphid season',
+    economic_impact: 'Yield losses of 20-60% from primary infection (within-season). Secondary infection (from infected seed) causes 50-80% loss. Seed certification with strict PLRV tolerances. Net necrosis downgrades processing potatoes.',
+    images_description: 'Potato plant with upward-rolled leaflets showing purple discolouration and leathery texture',
+  },
+
+  {
+    id: 'gangrene',
+    name: 'Gangrene',
+    common_names: ['Phoma foveata', 'Boeremia foveata'],
+    pest_type: 'disease',
+    description: 'Tuber storage disease of potatoes caused by Phoma foveata (syn. Boeremia foveata). Causes sunken dry rot lesions on tubers during storage. Infection occurs through wounds at harvest. Can result in significant storage losses.',
+    lifecycle: 'Soil-borne fungus infects tubers through harvest damage (cuts, bruises). Develops slowly in store at 3-5C. Visible lesions appear 2-3 months after harvest. Spreads by contact in store but slowly. Pycnidia on lesions produce spores.',
+    identification: 'Depressed rounded areas on tuber surface, skin wrinkles as tissue shrinks beneath. Cut tuber shows well-defined cavity with dry powdery brown to black rot. Thumb-shaped cavities. Distinguished from dry rot by neater cavity margins and lack of concentric shrinkage rings.',
+    crops_affected: ['potatoes'],
+    risk_factors: 'Harvest damage, wet harvest conditions, long storage, temperatures 3-10C in store, susceptible varieties, soil-borne inoculum from previous potato crops',
+    economic_impact: 'Storage losses of 5-20% in badly affected crops. Reduced by careful harvesting to minimise damage, suberisation period (wound healing at 12-15C for 14 days), and storage temperature management.',
+    images_description: 'Depressed sunken area on potato tuber surface with dry powdery cavity visible when cut',
+  },
+
+  {
+    id: 'dry-rot-potato',
+    name: 'Dry Rot of Potato',
+    common_names: ['Fusarium coeruleum', 'Fusarium solani var. coeruleum'],
+    pest_type: 'disease',
+    description: 'Storage disease of potatoes caused by Fusarium species, primarily F. coeruleum in the UK. Causes dry shrunken areas on tubers with concentric wrinkles and internal cavities. One of the most common potato storage diseases.',
+    lifecycle: 'Soil-borne and seed-borne. Infects tubers through wounds at harvest. Develops during storage, particularly at higher temperatures. Produces spores in pastel-coloured pustules on lesion surface. Can spread by contact in store.',
+    identification: 'Shrunken wrinkled area on tuber surface with concentric skin folds. Internal cavity with dry brown to pink crumbly rot. Pustules of spores (white, blue, or pink depending on species) on lesion surface. Distinguished from gangrene by concentric wrinkles and coloured sporulation.',
+    crops_affected: ['potatoes'],
+    risk_factors: 'Harvest damage, warm storage temperature (above 5C), susceptible varieties, long storage period, infected seed tubers, poor suberisation conditions',
+    economic_impact: 'Storage losses of 5-25% in affected stocks. Major cause of seed potato deterioration. Controlled by minimising harvest damage, rapid wound healing (suberisation), low storage temperature, and seed treatment where appropriate.',
+    images_description: 'Shrunken potato tuber with concentric wrinkles and coloured fungal pustules on surface',
+  },
+
+  {
+    id: 'pink-rot',
+    name: 'Pink Rot',
+    common_names: ['Phytophthora erythroseptica'],
+    pest_type: 'disease',
+    description: 'Soil-borne disease of potatoes caused by Phytophthora erythroseptica. Causes a wet watery rot of tubers that turns distinctly pink when cut flesh is exposed to air. Associated with waterlogged soils and poor drainage.',
+    lifecycle: 'Oospores persist in soil for many years. Infect tubers through stolons and lenticels in waterlogged conditions. Disease develops rapidly at soil temperatures above 15C. Infected tubers decay rapidly in store if moisture is high.',
+    identification: 'Tuber skin appears normal or slightly darkened. Cut tuber shows watery rot that turns distinctly salmon-pink within 15-30 minutes of cutting — diagnostic feature. Internal tissue is glassy and waterlogged. Strong ammonia-like odour. Rapid secondary bacterial infection.',
+    crops_affected: ['potatoes'],
+    risk_factors: 'Waterlogged soils, poor drainage, heavy rainfall during tuber bulking, warm soil temperatures, short rotations, susceptible varieties',
+    economic_impact: 'Can cause total loss of tubers in waterlogged areas of fields. Losses typically 2-10% of crop but higher in wet seasons. No effective chemical control in crop. Long rotations and drainage improvement are the main management tools.',
+    images_description: 'Cut potato tuber showing watery flesh turning distinctly salmon-pink on exposure to air',
+  },
+
+  {
+    id: 'spraing-tobacco-rattle-virus',
+    name: 'Spraing (Tobacco Rattle Virus)',
+    common_names: ['TRV', 'Spraing'],
+    pest_type: 'disease',
+    description: 'Tuber quality defect caused by Tobacco Rattle Virus (TRV) transmitted by free-living nematodes (Trichodorus and Paratrichodorus species). Causes brown arcs and flecks in tuber flesh (spraing). Major quality issue for processing potatoes.',
+    lifecycle: 'Virus persists in weed hosts and soil nematode vectors. Trichodorid nematodes acquire and transmit the virus during root feeding. Virus moves systemically to tubers. Spraing symptoms develop in tuber flesh during growth and storage.',
+    identification: 'External tuber symptoms often absent. Cut tuber reveals brown corky arcs, rings, and flecks scattered through the flesh — the characteristic spraing pattern. Symptoms may intensify during storage. Distinguished from PMTV spraing by arc pattern rather than rings.',
+    crops_affected: ['potatoes'],
+    risk_factors: 'Light sandy soils, high trichodorid nematode populations, land with history of spraing, weed hosts, susceptible varieties',
+    economic_impact: 'Rejection of processing and table potato crops with spraing above tolerance levels. Losses of 5-30% marketable yield. Nematicide treatment partially effective. Variety choice and avoidance of high-risk fields are primary management tools.',
+    images_description: 'Cut potato tuber showing brown corky arcs and flecks in flesh characteristic of spraing',
+  },
+
+  // ── Expansion: Fruit Diseases ──────────────────────────────────
+
+  {
+    id: 'peach-leaf-curl',
+    name: 'Peach Leaf Curl',
+    common_names: ['Taphrina deformans'],
+    pest_type: 'disease',
+    description: 'Fungal disease of peaches, nectarines, and almonds caused by Taphrina deformans. Causes dramatic curling, thickening, and red-purple discolouration of leaves in spring. Common throughout the UK on outdoor stone fruit.',
+    lifecycle: 'Ascospores and budding cells overwinter on bark and bud scales. Infection occurs during bud swell in late winter when rain washes spores into opening buds. No secondary spread during the growing season. Cool wet springs favour infection.',
+    identification: 'Leaves emerge thickened, puckered, and curled with red, purple, or yellow discolouration. Affected areas become swollen and blistered. White powdery spore layer develops on affected areas. Leaves eventually turn brown and fall. Severely affected trees defoliated by June.',
+    crops_affected: ['peaches', 'nectarines', 'almonds'],
+    risk_factors: 'Wet weather during bud swell (January-March), outdoor unprotected trees, no fungicide applied, susceptible varieties, exposed sites',
+    economic_impact: 'Repeated defoliation weakens trees and reduces fruit yield. Well-established trees tolerate occasional attacks. Commercial growers apply preventive copper or systemic fungicide before bud swell. Rain covers (polythene shelters) give near-complete control.',
+    images_description: 'Peach leaves thickened curled and puckered with red-purple discolouration',
+  },
+
+  {
+    id: 'bacterial-canker-stone-fruit',
+    name: 'Bacterial Canker of Stone Fruit',
+    common_names: ['Pseudomonas syringae pv. morsprunorum', 'Pseudomonas syringae pv. syringae'],
+    pest_type: 'disease',
+    description: 'Bacterial disease of cherries, plums, and other stone fruit caused by Pseudomonas syringae. Causes oozing cankers on branches and trunks, shothole symptoms on leaves, and bud death. Can kill young trees. Widespread in UK orchards.',
+    lifecycle: 'Bacteria overwinter in cankers and on leaf surfaces. Rain-splashed to leaf scars in autumn and pruning wounds in winter. Cankers enlarge during winter dormancy. Bacteria multiply on leaf surfaces in spring and infect through stomata.',
+    identification: 'Flattened dark sunken cankers on branches with amber or brown gum exuding. Dead buds in spring — branches fail to leaf out. Shothole symptoms on leaves (circular necrotic spots that drop out). Wilting of whole branches above girdling cankers.',
+    crops_affected: ['cherries', 'plums', 'damsons', 'apricots'],
+    risk_factors: 'Wet autumn and winter weather, autumn pruning (exposes leaf scars), young trees, susceptible rootstocks, waterlogged sites, frost damage',
+    economic_impact: 'Can kill young trees. Established trees lose branches, reducing yield by 10-30%. Copper-based sprays at leaf fall provide partial control. Prune only in summer (dry conditions). Some rootstocks offer improved tolerance.',
+    images_description: 'Dark sunken canker on cherry branch with amber gum exuding through bark',
+  },
+
+  {
+    id: 'pear-rust',
+    name: 'Pear Rust',
+    common_names: ['Gymnosporangium sabinae', 'European pear rust'],
+    pest_type: 'disease',
+    description: 'Rust disease of pears caused by Gymnosporangium sabinae. Requires juniper (Juniperus species) as an alternate host. Produces bright orange spots on pear leaves with distinctive horn-like projections on the undersurface. Increasing in UK gardens.',
+    lifecycle: 'Heteroecious rust — requires both pear and juniper to complete lifecycle. Teliospores on juniper produce basidiospores that infect pear leaves in spring. Aeciospores from pear re-infect juniper in late summer. Cycle repeats annually.',
+    identification: 'Bright orange to red spots on upper surface of pear leaves from May onwards. Underside of spots develops distinctive elongated horn-like projections (aecia) producing orange spores. Heavy infection causes premature leaf fall. Fruit occasionally affected.',
+    crops_affected: ['pears'],
+    risk_factors: 'Proximity to juniper or ornamental Juniperus species, wet springs, susceptible pear varieties, urban gardens with mixed planting',
+    economic_impact: 'Primarily cosmetic in gardens but severe infections cause premature leaf fall and reduced vigour. Commercial orchards rarely affected if no junipers nearby. Removal of nearby juniper plants eliminates the disease. No fungicides specifically approved for this use.',
+    images_description: 'Bright orange spots on pear leaf upper surface with horn-like aecial projections on underside',
+  },
+
+  // ── Expansion: Brassica Diseases ───────────────────────────────
+
+  {
+    id: 'brassica-dark-leaf-spot-alternaria',
+    name: 'Dark Leaf Spot of Brassica Vegetables',
+    common_names: ['Alternaria brassicicola', 'Alternaria brassicae'],
+    pest_type: 'disease',
+    description: 'Fungal disease of brassica vegetables caused by Alternaria brassicicola and A. brassicae. Produces dark concentric-ringed spots on leaves. Affects cabbage, Brussels sprouts, cauliflower, and other brassica vegetables. Seed-borne and debris-borne.',
+    lifecycle: 'Survives on seed and crop debris. Conidia produced in warm humid conditions and dispersed by rain splash and wind. Infects through stomata. Multiple infection cycles during the growing season. Favoured by warm wet weather.',
+    identification: 'Dark brown to black circular spots with concentric rings giving a target-board appearance. Spots on leaves, stems, and pods. Yellowing of surrounding tissue. On cauliflower curds, small dark spots reduce marketability.',
+    crops_affected: ['cabbage', 'Brussels sprouts', 'cauliflower', 'broccoli', 'calabrese'],
+    risk_factors: 'Warm humid weather, infected seed, crop debris, dense planting, overhead irrigation, brassica volunteers',
+    economic_impact: 'Yield and quality losses of 5-20%. Particularly important on cauliflower curds where any blemish reduces market grade. Seed treatment and hot-water seed treatment reduce seed-borne inoculum.',
+    images_description: 'Dark circular spots with concentric rings on brassica leaf surface',
+  },
+
+  {
+    id: 'brassica-white-mould',
+    name: 'White Mould of Brassica',
+    common_names: ['Sclerotinia sclerotiorum on brassica vegetables'],
+    pest_type: 'disease',
+    description: 'Disease of brassica vegetables caused by Sclerotinia sclerotiorum. Causes watery stem and head rot with white fluffy mycelium and hard black sclerotia. Particularly damaging to stored cabbage and Brussels sprouts in wet seasons.',
+    lifecycle: 'Sclerotia in soil germinate to produce apothecia that release ascospores in summer. Spores infect senescing petals and damaged tissue. Mycelium colonises stem and head. Sclerotia form inside and on rotting tissue for next season.',
+    identification: 'Watery soft rot of stem base, leaves, or heads. Covered with dense white fluffy mycelium. Hard black sclerotia (2-10mm) embedded in the rotting tissue. Plants wilt above the infected point. Foul smell as secondary bacteria invade.',
+    crops_affected: ['cabbage', 'Brussels sprouts', 'cauliflower', 'broccoli'],
+    risk_factors: 'Wet season, dense canopy, short rotations with other Sclerotinia-susceptible crops (oilseed rape, beans), soil with high sclerotia load',
+    economic_impact: 'Field losses of 5-15% in wet seasons. Post-harvest losses in stored cabbage can reach 30%. Long rotations (4+ years) reduce soil sclerotia load. No specific fungicide programme for vegetables — rotation is primary control.',
+    images_description: 'Brassica stem with watery rot covered in white fluffy mycelium and black sclerotia',
+  },
+
+  {
+    id: 'downy-mildew-brassica',
+    name: 'Downy Mildew of Brassica Vegetables',
+    common_names: ['Hyaloperonospora parasitica', 'Peronospora parasitica'],
+    pest_type: 'disease',
+    description: 'Oomycete disease of brassica vegetables caused by Hyaloperonospora parasitica. Causes yellow patches on upper leaf surface with white to grey downy sporulation beneath. Seedlings and transplants are most vulnerable. Common in UK brassica production.',
+    lifecycle: 'Oospores persist in soil and infected debris. Sporangia produced on undersides of infected leaves spread by wind and rain. Infects through stomata. Rapid cycles in cool humid conditions. Can be seed-borne.',
+    identification: 'Angular yellow patches on upper leaf surface bounded by veins. White to grey fluffy downy growth on corresponding underside. Seedlings show purpling and systemic infection. Cauliflower curds may show internal browning. Leaves may become necrotic.',
+    crops_affected: ['cabbage', 'cauliflower', 'broccoli', 'Brussels sprouts', 'calabrese', 'turnips', 'swedes'],
+    risk_factors: 'Cool humid weather (10-15C), overcrowded seedlings, overhead irrigation, poor air circulation, infected transplants',
+    economic_impact: 'Seedling losses of 20-50% if untreated. Mature plant losses of 5-15%. Cauliflower curd browning causes market rejection. Controlled by metalaxyl-M seed treatment and foliar fungicides in transplant modules.',
+    images_description: 'Angular yellow patches on brassica leaf surface with white downy growth on underside',
+  },
+
+  // ── Expansion: Vegetable Diseases ──────────────────────────────
+
+  {
+    id: 'leek-rust',
+    name: 'Leek Rust',
+    common_names: ['Puccinia porri', 'Puccinia allii'],
+    pest_type: 'disease',
+    description: 'Rust disease of leeks, onions, and garlic caused by Puccinia porri (syn. P. allii). Produces orange pustules on leaves that reduce photosynthesis and make leeks unmarketable. The most common disease of UK leek crops.',
+    lifecycle: 'Urediniospores produced on infected allium crops and volunteers. Wind-dispersed over long distances. Multiple infection cycles through the growing season. Favoured by warm humid conditions. Teliospores produced in autumn.',
+    identification: 'Bright orange urediniospore pustules on leaf surfaces. Pustules elongated (2-5mm), raised, and powdery. Severely infected leaves turn yellow and die back from the tips. Dark brown-black teliospore pustules appear in late season.',
+    crops_affected: ['leeks', 'garlic', 'onions', 'chives'],
+    risk_factors: 'Warm humid conditions (15-20C), high nitrogen, dense planting, proximity to infected allium crops, autumn crops most affected',
+    economic_impact: 'Yield losses of 10-30%. Severe infections make leeks unmarketable due to unsightly pustules on the white shaft. Tebuconazole provides moderate control. Variety resistance is the most effective management tool.',
+    images_description: 'Bright orange rust pustules scattered across leek leaf surface',
+  },
+
+  {
+    id: 'celery-leaf-spot',
+    name: 'Celery Leaf Spot',
+    common_names: ['Septoria apiicola'],
+    pest_type: 'disease',
+    description: 'Seed-borne fungal disease of celery and celeriac caused by Septoria apiicola. Produces small brown spots with black pycnidia on leaves and petioles. Can cause severe defoliation and crop loss. The most important disease of UK celery production.',
+    lifecycle: 'Seed-borne — primary inoculum from infected seed. Pycnidia on lesions produce spores that are rain-splashed to new leaves. Multiple infection cycles. Favoured by wet weather and overhead irrigation. Survives on crop debris between seasons.',
+    identification: 'Small (2-5mm) brown to grey spots on leaves and petioles with visible black pycnidia (fruiting bodies) within the spots. Spots may coalesce, causing leaf blight. Severely affected petioles develop brown sunken lesions.',
+    crops_affected: ['celery', 'celeriac'],
+    risk_factors: 'Infected seed, wet weather, overhead irrigation, dense planting, crop debris from previous celery, warm humid conditions',
+    economic_impact: 'Untreated crops can suffer 50-100% loss in wet seasons. Hot-water seed treatment (48C for 30 minutes) eliminates seed-borne infection. Fungicide programmes based on azoxystrobin and chlorothalonil provide good control.',
+    images_description: 'Brown spots with visible black pycnidia on celery leaf surface and petioles',
+  },
+
+  {
+    id: 'parsnip-canker',
+    name: 'Parsnip Canker',
+    common_names: ['Itersonilia pastinacae', 'Itersonilia perplexans'],
+    pest_type: 'disease',
+    description: 'Disease of parsnips caused primarily by Itersonilia pastinacae, with Phoma and Mycocentrospora species also involved. Causes orange-brown to black cankers on the shoulders of parsnip roots. The most important disease of parsnips in the UK.',
+    lifecycle: 'Spores produced on crop debris and soil surface. Infection through cracks and wounds in the root crown — carrot fly damage, frost cracks, and mechanical injury provide entry points. Develops during autumn and winter in the field.',
+    identification: 'Orange-brown to dark brown or black sunken cankers on the shoulder and crown of the parsnip root. Lesions expand during autumn and winter. Affected tissue is firm and dry initially but may become soft as secondary organisms invade.',
+    crops_affected: ['parsnips'],
+    risk_factors: 'Carrot fly damage (provides entry points), frost cracking, early sowing, short rotations, susceptible varieties, high crown exposure',
+    economic_impact: 'Losses of 10-40% of marketable yield. Canker-resistant varieties (e.g., Javelin, Gladiator) are the primary control. Deep sowing to cover crowns reduces exposure. Control of carrot fly reduces entry points for infection.',
+    images_description: 'Orange-brown to black canker lesion on the shoulder of a parsnip root',
+  },
+
+  {
+    id: 'white-tip-leek',
+    name: 'White Tip of Leek',
+    common_names: ['Phytophthora porri'],
+    pest_type: 'disease',
+    description: 'Disease of leeks caused by Phytophthora porri. Causes white papery drying of leaf tips that progresses downward. Can cause significant yield and quality losses in UK leek production. Favoured by wet autumn weather.',
+    lifecycle: 'Oospores persist in soil and infected debris. Zoospores released in wet conditions swim through soil water to infect root and leaf bases. Rain-splashed zoospores infect leaf surfaces. Multiple cycles in prolonged wet periods.',
+    identification: 'White to pale bleached drying of leaf tips that extends downward. Affected tips become papery and may split. Green leaf tissue below the die-back zone often shows water-soaked margins. In severe cases, rot extends into the shaft.',
+    crops_affected: ['leeks'],
+    risk_factors: 'Wet autumn weather, waterlogged soils, poor drainage, overhead irrigation, dense planting, short leek rotations',
+    economic_impact: 'Quality losses of 10-30% as tip damage requires trimming, reducing shaft length and market value. No specific fungicides approved. Drainage improvement and wider spacing reduce humidity in the crop canopy.',
+    images_description: 'Leek leaf with white papery dried tip extending downward into green tissue',
+  },
+
+  // ── Expansion: Additional Diseases ─────────────────────────────
+
+  {
+    id: 'powdery-scab-potato',
+    name: 'Powdery Scab of Potato',
+    common_names: ['Spongospora subterranea'],
+    pest_type: 'disease',
+    description: 'Soil-borne disease of potatoes caused by Spongospora subterranea. Produces raised pustules on tubers that rupture to release powdery brown spore balls. Also causes root galling. The vector for Potato Mop-Top Virus (PMTV).',
+    lifecycle: 'Resting spores (cystosori) persist in soil for 10+ years. Release zoospores in wet conditions that infect roots and developing tubers through lenticels. Pustules develop on tuber surface filled with powdery brown spore balls.',
+    identification: 'Raised pustules (3-10mm) on tuber surface that rupture to expose powdery dark brown mass of spore balls. Distinguished from common scab by the raised edge and powdery contents. Root galling visible on washed roots. Severe on wet heavy soils.',
+    crops_affected: ['potatoes'],
+    risk_factors: 'Wet heavy soils, waterlogged conditions, cool soil temperatures (12-18C), short potato rotations, infected seed tubers, susceptible varieties',
+    economic_impact: 'Downgrades processing and table potatoes. Yield losses from root galling. Tuber blemish reduces market value by 10-30%. Also transmits PMTV causing spraing. No chemical control. Long rotations (6+ years) and resistant varieties are primary tools.',
+    images_description: 'Potato tuber with raised pustules ruptured to show powdery brown spore mass',
+  },
+
+  {
+    id: 'bunt-wheat',
+    name: 'Common Bunt of Wheat',
+    common_names: ['Tilletia caries', 'Tilletia tritici', 'Stinking smut'],
+    pest_type: 'disease',
+    description: 'Seed-borne disease of wheat caused by Tilletia caries. Infected ears contain bunt balls instead of grain — dark masses of spores with a distinctive rotten fish smell. Historically devastating but now rare due to universal seed treatment.',
+    lifecycle: 'Seed-borne and soil-borne. Teliospores contaminating seed germinate alongside the wheat seed and infect the coleoptile. Fungus grows systemically within the plant. Replaces grain with bunt balls filled with teliospores.',
+    identification: 'Infected ears slightly shorter and more upright than healthy ears (bunt balls are lighter than grain). Bunt balls are dark grey-brown, same size as wheat grain. Crushing releases black spore mass with strong rotten fish (trimethylamine) odour.',
+    crops_affected: ['wheat', 'winter wheat', 'spring wheat'],
+    risk_factors: 'Untreated seed, farm-saved seed, organic systems without seed treatment, soil contamination from previously infected crops',
+    economic_impact: 'Near-zero in conventional farming due to seed treatment. Can cause 50-100% ear loss in untreated organic crops. Contaminated grain rejected at intake (smell and appearance). Hot water seed treatment available for organic production.',
+    images_description: 'Wheat ear with dark bunt balls replacing grain kernels and black spore mass when crushed',
+  },
+
+  {
+    id: 'cyst-nematode-cereals',
+    name: 'Cereal Cyst Nematode',
+    common_names: ['Heterodera avenae'],
+    pest_type: 'disease',
+    description: 'Soil-borne nematode that infects roots of cereals, causing stunting and yellowing in patches. White female cysts visible on roots in June-July. Most damaging in continuous cereal rotations on light soils. Declining in importance with modern rotations.',
+    lifecycle: 'Cysts containing 200+ eggs persist in soil for 10+ years. Hatching stimulated by cereal root exudates. Juveniles invade roots and feed. Females swell and burst through root cortex. White lemon-shaped cysts visible on roots. One generation per year.',
+    identification: 'Patchy stunting and yellowing in cereal crops, usually on lighter soils. White to brown lemon-shaped cysts (0.5mm) visible on roots June-July. Root systems shortened and bushy. Patches often in same location year after year.',
+    crops_affected: ['wheat', 'barley', 'oats'],
+    risk_factors: 'Continuous cereals, light sandy soils, spring barley and oats most susceptible, short rotations without break crops',
+    economic_impact: 'Yield losses of 5-20% in affected patches. Declining in importance as rotations have improved. No nematicide treatment. One non-cereal break crop year reduces populations significantly. Resistant varieties available in oats.',
+    images_description: 'Wheat roots with white lemon-shaped cereal cyst nematode females attached and stunted yellowing crop',
+  },
+
+  {
+    id: 'phytophthora-root-rot-peas',
+    name: 'Phytophthora Root Rot of Peas',
+    common_names: ['Phytophthora pisi'],
+    pest_type: 'disease',
+    description: 'Soil-borne disease of peas caused by Phytophthora pisi. Causes brown discolouration and rotting of the lower stem and roots. Plants wilt and die, often in waterlogged patches. Increasing in UK pea production.',
+    lifecycle: 'Oospores persist in soil. Produce zoospores in wet conditions that infect pea roots and stem bases. Disease develops rapidly in waterlogged soil. Plants wilt and collapse. Oospores formed in dead tissue persist for next season.',
+    identification: 'Brown to black discolouration of lower stem and roots. Plants wilt, turn yellow, and collapse. Roots rotted — pull from soil easily. Patches in waterlogged areas of fields. Distinguished from Fusarium by water-soaked brown (not pink) tissue.',
+    crops_affected: ['peas', 'combining peas', 'vining peas'],
+    risk_factors: 'Waterlogged soils, poor drainage, heavy rainfall after drilling, short pea rotations, compacted soils',
+    economic_impact: 'Losses of 10-40% in affected patches. No chemical treatment in crop. Long pea rotations (6+ years) reduce soil inoculum. Improve field drainage. Metalaxyl-M seed treatment provides some protection on high-risk sites.',
+    images_description: 'Wilting pea plants with brown-black root and lower stem rot in waterlogged field patch',
+  },
+
+  {
+    id: 'rust-beans',
+    name: 'Rust of Field Beans',
+    common_names: ['Uromyces viciae-fabae'],
+    pest_type: 'disease',
+    description: 'Rust disease of field beans caused by Uromyces viciae-fabae. Produces dark brown urediniospore pustules on leaves and stems in summer. Differs from chocolate spot by the raised powdery pustules. Can cause significant defoliation in late-maturing crops.',
+    lifecycle: 'Urediniospores spread by wind from early infections. Multiple infection cycles through summer. Pustules produce masses of brown spores. Most damaging on late-maturing crops in warm summers. Dark teliospores produced in autumn.',
+    identification: 'Dark brown to reddish-brown raised pustules (uredinia) on both leaf surfaces and stems. Pustules powdery when rubbed — brown spore mass. Distinguished from chocolate spot by raised powdery nature. Severe infections cause yellowing and defoliation.',
+    crops_affected: ['field beans', 'winter beans', 'spring beans'],
+    risk_factors: 'Warm humid summers, late-maturing crops, spring beans in warm autumns, dense crops, nitrogen-rich conditions',
+    economic_impact: 'Yield losses of 5-20% in severe years. More important in spring beans which are still green when conditions favour rust. Tebuconazole provides moderate control. Variety resistance is limited. Early harvest of mature crops avoids late-season build-up.',
+    images_description: 'Dark brown powdery rust pustules raised above field bean leaf surface',
+  },
+
+  {
+    id: 'verticillium-wilt-strawberry',
+    name: 'Verticillium Wilt of Strawberry',
+    common_names: ['Verticillium dahliae on strawberry'],
+    pest_type: 'disease',
+    description: 'Soil-borne wilt disease of strawberry caused by Verticillium dahliae. Causes outer leaf wilting, browning, and collapse of the whole plant. Microsclerotia persist in soil for years. Major problem in UK strawberry production.',
+    lifecycle: 'Microsclerotia in soil germinate and infect roots. Fungus colonises xylem vessels, blocking water transport. Outer leaves wilt and brown. Inner leaves remain green initially. Plant collapses. Microsclerotia form in dead tissue, returning to soil.',
+    identification: 'Outer leaves wilt, turn brown, and flatten around the crown. Inner leaves may remain green initially (rosette appearance). Cut crown lengthwise — brown-black vascular discolouration visible. Whole plant eventually collapses.',
+    crops_affected: ['strawberries'],
+    risk_factors: 'Previous potato, brassica, or strawberry cropping (broad host range), soil temperatures 20-25C, heavy soils, new plantings in infested soil',
+    economic_impact: 'Plant losses of 10-50% in infested fields. No in-crop chemical treatment. Raised beds with substrate (table-top) production avoids soil-borne inoculum. Resistant varieties limited. Biofumigation and long rotations help reduce soil inoculum.',
+    images_description: 'Strawberry plant with outer leaves wilted and brown and cut crown showing dark vascular staining',
+  },
+
+  {
+    id: 'crown-rot-strawberry',
+    name: 'Crown Rot of Strawberry',
+    common_names: ['Phytophthora cactorum'],
+    pest_type: 'disease',
+    description: 'Serious disease of strawberries caused by Phytophthora cactorum. Causes rapid wilting and death. Internal crown tissue shows reddish-brown discolouration. Spread in infected planting material and by splashing water. Common in UK production.',
+    lifecycle: 'Oospores in soil and infected crowns. Zoospores released in wet conditions infect crowns through wounds or soil splash. Disease develops rapidly in warm wet conditions. Entire plant wilts and dies within days to weeks.',
+    identification: 'Sudden wilting without outer-to-inner leaf progression (unlike Verticillium). Cut crown shows reddish-brown marbled discolouration (not uniform brown). Roots may appear healthy. Sudden collapse, often in wet warm weather.',
+    crops_affected: ['strawberries'],
+    risk_factors: 'Infected planting material, wet weather, waterlogged conditions, overhead irrigation, warm temperatures (20-30C), susceptible varieties',
+    economic_impact: 'Plant losses of 10-60% in outbreaks. Certified disease-free planting material is the primary control. Metalaxyl-M drench can protect but not cure. Raised substrate production reduces risk. Rapid plant removal limits spread within the row.',
+    images_description: 'Wilted strawberry plant and cut crown showing reddish-brown marbled internal discolouration',
+  },
+
+  {
+    id: 'powdery-mildew-strawberry',
+    name: 'Powdery Mildew of Strawberry',
+    common_names: ['Podosphaera aphanis'],
+    pest_type: 'disease',
+    description: 'Foliar and fruit disease of strawberries caused by Podosphaera aphanis. Causes leaf curling, purple discolouration, and white powdery coating on fruit. The most common fungal disease of UK strawberry production under protection.',
+    lifecycle: 'Overwinters as mycelium on old leaves. Conidia produced in warm dry conditions with high humidity (polytunnel environment). Rapid cycles of infection. Favoured by warm days (18-25C), cool nights, and high humidity without free water on leaves.',
+    identification: 'Leaves curl upward with purple-red discolouration on undersurface. White powdery mycelium on undersurface of leaves and on fruit. Infected fruit develop poor colour, hard texture, and powdery coating. Flowers may fail to set.',
+    crops_affected: ['strawberries'],
+    risk_factors: 'Polytunnel production (warm + humid), susceptible varieties (Elsanta), dense planting, poor ventilation, warm dry periods followed by high humidity',
+    economic_impact: 'Yield and quality losses of 10-30% in susceptible varieties. Fungicide programmes based on myclobutanil, penconazole, or sulfur. Variety resistance is important — some newer varieties have good field resistance. Polytunnel ventilation management.',
+    images_description: 'Strawberry leaf curling upward with purple discolouration and white powdery mildew on fruit surface',
+  },
+
+  {
+    id: 'apple-canker',
+    name: 'Apple Canker',
+    common_names: ['Neonectria ditissima', 'Nectria galligena'],
+    pest_type: 'disease',
+    description: 'Fungal disease of apples and pears caused by Neonectria ditissima. Causes sunken cankers on branches and trunks that girdle and kill branches. Enters through wounds, leaf scars, and pruning cuts. The most important canker disease of UK apple orchards.',
+    lifecycle: 'Ascospores released from red perithecia (tiny red balls on canker margins) year-round but mainly autumn-spring. Infection through leaf scars in autumn and pruning wounds in winter. Cankers enlarge over years, producing concentric bark rings.',
+    identification: 'Sunken oval cankers with concentric rings of cracked bark. Canker margin may show small red perithecia (0.5mm red dots). Cream-coloured sporodochia (spore cushions) in summer. Branches die above girdling cankers. Eye rot on stored fruit.',
+    crops_affected: ['apples', 'pears'],
+    risk_factors: 'Wet climate (western UK), heavy rainfall, poor drainage, susceptible varieties (Cox, Braeburn), woolly aphid galling (entry points), winter pruning in wet weather',
+    economic_impact: 'Branch and tree losses. Fruit eye rot in store causes rejection. Western UK orchards can lose 5-15% of productive wood annually. Canker removal (prune 30cm below canker) and wound paint. Copper sprays at leaf fall reduce new infections.',
+    images_description: 'Sunken oval canker on apple branch with concentric bark rings and small red perithecia at margins',
+  },
+
+  {
+    id: 'plum-rust',
+    name: 'Plum Rust',
+    common_names: ['Tranzschelia pruni-spinosae'],
+    pest_type: 'disease',
+    description: 'Rust disease of plums, damsons, and related Prunus species caused by Tranzschelia pruni-spinosae. Produces yellow-orange pustules on leaf undersurfaces. Can cause premature defoliation in severe years. Alternate host is anemone.',
+    lifecycle: 'Heteroecious rust alternating between anemone (spring) and Prunus (summer). Aeciospores from anemone infect plum leaves. Urediniospores cycle on plum through summer. Teliospores on fallen plum leaves infect anemone in spring.',
+    identification: 'Angular yellow spots on upper leaf surface. Brown to cinnamon urediniospore pustules on corresponding undersurface. Heavy infections cause premature leaf fall from August. Distinguished from other discolourations by powdery pustules beneath.',
+    crops_affected: ['plums', 'damsons', 'gages', 'blackthorn'],
+    risk_factors: 'Proximity to anemone (Anemone species), wet summers, susceptible varieties, sheltered sites, previous year infection',
+    economic_impact: 'Premature defoliation weakens trees and reduces next year fruit bud formation. Yield losses of 5-15%. Fungicide control not usually economic. Removal of anemone near orchards eliminates the alternate host.',
+    images_description: 'Plum leaf with yellow upper spots and brown urediniospore pustules on undersurface',
+  },
 ];
 
 // ── Insect Pests ────────────────────────────────────────────────
@@ -1759,6 +2219,536 @@ const INSECT_PESTS: Pest[] = [
     economic_impact: 'Repeated defoliation weakens trees. Public health risk from urticating hairs (skin rash, eye irritation, respiratory distress) is the primary concern. Nest removal costs GBP 500-2000 per tree. Forestry Commission manages the statutory control programme.',
     images_description: 'Caterpillars in head-to-tail procession on oak branch with white silk nest on trunk',
   },
+
+  // ── Expansion: Cereal Pests ────────────────────────────────────
+
+  {
+    id: 'hessian-fly',
+    name: 'Hessian Fly',
+    common_names: ['Mayetiola destructor'],
+    pest_type: 'pest',
+    description: 'Gall midge whose larvae feed inside wheat stems at the base, causing stunting, lodging, and stem breakage. Historically a major pest of wheat worldwide. Uncommon in the UK but occasional outbreaks occur, mainly in southern England.',
+    lifecycle: 'Two generations per year in the UK. Adults emerge in spring and autumn. Females lay eggs on upper leaf surfaces. Larvae migrate down to the leaf sheath and feed at the node, forming a flaxseed-like puparium. Overwinter as puparia in stubble.',
+    identification: 'Stunted tillers that fail to elongate. Dark patches at leaf sheath nodes where larvae feed. Stems break at feeding sites when bent. Brown flaxseed-shaped puparia (3mm) found at the base of leaf sheaths. Adults are small dark flies (3mm).',
+    crops_affected: ['wheat', 'winter wheat', 'spring wheat', 'barley'],
+    risk_factors: 'Southern England, early autumn drilling, warm autumns, wheat after wheat, stubble left undisturbed',
+    economic_impact: 'Rare in the UK but can cause 10-30% yield loss in outbreak years. Delayed drilling reduces autumn generation risk. Ploughing destroys puparia in stubble. No insecticides approved specifically for Hessian fly in the UK.',
+    images_description: 'Stunted wheat tiller with dark feeding damage and brown flaxseed puparium at leaf sheath base',
+  },
+
+  {
+    id: 'corn-ground-beetle',
+    name: 'Corn Ground Beetle',
+    common_names: ['Zabrus tenebrioides'],
+    pest_type: 'pest',
+    description: 'Large ground beetle whose larvae feed on wheat and barley leaves during autumn and winter. Larvae are nocturnal, emerging from soil to feed on leaf tips, leaving characteristic ragged damage. Sporadic pest mainly in eastern England.',
+    lifecycle: 'One generation per year. Adults active July-September, feed on grain in the ear. Eggs laid in soil near cereal stubble. Larvae feed on emerging cereal leaves from October to March. Pupate in spring. Adults emerge in summer.',
+    identification: 'Adults: large (14-18mm) black ground beetles. Larvae: pale grey-brown, curled, found in soil beneath damaged plants. Leaf damage: ragged chewing of leaf tips, often pulled into soil burrows. Damage most visible in autumn and winter.',
+    crops_affected: ['wheat', 'winter wheat', 'barley'],
+    risk_factors: 'Eastern England, continuous cereals, stubble left after harvest (adult egg-laying habitat), warm dry summers favouring adult activity',
+    economic_impact: 'Localised yield losses of 5-15% where populations are high. Mainly a pest of winter cereals in eastern counties. Ploughing after harvest destroys eggs. No specific insecticides approved — pyrethroid seed treatments provide some protection.',
+    images_description: 'Large black ground beetle (Zabrus) on soil surface near wheat seedlings with ragged leaf damage',
+  },
+
+  {
+    id: 'click-beetle',
+    name: 'Click Beetle',
+    common_names: ['Agriotes lineatus', 'Agriotes obscurus'],
+    pest_type: 'pest',
+    description: 'Click beetles (Agriotes lineatus, A. obscurus) are the adult stage of wireworms. Adults lay eggs in grassland and permanent pasture. Important as the egg-laying stage — populations build up over several years in grass before damaging the following arable crop.',
+    lifecycle: 'Adults emerge May-June from pupation in soil. Click beetles are elongated brown beetles (7-10mm) that right themselves with an audible click when placed on their backs. Females lay eggs in soil of grassland. Larvae (wireworms) develop over 3-5 years.',
+    identification: 'Adults: elongated brown beetles (7-10mm) with characteristic clicking mechanism. Found in grassland and cereal crops May-July. Pheromone traps (Agriotes lineatus pheromone) used for population monitoring. Trap catches correlate with subsequent wireworm damage risk.',
+    crops_affected: ['grassland', 'wheat', 'barley', 'potatoes'],
+    risk_factors: 'Long-term grassland (3+ years builds wireworm populations), first or second arable crop after grass, permanent pasture conversion',
+    economic_impact: 'Adults themselves cause no crop damage — they are significant as the source of wireworm populations. Pheromone trap monitoring before ploughing old grass identifies risk. Decision point: if trap catches exceed threshold, apply seed treatment or avoid potatoes.',
+    images_description: 'Brown click beetle on soil surface near grassland with characteristic elongated body shape',
+  },
+
+  // ── Expansion: Potato Pests ────────────────────────────────────
+
+  {
+    id: 'potato-tuber-moth',
+    name: 'Potato Tuber Moth',
+    common_names: ['Phthorimaea operculella'],
+    pest_type: 'pest',
+    description: 'Small moth whose larvae mine potato leaves and bore into tubers in the field and in store. A serious pest in warm climates. Currently rare in the UK but a quarantine concern with climate change potentially increasing risk.',
+    lifecycle: 'Multiple generations per year in warm climates. Adults are small grey-brown moths (15mm wingspan). Females lay eggs on leaves or exposed tubers. Larvae mine leaves and bore into tubers through eyes and wounds. Pupate in soil or store.',
+    identification: 'Leaf mining by larvae visible as translucent blotch mines. Frass-filled tunnels in tubers. Larvae are pale with a dark head, up to 12mm. Tuber damage: irregular tunnels filled with frass, often starting at the eye. Skin may show entry hole.',
+    crops_affected: ['potatoes'],
+    risk_factors: 'Imported potatoes from warmer regions, warm dry summers, exposed tubers, inadequate ridging, warm storage conditions',
+    economic_impact: 'Not currently established in the UK but a quarantine risk. In affected countries causes 20-50% tuber losses. UK interceptions on imported produce. Climate change may increase establishment risk. Deep ridging and cold storage are primary controls.',
+    images_description: 'Small grey-brown moth and larval tunnel damage in potato tuber filled with frass',
+  },
+
+  {
+    id: 'willow-carrot-aphid',
+    name: 'Willow-Carrot Aphid',
+    common_names: ['Cavariella aegopodii'],
+    pest_type: 'pest',
+    description: 'Aphid that alternates between willow (winter host) and umbelliferous crops including carrots and parsnips (summer host). Direct feeding causes leaf yellowing and curling. Also a vector of carrot motley dwarf virus complex.',
+    lifecycle: 'Overwintering eggs on willow (Salix). Spring migrants fly to umbelliferous crops in May-June. Multiple parthenogenetic generations on carrots during summer. Return migrants fly to willow in autumn for sexual reproduction.',
+    identification: 'Small (2mm) green aphids, sometimes with dark siphunculi. Found on carrot foliage, especially leaf stalks. Colonies cause leaf yellowing, curling, and stunting. Honeydew and sooty mould on leaves. Virus-infected plants show red and yellow discolouration.',
+    crops_affected: ['carrots', 'parsnips', 'celery', 'parsley'],
+    risk_factors: 'Proximity to willow trees, warm dry springs favouring early migration, carrot motley dwarf virus in the area',
+    economic_impact: 'Direct feeding damage usually minor. Virus transmission (carrot motley dwarf) causes significant quality and yield losses of 10-30%. Pyrethroid sprays reduce populations. Timing of spray to coincide with first migration from willow is important.',
+    images_description: 'Green aphids on carrot leaf petioles with yellowing and curling of foliage',
+  },
+
+  // ── Expansion: Vegetable Pests ─────────────────────────────────
+
+  {
+    id: 'leek-moth',
+    name: 'Leek Moth',
+    common_names: ['Acrolepiopsis assectella'],
+    pest_type: 'pest',
+    description: 'Small moth whose larvae mine into the leaves and stems of leeks, onions, and garlic. First confirmed breeding in the UK in 2003 in south-east England. Spreading northward. Larvae bore into the leek shaft causing quality losses.',
+    lifecycle: 'Two generations per year in the UK. Adults emerge April-May and July-August. Eggs laid near leaf bases. Larvae mine within leaves, then bore into the central growing point and shaft. Pupate in a lace-like cocoon on the plant.',
+    identification: 'Adults: small brown moths (16mm wingspan) with white triangular markings. Larvae: yellowish-green, up to 13mm, found mining inside leaves and shaft. Characteristic lace-like pupation cocoon. Damage: windows in leaf surface, holes in shaft.',
+    crops_affected: ['leeks', 'onions', 'garlic', 'chives'],
+    risk_factors: 'South-east England (expanding range), warm springs, proximity to allium crops, absence of crop covers',
+    economic_impact: 'Shaft damage makes leeks unmarketable — losses of 10-40% in affected areas. Fleece or mesh covers prevent egg-laying. Spinosad approved for control. Pheromone traps monitor flight timing. Range expanding in the UK with warming climate.',
+    images_description: 'Small brown moth with white markings and larval mining damage in leek leaf',
+  },
+
+  {
+    id: 'swede-midge',
+    name: 'Swede Midge',
+    common_names: ['Contarinia nasturtii'],
+    pest_type: 'pest',
+    description: 'Tiny gall midge (1.5mm) whose larvae feed in the growing points of brassica crops causing distorted growth, blind heads, and multiple growing points. Quarantine pest in some regions. First confirmed in UK oilseed rape in 2007.',
+    lifecycle: 'Multiple generations per year. Adults emerge from soil in spring. Females lay eggs in clusters on brassica growing points. Larvae feed gregariously, causing galling and distortion. Drop to soil to pupate. Can overwinter as diapausing larvae.',
+    identification: 'Adults: tiny (1.5mm) light brown midges — difficult to see. Larval feeding causes: swollen distorted growing points, multiple growing points (bushy appearance), blind or distorted heads in cauliflower/broccoli, twisted petioles, scarred stems.',
+    crops_affected: ['cauliflower', 'broccoli', 'Brussels sprouts', 'oilseed rape', 'swedes', 'turnips'],
+    risk_factors: 'Consecutive brassica cropping, warm humid conditions, proximity to previous brassica crops, south-east England',
+    economic_impact: 'Blind or distorted heads reduce cauliflower and broccoli yield by 20-80% in severe infestations. Oilseed rape pod set reduced. Crop rotation (3+ year break from brassicas) is primary control. No insecticides specifically recommended.',
+    images_description: 'Distorted brassica growing point with multiple shoots and swollen galled tissue',
+  },
+
+  {
+    id: 'brassica-flea-beetle-small',
+    name: 'Small Brassica Flea Beetle',
+    common_names: ['Phyllotreta undulata', 'Phyllotreta nemorum', 'Phyllotreta spp.'],
+    pest_type: 'pest',
+    description: 'Small flea beetles (Phyllotreta species) that damage brassica vegetables by shot-holing cotyledons and young leaves. Multiple species involved, all 2-3mm. Distinguished from the larger cabbage stem flea beetle (Psylliodes chrysocephala) of oilseed rape.',
+    lifecycle: 'Adults overwinter in hedgerows and field margins. Become active in April when temperatures exceed 15C. Feed on brassica leaves. Eggs laid in soil near roots. Larvae feed on roots (minor damage). New generation adults appear in late summer.',
+    identification: 'Tiny (2-3mm) shiny black or black-and-yellow striped beetles that jump when disturbed. Damage: small round holes (shot-holes) in cotyledons and young leaves. Seedlings may be killed if grazing is severe during hot dry weather when growth is slow.',
+    crops_affected: ['cabbage', 'cauliflower', 'broccoli', 'Brussels sprouts', 'turnips', 'swedes', 'radishes', 'rocket'],
+    risk_factors: 'Hot dry weather (slow seedling growth), direct drilled crops, unprotected transplants, proximity to brassica stubble, warm springs',
+    economic_impact: 'Seedling losses of 10-50% in hot dry weather when plant growth cannot outpace beetle feeding. Less significant once plants have 4+ true leaves. Fleece covers, irrigation to promote growth, and pyrethroid sprays are control options.',
+    images_description: 'Tiny black flea beetle on brassica cotyledon showing characteristic round shot-holes',
+  },
+
+  {
+    id: 'turnip-moth',
+    name: 'Turnip Moth',
+    common_names: ['Agrotis segetum', 'Turnip cutworm'],
+    pest_type: 'pest',
+    description: 'Noctuid moth whose caterpillars (cutworms) live in soil and sever plant stems at ground level. Affects a wide range of crops. Damage occurs at night. One of the most important cutworm species in the UK alongside Agrotis exclamationis.',
+    lifecycle: 'Two generations in southern UK, one in the north. Adults fly May-September. Eggs laid on bare soil or low-growing plants. Caterpillars feed on soil surface at night, cutting stems and pulling foliage into soil. Pupate in soil.',
+    identification: 'Adults: grey-brown moths (40-45mm wingspan) with kidney-shaped and round dark markings on forewings. Caterpillars: dull greyish-brown, smooth, curled in C-shape when disturbed, up to 45mm. Damage: plants severed at ground level, young roots tunnelled.',
+    crops_affected: ['lettuce', 'brassicas', 'sugar beet', 'carrots', 'potatoes', 'cereals', 'turnips', 'swedes'],
+    risk_factors: 'Warm dry summers, light sandy soils, weedy fields (attract egg-laying moths), following grass or weedy fallow',
+    economic_impact: 'Plant losses of 5-30% in affected crops. Lettuce and brassica transplants are most vulnerable. Damage is patchy — worst in warm dry summers when caterpillars are active on soil surface. Irrigating to firm soil surface reduces surface movement.',
+    images_description: 'Grey-brown cutworm caterpillar curled in C-shape on soil surface next to severed lettuce stem',
+  },
+
+  // ── Expansion: Fruit Pests ─────────────────────────────────────
+
+  {
+    id: 'woolly-aphid',
+    name: 'Woolly Aphid',
+    common_names: ['Eriosoma lanigerum'],
+    pest_type: 'pest',
+    description: 'Aphid that produces distinctive white waxy wool and feeds on apple bark, especially around pruning wounds and new growth. Forms dense colonies that cause galling and distortion of bark. Can weaken young trees and provide entry points for canker.',
+    lifecycle: 'Overwinters on roots and in bark crevices on apple. Colonies become visible from May as white wool appears. Multiple overlapping generations. Winged forms spread to new trees in summer. Some populations include a sexual phase on elm.',
+    identification: 'Dense white waxy wool on bark surfaces, pruning wounds, and around graft unions. Beneath the wool, purple-brown aphids feeding on bark. Galling and swelling of bark at feeding sites. Honeydew may attract ants and sooty mould.',
+    crops_affected: ['apples', 'pears', 'Cotoneaster', 'Pyracantha'],
+    risk_factors: 'Pruning wounds, mechanical damage, warm summers, sheltered orchards, lack of natural enemies',
+    economic_impact: 'Weakens young trees by causing bark galling. Provides entry points for apple canker (Neonectria ditissima). Natural enemy Aphelinus mali provides good biological control in many orchards. Spirotetramat effective where biological control is insufficient.',
+    images_description: 'Dense white waxy wool on apple bark at pruning wound concealing purple-brown aphid colony beneath',
+  },
+
+  {
+    id: 'gooseberry-sawfly',
+    name: 'Gooseberry Sawfly',
+    common_names: ['Nematus ribesii'],
+    pest_type: 'pest',
+    description: 'Sawfly whose larvae rapidly defoliate gooseberry and currant bushes. Three generations per year are possible. Larvae are gregarious and can strip a bush of leaves within days if undetected. One of the most damaging pests of soft fruit in UK gardens.',
+    lifecycle: 'Adults emerge April-May. Eggs inserted into leaf undersides along veins. Larvae feed gregariously, starting in the centre of the bush (often unnoticed). Three generations: spring, summer, and late summer. Pupate in soil.',
+    identification: 'Larvae: pale green with black spots, up to 20mm, feeding in groups on leaf edges. Start in the lower centre of the bush. Adults: yellow and black wasp-like insects (6-8mm). Damage: rapid defoliation starting from the interior outward.',
+    crops_affected: ['gooseberries', 'red currants', 'white currants'],
+    risk_factors: 'Previous year infestation, sheltered gardens, failure to inspect bush centres in April-May, mild winters',
+    economic_impact: 'Complete defoliation reduces fruit quality and yield by 50-100%. Weakens bushes for the following year. Hand-picking effective on small bushes. Spinosad or pyrethrum sprays when larvae first detected. Inspect bush centres weekly from mid-April.',
+    images_description: 'Green larvae with black spots feeding gregariously on defoliated gooseberry branch',
+  },
+
+  {
+    id: 'blackcurrant-gall-mite',
+    name: 'Blackcurrant Gall Mite',
+    common_names: ['Cecidophyopsis ribis', 'Big bud mite'],
+    pest_type: 'pest',
+    description: 'Microscopic eriophyid mite that infests blackcurrant buds, causing them to swell into characteristic rounded big buds that fail to develop. Also vectors blackcurrant reversion virus. The most important pest of blackcurrant in the UK.',
+    lifecycle: 'Overwinters inside infested buds. Mites migrate to new buds during flowering (April-May) — the dispersal window. Mites colonise new buds and feed inside, causing galling. Hundreds of mites per bud. Slow natural spread; faster spread on planting material.',
+    identification: 'Swollen rounded buds (big buds) visible from January that fail to open normally. Normal buds are pointed. Infested buds may be twice normal size. Microscopic mites (0.2mm) visible if bud is dissected and examined under magnification.',
+    crops_affected: ['blackcurrants'],
+    risk_factors: 'Infested planting material, established plantations, failure to remove big buds, proximity to infested bushes',
+    economic_impact: 'Yield losses of 20-60% from destroyed buds plus reversion virus. Controlled by certified pest-free planting material, hand-removal of big buds in winter, and sulphur sprays at peak mite migration. Resistant varieties (e.g., Ben Hope) available.',
+    images_description: 'Blackcurrant branch showing swollen rounded big buds alongside normal pointed buds',
+  },
+
+  {
+    id: 'strawberry-blossom-weevil',
+    name: 'Strawberry Blossom Weevil',
+    common_names: ['Anthonomus rubi'],
+    pest_type: 'pest',
+    description: 'Small weevil that severs strawberry and raspberry flower stalks (pedicels) after laying an egg inside the bud. Causes loss of primary flowers and reduced yield. Increasing in UK strawberry production. Also affects wild Rosaceae.',
+    lifecycle: 'Adults overwinter in leaf litter and soil. Emerge in spring when temperatures exceed 10C. Females lay a single egg in a flower bud, then partially sever the pedicel. Larva develops inside the wilting bud. New adults emerge in summer.',
+    identification: 'Adults: small (2-4mm) dark brown to black weevils with a long rostrum. Damage: flower buds hanging on partially severed stalks or fallen to the ground. Cut is distinctive — a clean partial cut leaving the bud attached by a thin strand.',
+    crops_affected: ['strawberries', 'raspberries', 'blackberries'],
+    risk_factors: 'Mild winters (adult survival), proximity to hedgerows and woodland (overwintering sites), organic systems without insecticide options',
+    economic_impact: 'Yield losses of 10-30% of primary fruit if severe. Primary (king) flowers produce the largest berries, so the economic impact exceeds the percentage of buds lost. Pyrethroid spray before flowering. Trap crops of early-flowering varieties.',
+    images_description: 'Strawberry flower bud hanging on partially severed stalk with small dark weevil nearby',
+  },
+
+  {
+    id: 'apple-sawfly',
+    name: 'Apple Sawfly',
+    common_names: ['Hoplocampa testudinea'],
+    pest_type: 'pest',
+    description: 'Sawfly whose larvae bore into young apple fruitlets causing a distinctive ribbon-like scar on the skin and early fruit drop. One of the most important pests of dessert apple in UK orchards. Damage reduces marketable yield.',
+    lifecycle: 'One generation per year. Adults emerge at pink bud stage and fly during blossom. Eggs inserted into the calyx of open flowers. First-instar larvae feed just under the skin (ribbon scar). Later instars bore into the core. Fruitlets drop. Pupate in soil.',
+    identification: 'Ribbon-like scar on fruitlet skin where early larva has fed just beneath the surface. Entry hole near the calyx with frass. Fruitlets drop prematurely in June. Larvae: pale cream with dark head, up to 12mm, found inside fallen fruitlets.',
+    crops_affected: ['apples'],
+    risk_factors: 'Heavy blossom (more egg-laying sites), sheltered orchards, warm weather during blossom, previous year infestation, Cox and Bramley varieties',
+    economic_impact: 'Yield losses of 5-20% of dessert fruit. Ribbon scar damage makes fruit unmarketable even when larva has moved on. Thiacloprid or deltamethrin at petal fall. White sticky traps during blossom for monitoring.',
+    images_description: 'Apple fruitlet with characteristic ribbon scar on skin and entry hole near calyx end',
+  },
+
+  {
+    id: 'winter-moth',
+    name: 'Winter Moth',
+    common_names: ['Operophtera brumata'],
+    pest_type: 'pest',
+    description: 'Common moth whose caterpillars feed on buds, leaves, and blossom of fruit trees and many deciduous trees. Named for adult emergence in November-January. Caterpillars emerge from eggs at bud burst and can cause significant fruit damage.',
+    lifecycle: 'Adults emerge November-January. Wingless females climb tree trunks to lay eggs on bark and buds. Caterpillars hatch at bud burst (March-April) and feed on opening buds, flowers, and young leaves. Drop on silk threads to pupate in soil by June.',
+    identification: 'Adults: males grey-brown moths (25mm wingspan); females wingless. Caterpillars: pale green inchworms (loopers) up to 25mm, moving with characteristic looping gait. Damage: holes in leaves, destroyed blossom clusters, fruitlets with feeding scars.',
+    crops_affected: ['apples', 'pears', 'plums', 'cherries', 'oak trees', 'many deciduous trees'],
+    risk_factors: 'Mild winters (adult survival), orchards near woodland, failure to apply grease bands, previous year infestation',
+    economic_impact: 'Yield losses of 10-40% from blossom destruction and fruitlet damage. Grease bands on tree trunks in October trap wingless females. Diflubenzuron spray at egg hatch. Bacillus thuringiensis for organic control.',
+    images_description: 'Pale green looper caterpillar on apple blossom with feeding damage to petals and fruitlets',
+  },
+
+  {
+    id: 'tortrix-moth',
+    name: 'Tortrix Moth (Fruit)',
+    common_names: ['Archips podanus', 'Adoxophyes orana', 'Summer fruit tortrix'],
+    pest_type: 'pest',
+    description: 'Complex of tortrix moth species whose caterpillars feed on fruit tree leaves and fruit surfaces, causing characteristic shallow grazing marks on apples and pears. Multiple species involved — summer fruit tortrix and others.',
+    lifecycle: 'Varies by species. Summer fruit tortrix has two generations. Adults fly May-June and August. Caterpillars spin leaves together with silk and feed inside. Later generations feed on fruit surface. Overwinter as small larvae on bark.',
+    identification: 'Caterpillars: green with brown head, up to 20mm, found inside spun leaves or on fruit surface. Damage: leaves spun together with silk, shallow irregular grazing marks on fruit skin. Adults: small brown moths (15-20mm) at rest with characteristic wing-folding.',
+    crops_affected: ['apples', 'pears', 'plums', 'cherries'],
+    risk_factors: 'Previous year infestation, sheltered orchards with low wind exposure, organic systems, proximity to hedgerows',
+    economic_impact: 'Fruit surface grazing makes 5-20% of dessert fruit unmarketable. Pheromone traps for monitoring flight periods. Diflubenzuron or spinosad at egg hatch. Mating disruption dispensers in larger orchards.',
+    images_description: 'Green caterpillar inside spun apple leaves and shallow grazing damage on fruit surface',
+  },
+
+  {
+    id: 'cherry-blackfly',
+    name: 'Cherry Blackfly',
+    common_names: ['Myzus cerasi'],
+    pest_type: 'pest',
+    description: 'Aphid that forms dense colonies on young cherry shoots in spring, causing severe leaf curling and stunting. Honeydew from colonies contaminates fruit. One of the most damaging pests of sweet and acid cherries in the UK.',
+    lifecycle: 'Overwintering eggs on cherry bark. Fundatrices hatch at bud burst. Rapid parthenogenetic reproduction on young shoots. Dense colonies form by May. Winged migrants leave for summer hosts (bedstraw, speedwell) from June. Return to cherry in autumn.',
+    identification: 'Dense black aphid colonies on shoot tips and undersides of young leaves. Severe leaf curling and crumpling. Sticky honeydew and black sooty mould on leaves and fruit below colonies. Shoot growth stunted and distorted.',
+    crops_affected: ['sweet cherries', 'acid cherries'],
+    risk_factors: 'Previous year infestation, mild winters (egg survival), vigorous shoot growth, sheltered sites',
+    economic_impact: 'Fruit contamination with honeydew and sooty mould makes 20-50% of crop unmarketable. Leaf curling protects aphids from contact sprays. Pre-blossom pyrethroid or post-blossom acetamiprid provides control. Fatty acid sprays for organic systems.',
+    images_description: 'Dense black aphid colony on cherry shoot tip with severely curled and crumpled leaves',
+  },
+
+  {
+    id: 'pear-midge',
+    name: 'Pear Midge',
+    common_names: ['Contarinia pyrivora'],
+    pest_type: 'pest',
+    description: 'Tiny midge that lays eggs in pear blossom. Larvae feed inside developing fruitlets causing them to swell abnormally, blacken, and fall prematurely. Can cause major crop loss in pear orchards. Widespread in the UK.',
+    lifecycle: 'One generation per year. Adults emerge from soil at white bud to early blossom stage. Females lay eggs inside flower buds. Larvae feed inside developing fruitlet (15-30 per fruitlet). Infested fruitlets blacken and drop by late May. Larvae enter soil to pupate.',
+    identification: 'Infested fruitlets swell abnormally — rounder and larger than normal at early stage. Then blacken and crack at the calyx end. Cut open to find orange-white larvae inside. Premature fruit drop in late May-June. Adults too small (2mm) to see easily.',
+    crops_affected: ['pears'],
+    risk_factors: 'Previous year infestation (soil pupae), sheltered orchards, heavy blossom, Conference and Comice varieties',
+    economic_impact: 'Losses of 30-80% of fruitlets in severe infestations. Cultivation under trees in autumn disturbs pupae. Insecticide spray at white bud stage (before egg-laying). Monitoring: shake blossoms over a white tray to detect adults.',
+    images_description: 'Swollen blackened pear fruitlet cracking at calyx with orange larvae visible inside',
+  },
+
+  {
+    id: 'mussel-scale',
+    name: 'Mussel Scale',
+    common_names: ['Lepidosaphes ulmi', 'Oystershell scale'],
+    pest_type: 'pest',
+    description: 'Scale insect found on apple, pear, and many ornamental trees. Named for the mussel-shaped scale cover (2-3mm). Heavy infestations weaken branches and can kill young trees. Often overlooked because the scales resemble bark texture.',
+    lifecycle: 'One generation per year. Overwinter as eggs beneath the dead female scale. Crawlers emerge in June-July and settle on bark. Insert stylet to feed on sap. Females remain immobile, producing a protective waxy scale. Males are tiny winged insects.',
+    identification: 'Grey-brown mussel-shaped scales (2-3mm) aligned along twigs and branches. Heavy infestations encrust bark. Lift a scale to see eggs (white) or the shrivelled female body beneath. Branch dieback in severe cases. Fruit may show red halos around settled scales.',
+    crops_affected: ['apples', 'pears', 'plums', 'Cotoneaster', 'many ornamental trees'],
+    risk_factors: 'Old neglected orchards, poor tree vigour, lack of dormant sprays, sheltered sites',
+    economic_impact: 'Heavy infestations reduce tree vigour and can kill branches. Winter tar oil washes historically used. Dormant-season petroleum spray oil smothers overwintering eggs. Crawler-stage sprays (July) with spirotetramat.',
+    images_description: 'Grey-brown mussel-shaped scales aligned along apple twig bark surface',
+  },
+
+  {
+    id: 'fruit-tree-red-spider-mite',
+    name: 'Fruit Tree Red Spider Mite',
+    common_names: ['Panonychus ulmi'],
+    pest_type: 'pest',
+    description: 'Mite that feeds on apple, pear, and plum leaves causing bronzing and reduced photosynthesis. Distinguished from the glasshouse red spider mite (Tetranychus urticae) — this species is specific to fruit trees and overwinters as red eggs on bark.',
+    lifecycle: 'Overwinter as distinctive red eggs on bark, especially around spurs and bud bases. Hatch at bud burst. Females lay eggs on leaves — multiple generations through summer. Populations peak July-August. Return to bark to lay overwintering eggs in autumn.',
+    identification: 'Mites: tiny (0.4mm) dark red to brown with white dorsal spots. Red overwintering eggs visible on bark in winter. Leaf damage: fine pale stippling on upper surface, bronzing in severe cases. Mites and summer eggs on leaf undersurface.',
+    crops_affected: ['apples', 'pears', 'plums', 'damsons'],
+    risk_factors: 'Repeated broad-spectrum insecticide use (kills predatory mites), hot dry summers, high overwintering egg counts, absence of Typhlodromus pyri (predatory mite)',
+    economic_impact: 'Yield and fruit quality losses of 5-20% when populations are high. Predatory mite Typhlodromus pyri provides excellent biological control in IPM orchards. Winter wash with petroleum oil reduces egg survival. Avoid broad-spectrum sprays that harm predators.',
+    images_description: 'Bronzed apple leaf with tiny red-brown mites and red overwintering eggs on bark',
+  },
+
+  // ── Expansion: Grassland Pests ─────────────────────────────────
+
+  {
+    id: 'chafer-grubs',
+    name: 'Chafer Grubs',
+    common_names: ['Phyllopertha horticola', 'Garden chafer', 'Melolontha melolontha', 'Cockchafer'],
+    pest_type: 'pest',
+    description: 'Larvae of chafer beetles that feed on grass roots in grassland, turf, and amenity areas. Several species involved, with garden chafer (Phyllopertha horticola) most common. Cause yellowing patches that can be pulled up like carpet.',
+    lifecycle: 'Garden chafer: one year cycle. Adults fly June-July. Eggs laid in grassland soil. Larvae (C-shaped white grubs with brown heads) feed on roots through summer and autumn. Overwinter deeper in soil. Resume feeding in spring. Pupate April-May.',
+    identification: 'C-shaped white grubs with brown head capsule and three pairs of legs, found 2-5cm deep in soil beneath yellowing turf. Turf lifts easily from soil. Crows, rooks, and badgers dig up turf to feed on grubs. Adults: brown beetles (10-12mm) in swarms on warm June evenings.',
+    crops_affected: ['grassland', 'turf', 'amenity grass', 'lawns'],
+    risk_factors: 'Light sandy soils, warm dry summers, previous adult beetle activity, grassland without predator activity',
+    economic_impact: 'Turf and grassland losses of 10-50% in affected areas. Secondary damage from birds and mammals digging for grubs can exceed direct root damage. Nematode drench (Heterorhabditis bacteriophora) in late summer provides biological control.',
+    images_description: 'White C-shaped chafer grub with brown head found beneath lifted turf patch',
+  },
+
+  {
+    id: 'field-voles',
+    name: 'Field Voles',
+    common_names: ['Microtus agrestis', 'Short-tailed vole'],
+    pest_type: 'pest',
+    description: 'Small herbivorous rodent that damages grassland, young tree plantations, and orchard trees by gnawing bark and eating vegetation. Populations cycle with peaks every 3-4 years. Can cause significant damage to grass leys and tree bark in peak years.',
+    lifecycle: 'Breed March-October, producing 4-6 litters of 3-6 young per year. Populations cycle over 3-4 years from low to peak density. Peak populations can reach 200+ per hectare. Construct characteristic surface runways through grass. Active day and night.',
+    identification: 'Small rodents (10cm body) with short tail, blunt nose, and small ears. Surface runways (3-4cm wide) visible in long grass. Piles of chopped grass stems at feeding stations along runways. Bark gnawing at the base of young trees.',
+    crops_affected: ['grassland', 'young tree plantations', 'orchards', 'grass leys'],
+    risk_factors: 'Long ungrazed grass (provides cover), rough tussocky grassland, peak population years, young tree plantations without guards',
+    economic_impact: 'Grassland damage mainly cosmetic but bark damage can kill young trees. Losses of 5-30% of young trees in plantations in peak vole years. Tree guards (spiral or mesh), short grass around tree bases, and raptor perches for natural predation are controls.',
+    images_description: 'Surface runway through grass with chopped stems and bark gnawing at base of young tree',
+  },
+
+  {
+    id: 'new-zealand-flatworm',
+    name: 'New Zealand Flatworm',
+    common_names: ['Arthurdendyus triangulatus'],
+    pest_type: 'pest',
+    description: 'Invasive predatory flatworm from New Zealand that feeds on earthworms. Established in Scotland, Northern Ireland, and parts of northern England. Reduces earthworm populations, degrading soil structure and fertility. No chemical control available.',
+    lifecycle: 'Produces dark egg capsules in soil year-round. Feeds by enveloping earthworms in mucus and digesting them externally. Active at soil temperatures of 5-20C. Avoids hot dry conditions by retreating deeper into soil. Spreads primarily through movement of soil and plants.',
+    identification: 'Flat, pointed at both ends, 5-15cm long, dark purple-brown upper surface with pale buff underside and margin. Found under stones, pots, and surface objects. Egg capsules: dark, shiny, 5-10mm, found in soil. Distinct from native flatworms by larger size and colour.',
+    crops_affected: ['grassland', 'gardens', 'allotments', 'nursery stock'],
+    risk_factors: 'Scotland and Northern Ireland (established), imported plants and soil, cool moist conditions, gardens and nurseries',
+    economic_impact: 'Reduces earthworm populations by 20-80% in affected areas. Consequent loss of soil aeration, drainage, and organic matter incorporation. No chemical control. Prevent spread by avoiding movement of soil from infested areas. Biosecurity in nursery trade.',
+    images_description: 'Dark purple-brown flat elongated flatworm on soil surface with pale-edged margin',
+  },
+
+  {
+    id: 'crow-rook-damage',
+    name: 'Crow and Rook Damage',
+    common_names: ['Corvus frugilegus', 'Corvus corone'],
+    pest_type: 'pest',
+    description: 'Rooks (Corvus frugilegus) and carrion crows (Corvus corone) cause significant crop damage by pulling up newly sown cereal and maize seedlings to eat the seed, and by feeding on grain in the ear before harvest. Also dig up grassland to feed on soil invertebrates.',
+    lifecycle: 'Year-round residents. Rooks nest colonially in rookeries. Crows nest individually. Crop damage peaks at drilling (pulling seedlings), at milk ripe stage (grain feeding), and in spring on grassland (invertebrate feeding). Social learning spreads damaging behaviour.',
+    identification: 'Seedlings pulled up with seed still attached at base. Rows of missing plants in newly drilled cereals and maize. Ragged ears where grain has been removed. Patches of grassland torn up. Flocks of rooks or individual crows in affected fields.',
+    crops_affected: ['wheat', 'barley', 'maize', 'peas', 'grassland'],
+    risk_factors: 'Fields near rookeries, shallow drilling, bare soil after drilling, grain left on surface, livestock fields (invertebrate attraction)',
+    economic_impact: 'Losses of 5-20% plant stand in worst-affected fields. Maize is particularly vulnerable due to large seed and slow emergence. Bird scarers (gas cannons, kites, distress calls) provide temporary deterrence. Deeper drilling reduces seed exposure.',
+    images_description: 'Rook in cereal field pulling up seedling with seed still attached at base',
+  },
+
+  // ── Expansion: Additional Pests ────────────────────────────────
+
+  {
+    id: 'cabbage-moth',
+    name: 'Cabbage Moth',
+    common_names: ['Mamestra brassicae'],
+    pest_type: 'pest',
+    description: 'Noctuid moth whose caterpillars bore into the hearts of cabbages and Brussels sprouts. Distinguished from cabbage white butterflies by the moth adult and the boring habit of larger larvae. Causes contamination and rejection of produce.',
+    lifecycle: 'One to two generations per year. Adults fly May-September. Eggs laid in clusters on undersides of brassica leaves. Young larvae feed on outer leaves. Older larvae bore into hearts. Pupate in soil in autumn. Overwinter as pupae.',
+    identification: 'Adults: brown-grey noctuid moths (40-45mm wingspan) with kidney-shaped wing markings. Caterpillars: variable — green, brown, or dark with pale line along sides, up to 45mm. Damage: holes in outer leaves (young larvae) and bore holes into hearts (older larvae).',
+    crops_affected: ['cabbage', 'Brussels sprouts', 'cauliflower', 'broccoli'],
+    risk_factors: 'Warm summers, fields near overwintering sites, second generation in warm years, organic systems without synthetic insecticides',
+    economic_impact: 'Heart damage and frass contamination makes 10-30% of produce unmarketable. More damaging than cabbage white because boring larvae are protected from sprays. Bacillus thuringiensis effective on young larvae before they bore.',
+    images_description: 'Brown-green caterpillar boring into cabbage heart with frass visible at entry hole',
+  },
+
+  {
+    id: 'carrot-willow-aphid',
+    name: 'Carrot-Willow Aphid',
+    common_names: ['Cavariella aegopodii', 'Willow-carrot aphid'],
+    pest_type: 'pest',
+    description: 'Aphid alternating between willow (winter) and carrot family (summer). Direct feeding causes leaf yellowing. Transmits carrot motley dwarf virus complex causing red and yellow discolouration. Same species as willow-carrot aphid — primary name in entomological literature.',
+    lifecycle: 'Overwintering eggs on willow. Spring migration to umbelliferous crops May-June. Multiple summer generations on carrots. Autumn return to willow. Virus acquired from infected plants and transmitted to healthy ones during probing.',
+    identification: 'Small green aphids on carrot foliage. Virus symptoms: bright red and yellow discolouration of outer leaves. Stunted plants. Distinguished from other carrot aphids by the specific association with carrot motley dwarf virus.',
+    crops_affected: ['carrots', 'parsnips', 'celery'],
+    risk_factors: 'Proximity to willow, warm springs, virus reservoir in wild umbellifers',
+    economic_impact: 'Virus-mediated losses of 10-30% in affected areas. Pyrethroid sprays timed to first migration reduce virus spread. Removal of willow hedges near carrot fields eliminates overwintering host.',
+    images_description: 'Carrot foliage with red-yellow discolouration from virus and green aphids on leaf underside',
+  },
+
+  {
+    id: 'mangold-fly',
+    name: 'Mangold Fly',
+    common_names: ['Pegomya hyoscyami', 'Beet leaf miner'],
+    pest_type: 'pest',
+    description: 'Fly whose larvae mine within sugar beet and beetroot leaves, creating large blister-like mines. Same species as beet leaf miner. Two generations per year. Most damaging to young plants in spring when leaf area is limited.',
+    lifecycle: 'Adults emerge May. Eggs laid in clusters on undersides of beet leaves. Larvae feed between leaf surfaces creating mines. Pupate in soil. Second generation July-August. Overwinter as pupae in soil.',
+    identification: 'Pale blister-like mines in beet leaves, initially narrow then expanding. Several larvae may be visible inside the mine as dark shapes. Severely mined leaves become brown and papery. Young plants may be stunted if most leaf area is mined.',
+    crops_affected: ['sugar beet', 'beetroot', 'spinach beet', 'mangolds'],
+    risk_factors: 'Fields near hedgerows, spring (first generation on young plants), warm dry weather, organic systems',
+    economic_impact: 'First generation on young plants (4-6 leaf) can reduce yield 5-15%. Later attacks on established plants are tolerated. Seed treatment with neonicotinoids (where still approved) provides early protection. Established plants compensate for mining damage.',
+    images_description: 'Large blister-like mine in sugar beet leaf with larval shapes visible inside',
+  },
+
+  {
+    id: 'celery-fly',
+    name: 'Celery Fly',
+    common_names: ['Euleia heraclei', 'Celery leaf miner'],
+    pest_type: 'pest',
+    description: 'Small fly whose larvae mine within celery, parsnip, and lovage leaves. Creates brown blister mines that reduce photosynthetic area and make celery unmarketable. Two to three generations per year. A significant pest of UK celery production.',
+    lifecycle: 'Adults emerge April-May. Eggs inserted into leaf tissue. Larvae feed between leaf surfaces creating brown blotch mines. Pupate in the mine or in soil. Two to three generations: April-May, July, and September. Multiple larvae per mine.',
+    identification: 'Brown blotch mines in celery and parsnip leaves, initially small then expanding to cover much of the leaflet. Frass visible inside mine. Larvae: white maggots (5-7mm) visible through mine surface. Severely mined plants have brown, papery leaves.',
+    crops_affected: ['celery', 'parsnips', 'lovage', 'parsley'],
+    risk_factors: 'Proximity to hedgerow (umbelliferous hosts), warm dry conditions, unprotected crops, organic production',
+    economic_impact: 'Celery with visible mine damage is unmarketable — losses of 10-30%. Spinosad spray provides control. Fleece covers prevent egg-laying. On parsnips, damage is cosmetic to foliage and rarely affects root yield.',
+    images_description: 'Brown blotch mines in celery leaf with white larvae visible inside the mine',
+  },
+
+  {
+    id: 'onion-thrips',
+    name: 'Onion Thrips',
+    common_names: ['Thrips tabaci'],
+    pest_type: 'pest',
+    description: 'Tiny (1-2mm) thrips that feeds on onion and leek leaves, causing silver-white patches and streaks. Heavy infestations reduce bulb size and quality. Also vectors Iris Yellow Spot Virus (IYSV). Important pest of UK allium crops.',
+    lifecycle: 'Multiple generations per year. Adults and larvae feed by rasping leaf surface and sucking cell contents. Eggs inserted into leaf tissue. Pupate in soil. Populations build through summer, peaking July-August. Overwinter in soil and crop debris.',
+    identification: 'Tiny (1-2mm) yellow to brown insects found between inner leaves. Silver-white streaks and patches on leaves where cells have been emptied. Heavy infestations cause distorted, silvered foliage. Black frass spots visible on damaged areas.',
+    crops_affected: ['onions', 'leeks', 'garlic', 'shallots'],
+    risk_factors: 'Hot dry summers, sheltered fields, dense crops, proximity to alternative hosts, previous crop debris',
+    economic_impact: 'Yield losses of 10-25% from reduced bulb size. Quality reduction from neck damage. Virus transmission adds further loss. Spinosad and lambda-cyhalothrin provide control. Blue sticky traps for monitoring. Overhead irrigation deters thrips.',
+    images_description: 'Silver-white streaks on onion leaf surface with tiny yellow thrips visible between leaves',
+  },
+
+  {
+    id: 'raspberry-cane-midge',
+    name: 'Raspberry Cane Midge',
+    common_names: ['Resseliella theobaldi'],
+    pest_type: 'pest',
+    description: 'Tiny midge whose larvae feed in the bark splits of raspberry canes, creating entry points for cane blight and other fungal diseases. The midge itself causes minor damage but the resulting cane blight is devastating. Critical pest of UK raspberry production.',
+    lifecycle: 'Two to three generations per year. Adults emerge April-May. Females lay eggs in natural bark splits on new canes. Larvae feed in the cambium layer. Larvae fall to soil to pupate. Feeding wounds become entry points for Leptosphaeria coniothyrium (cane blight).',
+    identification: 'Tiny orange-pink larvae (2-3mm) found beneath bark splits on primocanes. Dark areas around split bark where larvae have fed. Cane blight follows — dark brown to black discolouration spreading from entry point, making canes brittle.',
+    crops_affected: ['raspberries'],
+    risk_factors: 'Vigorous primocane growth (more bark splitting), warm moist conditions, previous cane blight history, susceptible varieties',
+    economic_impact: 'Cane blight resulting from midge damage can destroy 20-50% of fruiting canes. Fenitrothion historically used but now withdrawn. Current control relies on reducing primocane number, prophylactic fungicide sprays at split bark stage.',
+    images_description: 'Raspberry cane bark split with tiny orange larvae beneath and dark cane blight discolouration',
+  },
+
+  {
+    id: 'pea-leaf-weevil',
+    name: 'Pea and Bean Weevil',
+    common_names: ['Sitona lineatus'],
+    pest_type: 'pest',
+    description: 'Small weevil (4-5mm) that notches the leaf margins of peas and beans. Adults cause characteristic U-shaped notches. Larvae feed on root nodules underground, reducing nitrogen fixation. One of the most common pests of legume crops in the UK.',
+    lifecycle: 'Adults overwinter in hedgerows and field margins. Migrate to pea and bean crops in spring. Feeding creates leaf notches. Eggs laid in soil near plants. Larvae feed on Rhizobium root nodules. New adults emerge in summer and seek overwintering sites.',
+    identification: 'Adults: grey-brown weevils (4-5mm) with striped pattern, feigning death when disturbed. Damage: distinctive U-shaped notches along leaf margins. Larvae: white, legless, C-shaped grubs on roots. Root nodules appear brown and hollowed out.',
+    crops_affected: ['peas', 'field beans', 'spring beans'],
+    risk_factors: 'Spring-sown crops (most vulnerable at seedling stage), warm dry springs, proximity to hedgerows, previous pea/bean crops',
+    economic_impact: 'Leaf notching on young plants (1-3 leaf stage) can reduce yield 5-15% in severe cases. Mature plants tolerate significant notching. Larval damage to root nodules reduces nitrogen fixation. Lambda-cyhalothrin threshold spray when notching reaches 50% of plants.',
+    images_description: 'Grey-brown weevil on pea leaf margin with characteristic U-shaped notches',
+  },
+
+  {
+    id: 'flea-beetle-root-crops',
+    name: 'Flea Beetle on Root Crops',
+    common_names: ['Phyllotreta vittula', 'Chaetocnema concinna'],
+    pest_type: 'pest',
+    description: 'Small flea beetles that damage sugar beet, spinach, and other root crop seedlings by shot-holing cotyledons. Several species involved. Most damaging in hot dry weather when seedling growth is slow. Can necessitate re-drilling.',
+    lifecycle: 'Adults overwinter in leaf litter and field margins. Active from April when temperatures exceed 15C. Feed on cotyledons and first true leaves. Eggs laid in soil. Larvae feed on roots (minor). New adults emerge mid-summer.',
+    identification: 'Tiny (2-3mm) shiny dark beetles that jump vigorously when disturbed. Shot-hole damage on cotyledons and young leaves. Multiple species: Chaetocnema concinna (beet flea beetle, shiny bronze), Phyllotreta vittula (striped). Seedlings may be killed.',
+    crops_affected: ['sugar beet', 'beetroot', 'spinach', 'chard'],
+    risk_factors: 'Hot dry weather, slow seedling emergence, light sandy soils, east and south England, organic systems',
+    economic_impact: 'Seedling losses requiring re-drilling in 2-5% of UK beet crops annually. Neonicotinoid seed treatment (where approved) provides effective early protection. Lambda-cyhalothrin foliar spray at seedling stage as alternative.',
+    images_description: 'Tiny shiny dark beetle jumping from sugar beet cotyledon showing shot-hole damage',
+  },
+
+  {
+    id: 'large-narcissus-fly',
+    name: 'Large Narcissus Fly',
+    common_names: ['Merodon equestris'],
+    pest_type: 'pest',
+    description: 'Hoverfly whose larvae feed inside narcissus (daffodil) bulbs, destroying them from within. A significant pest of commercial narcissus production in the UK, particularly in Cornwall and Lincolnshire. Larvae consume the central growing point.',
+    lifecycle: 'One generation per year. Adults (bumblebee mimics) fly May-June. Females lay eggs at the base of narcissus leaves as foliage dies back. Larva enters bulb through the base plate. Feeds inside through autumn and winter. Pupates in soil spring.',
+    identification: 'Adults: bumblebee-like hoverflies (12-15mm) visiting flowers near narcissus. Larva: large (15-20mm) cream grub inside hollowed-out bulb. Infested bulbs are soft, light, and fail to produce shoots. Single larva per bulb. Brown papery remains inside.',
+    crops_affected: ['narcissus', 'daffodils', 'amaryllis', 'snowdrops'],
+    risk_factors: 'Fields with previous narcissus, warm dry June conditions (adult flight), foliage dying back naturally (eggs laid at base), southwest and east England production areas',
+    economic_impact: 'Bulb losses of 5-20% in commercial narcissus. Hot water treatment of bulbs (44.4C for 3 hours) kills larvae but stresses bulbs. Permethrin drench historically used. Covering soil surface at foliage die-back can prevent egg-laying.',
+    images_description: 'Hollowed-out narcissus bulb with large cream larva inside and bumblebee-like adult hoverfly',
+  },
+
+  {
+    id: 'glasshouse-whitefly',
+    name: 'Glasshouse Whitefly',
+    common_names: ['Trialeurodes vaporariorum'],
+    pest_type: 'pest',
+    description: 'Small white-winged insect that feeds on the undersides of leaves of tomatoes, cucumbers, and many protected crops. Adults and nymphs suck sap and excrete honeydew. One of the most important pests of UK protected edible crops.',
+    lifecycle: 'Continuous generations in heated glasshouses. Females lay eggs on leaf undersides. Nymphs (scales) are flat, oval, and immobile after first instar. Pupate to winged adults. Complete cycle takes 3-4 weeks at 20C. Cannot survive UK winters outdoors.',
+    identification: 'Adults: tiny (1.5mm) white-winged insects that fly up in clouds when plants are disturbed. Nymphs: flat oval pale green scales on leaf undersurface. Honeydew and black sooty mould on leaves below colonies. Eggs on stalks on leaf undersurface.',
+    crops_affected: ['tomatoes', 'cucumbers', 'peppers', 'aubergines', 'ornamentals'],
+    risk_factors: 'Heated glasshouses, year-round cropping, insecticide resistance, absence of biological control agents',
+    economic_impact: 'Direct feeding, honeydew, and sooty mould reduce fruit quality and yield by 10-30%. Encarsia formosa (parasitoid wasp) provides commercial biological control. Insecticide resistance is widespread. IPM programmes essential.',
+    images_description: 'White-winged adult whiteflies and flat oval nymphs on tomato leaf underside with honeydew',
+  },
+
+  {
+    id: 'western-flower-thrips',
+    name: 'Western Flower Thrips',
+    common_names: ['Frankliniella occidentalis', 'WFT'],
+    pest_type: 'pest',
+    description: 'Invasive thrips species from North America. Established in UK glasshouses since the late 1980s. Feeds on flowers and young fruit of many crops, causing scarring and distortion. Also vectors Tomato Spotted Wilt Virus (TSWV). Major protected crop pest.',
+    lifecycle: 'Continuous generations under glass. Adults and larvae feed by rasping and sucking. Eggs inserted into plant tissue. Pupation in growing media or soil. Complete cycle 2-3 weeks at 25C. Cannot survive UK winters outdoors.',
+    identification: 'Tiny (1-2mm) yellow to brown insects in flowers and on young fruit. Feeding causes silver scarring on fruit, distorted flowers, and streaking on petals. Tap flowers over white paper to dislodge and count. Blue sticky traps for monitoring.',
+    crops_affected: ['peppers', 'cucumbers', 'strawberries', 'chrysanthemums', 'ornamentals'],
+    risk_factors: 'Heated glasshouses, imported plant material, insecticide resistance, warm dry conditions, absence of predatory mites',
+    economic_impact: 'Fruit scarring and virus transmission cause 10-40% yield and quality losses. Amblyseius cucumeris (predatory mite) is standard biological control. Insecticide resistance severe. IPM with biological control agents is primary strategy.',
+    images_description: 'Tiny yellow thrips inside pepper flower and silver scarring damage on fruit surface',
+  },
+
+  {
+    id: 'badger-damage',
+    name: 'Badger Damage',
+    common_names: ['Meles meles'],
+    pest_type: 'pest',
+    description: 'European badger (Meles meles) causes agricultural damage by digging in grassland, cereals, and sweetcorn for earthworms and invertebrates, and by feeding on ripening crops. Protected under the Protection of Badgers Act 1992.',
+    lifecycle: 'Year-round activity with seasonal peaks. Family groups (clans) in setts. Digging for earthworms and leatherjackets peaks in autumn-winter. Cereal and sweetcorn feeding in late summer-autumn. Protected species — cannot be killed or disturbed.',
+    identification: 'Characteristic snuffle holes (5-10cm deep, cone-shaped) in grassland and turf. Sweetcorn cobs pulled down and stripped. Cereal crops flattened and ears eaten. Well-worn paths between sett and feeding area. Latrine pits near sett.',
+    crops_affected: ['grassland', 'turf', 'sweetcorn', 'cereals', 'strawberries'],
+    risk_factors: 'Proximity to badger setts, livestock pasture (earthworm attraction), sweetcorn fields near woodland, autumn (peak foraging)',
+    economic_impact: 'Sweetcorn losses of 10-50% in fields near setts. Grassland digging damages machinery and sports turf. Electric fencing provides deterrence. Compensation not available. Protected species — lethal control not an option. Coexistence strategies required.',
+    images_description: 'Cone-shaped snuffle holes in grassland turf and stripped sweetcorn cobs from badger feeding',
+  },
+
+  {
+    id: 'cabbage-stem-weevil',
+    name: 'Cabbage Stem Weevil',
+    common_names: ['Ceutorhynchus pallidactylus', 'Ceutorhynchus quadridens'],
+    pest_type: 'pest',
+    description: 'Weevil whose larvae bore inside the stems of oilseed rape and brassica vegetables. Adults feed on leaves creating small holes. Larvae mine within the petioles and stems, weakening plants. A common spring pest of UK oilseed rape.',
+    lifecycle: 'Adults overwinter away from crops. Migrate to oilseed rape in spring (March-April). Eggs laid in petioles and stem. Larvae mine within petioles, moving into main stem. Exit to pupate in soil in June. New adults feed on brassica pods before overwintering.',
+    identification: 'Adults: small (3-4mm) dark grey weevils. Leaf damage: small round feeding holes. Larval damage: white legless grubs inside split petioles and stems. Exit holes visible on stem surface where mature larvae leave. Multiple larvae per stem.',
+    crops_affected: ['oilseed rape', 'cabbage', 'Brussels sprouts'],
+    risk_factors: 'Spring migration during warm dry weather (March-April), proximity to overwintering sites, large crops with many petioles',
+    economic_impact: 'Yield losses usually minor (2-5%) unless secondary infections enter larval tunnels. Pyrethroid spray at migration threshold but rarely justified economically. Often present but below treatment threshold. More of an issue in brassica vegetables.',
+    images_description: 'Small dark weevil on oilseed rape leaf and white larva inside split petiole',
+  },
 ];
 
 // ── Weeds ───────────────────────────────────────────────────────
@@ -2133,6 +3123,388 @@ const WEEDS: Pest[] = [
     risk_factors: 'Wet poorly drained grassland, marsh edges, ditch banks, neglected pasture, acidic soils, woodland clearings',
     economic_impact: 'Indicator of poor drainage — presence signals need for drainage improvement. Reduces grazing value of wet grassland. Less competitive than creeping or spear thistle. Control through drainage improvement, cutting, and targeted herbicide.',
     images_description: 'Tall spiny-winged stem with clusters of small purple flowers at top in wet grassland',
+  },
+
+  // ── Expansion: Arable Weeds ────────────────────────────────────
+
+  {
+    id: 'red-dead-nettle',
+    name: 'Red Dead-nettle',
+    common_names: ['Lamium purpureum'],
+    pest_type: 'weed',
+    description: 'Common winter annual weed (Lamium purpureum) of arable land. Germinates autumn through spring. Square stems with opposite, purplish, nettle-shaped leaves. Small pink-purple flowers. Does not sting. Often found with chickweed and speedwells.',
+    lifecycle: 'Winter or spring annual. Germinates September-November and February-April. Flowers March-October. Sets seed prolifically. Seeds viable in soil for 5+ years. Often completes multiple short generations per year.',
+    identification: 'Square stems up to 30cm. Opposite heart-shaped leaves with crenate margins, often purplish especially near the top. Small pink-purple two-lipped flowers in whorls at upper leaf axils. No stinging hairs (unlike true nettles).',
+    crops_affected: ['cereals', 'oilseed rape', 'sugar beet', 'vegetables'],
+    risk_factors: 'Autumn-sown crops, minimum tillage, fertile soils, sheltered field margins',
+    economic_impact: 'Usually minor in competitive cereal crops. Can be significant in sugar beet and vegetables where it competes early. Controlled by most broadleaved herbicide programmes. Often present but below economic threshold.',
+    images_description: 'Red dead-nettle plant with square stem purplish leaves and pink-purple flowers',
+  },
+
+  {
+    id: 'field-forget-me-not',
+    name: 'Field Forget-me-not',
+    common_names: ['Myosotis arvensis'],
+    pest_type: 'weed',
+    description: 'Winter annual weed of arable land with small blue flowers. Myosotis arvensis is one of the most common arable weeds in the UK. Germinates in autumn and overwinters as a rosette. Generally not highly competitive but abundant.',
+    lifecycle: 'Winter annual. Germinates August-November. Overwinters as a basal rosette. Flowers April-September. Produces many small nutlet seeds with a hard coat. Seeds viable in soil for many years. Widespread across all soil types.',
+    identification: 'Basal rosette of hairy oval leaves. Flowering stems up to 40cm. Small blue flowers (3-5mm) with yellow centres in coiled cyme inflorescences (scorpioid cyme). Stems and leaves covered in fine hairs. Nutlet seeds.',
+    crops_affected: ['cereals', 'oilseed rape', 'peas', 'beans'],
+    risk_factors: 'Autumn-sown crops, minimum tillage, widespread across soil types, lower-fertility sandy soils',
+    economic_impact: 'Usually a minor competitor but very widespread. Rarely reaches economic threshold in cereals. Controlled by most broadleaved herbicide programmes. Can be locally abundant in peas and beans where herbicide options are limited.',
+    images_description: 'Small blue forget-me-not flowers with yellow centre on hairy stems in arable field',
+  },
+
+  {
+    id: 'corn-marigold',
+    name: 'Corn Marigold',
+    common_names: ['Glebionis segetum', 'Chrysanthemum segetum'],
+    pest_type: 'weed',
+    description: 'Annual weed of arable land with bright yellow daisy-like flower heads. Once a major arable weed in the UK but declined due to herbicides and seed cleaning. Still locally common on acidic sandy soils. Heritage significance as a cornfield wildflower.',
+    lifecycle: 'Spring or autumn annual. Germinates February-May and September-October. Flowers June-October. Single bright yellow flower heads (35-65mm). Seeds lack dormancy mechanisms — most germinate within one year. Declined significantly since 1950s.',
+    identification: 'Erect stems to 60cm. Bluish-green fleshy leaves, lower ones deeply toothed, upper clasping the stem. Large single bright yellow flower heads. Distinguished from other yellow composites by the fleshy bluish-green foliage.',
+    crops_affected: ['cereals', 'root crops', 'vegetables'],
+    risk_factors: 'Acidic sandy soils, organic systems (no herbicides), conservation headlands, light land in Scotland and eastern England',
+    economic_impact: 'Historically a serious weed causing major yield losses. Now uncommon in conventional cropping due to herbicides. Can be competitive in organic systems on light soils. Valued in conservation headlands and wildflower strips.',
+    images_description: 'Bright yellow daisy-like corn marigold flowers in cereal field margin',
+  },
+
+  {
+    id: 'scented-mayweed',
+    name: 'Scented Mayweed',
+    common_names: ['Matricaria chamomilla', 'Matricaria recutita', 'Wild chamomile'],
+    pest_type: 'weed',
+    description: 'Annual weed with white daisy-like flowers and finely divided feathery leaves that release a sweet chamomile scent when crushed. Common in UK arable land, especially on lighter soils. Distinguished from scentless mayweed by the scent and hollow receptacle.',
+    lifecycle: 'Spring or autumn annual. Germinates February-May and September-October. Flowers May-August. Prolific seed production (up to 5,000 seeds per plant). Seeds small and light, viable in soil for up to 15 years. Conical hollow receptacle beneath flower.',
+    identification: 'Finely divided feathery leaves. White ray florets around yellow conical disc. Distinguished from scentless mayweed by: sweet scent when crushed, conical (not flat) receptacle, and hollow receptacle when sliced vertically.',
+    crops_affected: ['cereals', 'sugar beet', 'oilseed rape', 'potatoes'],
+    risk_factors: 'Light sandy to loamy soils, pH 5-7, autumn-sown crops, reduced herbicide input, field margins',
+    economic_impact: 'Competitive in thin crops on lighter soils. Yield losses of 2-10% where dense. Controlled by most ALS and growth regulator herbicides in cereals. Can be problematic in sugar beet where herbicide options are limited.',
+    images_description: 'White daisy flowers with yellow conical centre and finely divided feathery leaves in cereal stubble',
+  },
+
+  {
+    id: 'shepherds-purse',
+    name: "Shepherd's Purse",
+    common_names: ['Capsella bursa-pastoris'],
+    pest_type: 'weed',
+    description: "Ubiquitous annual weed found in arable land, gardens, and waste ground across the UK. Named for its distinctive heart-shaped seed pods. Capsella bursa-pastoris can flower and set seed year-round in mild conditions. Also a host for brassica diseases.",
+    lifecycle: "Germinates year-round in mild conditions. Rapid growth — can complete a generation in 6 weeks. Flowers year-round. Heart-shaped (triangular) seed pods. Up to 40,000 seeds per plant. Seed bank persists for 30+ years in soil.",
+    identification: "Basal rosette of deeply lobed leaves (variable shape). Slender flowering stems to 40cm. Tiny white four-petalled flowers. Distinctive flattened heart-shaped seed pods (silicula) along the stem. Rosette leaves variable — from entire to deeply lobed.",
+    crops_affected: ['cereals', 'oilseed rape', 'sugar beet', 'vegetables', 'potatoes'],
+    risk_factors: 'Year-round germination, all soil types, disturbed ground, field margins, gardens, compacted ground, nitrogen-rich soils',
+    economic_impact: "Usually not highly competitive but acts as a bridge host for Alternaria, clubroot, and other brassica diseases. Important in oilseed rape for this reason. Controlled by most broadleaved herbicide programmes.",
+    images_description: "Shepherd's purse plant with distinctive heart-shaped seed pods along the flowering stem",
+  },
+
+  {
+    id: 'groundsel',
+    name: 'Groundsel',
+    common_names: ['Senecio vulgaris'],
+    pest_type: 'weed',
+    description: 'Very common annual weed (Senecio vulgaris) that flowers and sets seed year-round. Found in arable land, gardens, nurseries, and waste ground. Fast lifecycle — can produce seed 5-6 weeks after germination. Also a host for rust diseases.',
+    lifecycle: 'Germinates year-round. Multiple overlapping generations. Flowers have no ray florets (distinguish from ragwort). Wind-dispersed pappus seeds. Up to 1,000 seeds per plant. Short-lived seed bank (2-5 years). Common in warm winters.',
+    identification: 'Upright plant to 40cm. Irregularly lobed leaves, slightly fleshy. Clusters of small cylindrical yellow flower heads without ray florets — flower heads look like miniature shaving brushes. White pappus for wind dispersal.',
+    crops_affected: ['vegetables', 'nursery stock', 'cereals', 'sugar beet'],
+    risk_factors: 'Year-round germination, disturbed ground, container nurseries, vegetable beds, mild winters, nitrogen-rich soils',
+    economic_impact: 'Competitive in slow-establishing crops and containers. Acts as a host for lettuce downy mildew and rust diseases. Important weed in nursery stock and vegetable production. Controlled by most broadleaved herbicides but re-establishes rapidly.',
+    images_description: 'Groundsel plant with lobed leaves and clusters of small cylindrical yellow flower heads without petals',
+  },
+
+  {
+    id: 'knotgrass',
+    name: 'Knotgrass',
+    common_names: ['Polygonum aviculare'],
+    pest_type: 'weed',
+    description: 'Prostrate annual weed (Polygonum aviculare) common on compacted, heavily trafficked arable land. Forms mats of wiry stems with small lance-shaped leaves and tiny pink-white flowers. Tolerant of trampling and poor soil conditions.',
+    lifecycle: 'Spring annual. Germinates March-June. Prostrate spreading habit, stems radiating from a central tap root. Tiny pink or white flowers in leaf axils July-October. Hard seeds — viable in soil for 20+ years. Favoured by compaction.',
+    identification: 'Prostrate wiry stems spreading to 100cm. Small lance-shaped leaves decreasing in size toward stem tips. Silvery membranous sheaths (ocreae) at each node. Tiny pink-white flowers in leaf axils. Overall appearance of a flat mat on soil surface.',
+    crops_affected: ['cereals', 'sugar beet', 'potatoes', 'maize', 'vegetables'],
+    risk_factors: 'Compacted soils, field gateways, tramlines, headlands, spring-sown crops, heavy clay soils',
+    economic_impact: 'Usually a minor competitor in cereal crops but abundant on headlands and tramlines. Indicator of soil compaction. Can smother low-growing crops on headlands. Controlled by most broadleaved herbicides. Address soil compaction as root cause.',
+    images_description: 'Prostrate knotgrass mat with wiry stems and small leaves on compacted soil surface',
+  },
+
+  {
+    id: 'black-bindweed',
+    name: 'Black Bindweed',
+    common_names: ['Fallopia convolvulus', 'Bilderdykia convolvulus'],
+    pest_type: 'weed',
+    description: 'Annual climbing weed (Fallopia convolvulus) that twines around crop stems in arable fields. Heart-shaped leaves resemble field bindweed but this species is annual and lacks the showy trumpet flowers. Can smother crops and cause harvesting difficulties.',
+    lifecycle: 'Spring annual. Germinates April-June. Climbs by twining stems around crop plants. Small greenish-white flowers in clusters July-October. Hard angular black seeds. Seed bank persists for 10-20 years. Commonest in spring-sown crops.',
+    identification: 'Twining annual with heart-shaped leaves (like bindweed but duller green and more angular). Stems reddish, climbing to 120cm. Small greenish-white flowers in axillary clusters (not the large trumpets of true bindweed). Hard angular black seeds.',
+    crops_affected: ['cereals', 'oilseed rape', 'peas', 'beans', 'sugar beet', 'potatoes'],
+    risk_factors: 'Spring-sown crops, fertile soils, minimum tillage, hedgerow margins, combine harvester spread',
+    economic_impact: 'Yield losses of 3-10% from competition. Twining around stems causes lodging and harvesting problems. Contamination of harvested grain with weed seed. Controlled by most post-emergence broadleaved herbicides in cereals.',
+    images_description: 'Black bindweed twining around cereal stem with heart-shaped leaves and angular black seeds',
+  },
+
+  {
+    id: 'pale-persicaria',
+    name: 'Pale Persicaria',
+    common_names: ['Persicaria lapathifolia', 'Polygonum lapathifolium'],
+    pest_type: 'weed',
+    description: 'Annual weed (Persicaria lapathifolia) of arable land with pale pink flower spikes. Common in fertile, damp soils. Distinguished from redshank by nodding flower spikes, lack of dark leaf blotch, and preference for wetter conditions.',
+    lifecycle: 'Spring annual. Germinates March-May. Erect stems to 80cm. Pale pink to white nodding flower spikes June-October. Seeds flattened and shiny. Seed bank persists 5-10 years. Commonest in wet areas of fields and ditch margins.',
+    identification: 'Erect stems with swollen nodes and membranous ocreae. Leaves lance-shaped, often with glandular dots beneath (feel rough). Pale pink to white flower spikes that nod at the tip. No dark blotch on leaves (unlike redshank).',
+    crops_affected: ['cereals', 'sugar beet', 'potatoes', 'maize', 'vegetables'],
+    risk_factors: 'Wet fertile soils, damp areas of fields, spring-sown crops, ditch margins, minimum tillage',
+    economic_impact: 'Competitive in spring-sown crops on wet soils. Yield losses of 3-8% locally. Controlled by most broadleaved herbicides in cereals. Can be problematic in sugar beet and vegetables in wet field areas.',
+    images_description: 'Pale persicaria with nodding pale pink flower spikes and lance-shaped leaves without dark blotch',
+  },
+
+  {
+    id: 'redshank',
+    name: 'Redshank',
+    common_names: ['Persicaria maculosa', 'Polygonum persicaria'],
+    pest_type: 'weed',
+    description: 'Common annual weed (Persicaria maculosa) of arable land with erect pink flower spikes and a characteristic dark blotch on each leaf. One of the most widespread arable weeds in the UK. Related to pale persicaria.',
+    lifecycle: 'Spring annual. Germinates March-June. Erect to spreading stems to 75cm with reddish nodes. Erect (not nodding) pink flower spikes June-October. Seeds shiny and dark. Seed bank persists 20+ years. Very common on all soil types.',
+    identification: 'Stems reddish, often with reddish swollen nodes. Lance-shaped leaves with distinctive dark blotch (not always present). Erect pink flower spikes (not nodding — unlike pale persicaria). Membranous ocreae at nodes. Leaves smooth, not glandular.',
+    crops_affected: ['cereals', 'oilseed rape', 'sugar beet', 'potatoes', 'peas', 'beans'],
+    risk_factors: 'All soil types, spring and autumn crops, minimum tillage, fertile soils, field margins',
+    economic_impact: 'Common but usually a minor competitor. Yield losses rarely exceed 5%. Controlled by most broadleaved herbicide programmes. Very long-lived seed bank means persistence despite good chemical control. Rarely justifies specific herbicide application.',
+    images_description: 'Redshank plant with erect pink flower spike and lance-shaped leaf showing dark central blotch',
+  },
+
+  {
+    id: 'yorkshire-fog',
+    name: 'Yorkshire Fog',
+    common_names: ['Holcus lanatus'],
+    pest_type: 'weed',
+    description: 'Perennial grass (Holcus lanatus) that is an unwanted component in arable crops and improved grassland. Soft, hairy grass with distinctive pink-white fluffy flower heads. Indicates low fertility or poor management in grassland. Competitive in arable crops.',
+    lifecycle: 'Perennial, tufted grass. Spreads by seed and short stolons. Flowers May-August in fluffy panicles that are pink when fresh, turning white. Seeds small and produced abundantly. Tolerates acid and poorly drained soils. Very common throughout the UK.',
+    identification: 'Very hairy — leaves, sheaths, and nodes all softly pubescent (velvet-like feel when stroked). Pink-white fluffy flower panicle. Leaves grey-green, broad (4-10mm). Tufted growth habit. Distinguished from other grasses by the all-over hairiness.',
+    crops_affected: ['cereals', 'grassland', 'hay', 'silage', 'amenity turf'],
+    risk_factors: 'Acid soils, poorly drained land, low fertility, undergrazed grassland, minimum tillage in arable',
+    economic_impact: 'In grassland, indicates poor fertility and management — low palatability to livestock. In arable, competes with crops on headlands and field margins. Controlled by glyphosate before drilling. Responsive to liming and fertiliser improvement in grassland.',
+    images_description: 'Soft hairy grass with pink-white fluffy flower panicle and grey-green velvet leaves',
+  },
+
+  {
+    id: 'soft-brome',
+    name: 'Soft Brome',
+    common_names: ['Bromus hordeaceus', 'Lop grass'],
+    pest_type: 'weed',
+    description: 'Annual or biennial grass (Bromus hordeaceus) that has become a significant weed of winter cereals in the UK, particularly where minimum tillage is practiced. Closely related to sterile brome. Competitive and can cause yield losses.',
+    lifecycle: 'Annual or short-lived biennial. Germinates autumn and spring. Softly hairy plant with nodding panicle of awned spikelets. Seeds shed before harvest. Seed bank short-lived (2-3 years). Increasing in minimum tillage systems.',
+    identification: 'Softly hairy grass, stems to 80cm. Panicle of broad, softly hairy spikelets with short awns. Panicle becomes compact and nodding at maturity. Distinguished from sterile brome by softer hairs, compact panicle, and shorter awns.',
+    crops_affected: ['wheat', 'barley', 'oilseed rape'],
+    risk_factors: 'Minimum tillage, winter cereals, field margins, short rotations, late herbicide application',
+    economic_impact: 'Yield losses of 5-15% in heavy infestations. Short-lived seed bank means ploughing provides good control. In minimum tillage, pre-emergence flufenacet-based herbicides provide partial control. Less of a resistance problem than blackgrass.',
+    images_description: 'Softly hairy brome grass with compact nodding panicle of broad awned spikelets in wheat field',
+  },
+
+  {
+    id: 'onion-couch',
+    name: 'Onion Couch',
+    common_names: ['Arrhenatherum elatius var. bulbosum', 'False oat-grass (bulbous form)'],
+    pest_type: 'weed',
+    description: 'Bulbous form of false oat-grass (Arrhenatherum elatius var. bulbosum). Perennial grass with distinctive chains of small onion-like bulbs at the base. Difficult to control because bulbs survive cultivation and regrow. Increasing in minimum tillage.',
+    lifecycle: 'Perennial. Spreads by seed and chains of basal corm-like bulbs (3-5 per chain). Bulbs survive cultivation and act like vegetative propagules. Tall grass (60-150cm) flowering June-August. Bulbs are the primary means of persistence and spread.',
+    identification: 'Tall grass with distinctive chain of swollen onion-like bulbs at the stem base (easily visible when plant is pulled up). Otherwise resembles false oat-grass. Panicle with conspicuous bent awns. Bulbs 10-15mm, white to brown, bead-like.',
+    crops_affected: ['cereals', 'oilseed rape', 'grass leys'],
+    risk_factors: 'Minimum tillage (bulbs survive), field margins, hedgerow edges, non-inversion cultivation, light soils',
+    economic_impact: 'Competitive perennial that is difficult to eradicate. Yield losses of 5-10%. Glyphosate before drilling partially effective. Ploughing buries bulbs but they can survive at depth. Repeated glyphosate applications over several seasons needed for full control.',
+    images_description: 'Onion couch grass pulled from soil showing characteristic chain of onion-like bulbs at base',
+  },
+
+  {
+    id: 'creeping-bent',
+    name: 'Creeping Bent',
+    common_names: ['Agrostis stolonifera'],
+    pest_type: 'weed',
+    description: 'Stoloniferous perennial grass (Agrostis stolonifera) that spreads rapidly by surface stolons. Weed of arable land, particularly in wet areas and headlands. Also invades improved grassland. Difficult to eradicate once established.',
+    lifecycle: 'Perennial. Spreads primarily by stolons (surface runners) that root at nodes. Also produces abundant fine seed. Stolons fragment during cultivation and re-root. Flowers June-August. Tolerates wet and acid conditions.',
+    identification: 'Mat-forming grass spreading by surface stolons. Fine leaves (2-5mm wide). Open panicle of tiny spikelets. Stolons visible as runners across soil surface, rooting at nodes. Forms dense mats that smother crop seedlings. Ligule pointed (2-6mm).',
+    crops_affected: ['cereals', 'oilseed rape', 'sugar beet', 'grassland'],
+    risk_factors: 'Wet areas of fields, headlands, minimum tillage, poorly drained soils, field ditches, grassland conversion to arable',
+    economic_impact: 'Competitive mat-forming grass. Yield losses of 5-15% in affected patches. Glyphosate effective but stolon fragments re-establish. Ploughing and repeated cultivation needed. Drainage improvement reduces competitive advantage.',
+    images_description: 'Dense mat of creeping bent grass with surface stolons rooting at nodes in wet arable headland',
+  },
+
+  {
+    id: 'horsetail',
+    name: 'Horsetail',
+    common_names: ['Equisetum arvense', 'Marestail (common name, not Hippuris)'],
+    pest_type: 'weed',
+    description: 'Ancient perennial plant (Equisetum arvense) with deep rhizomes and distinctive jointed stems. Difficult to eradicate due to rhizomes extending 2m+ deep. Not controlled by any selective herbicide. Present since the Carboniferous period.',
+    lifecycle: 'Perennial. Spreads by deep rhizomes (to 2m+) and spore-bearing cones on brown fertile stems in spring. Green vegetative stems (15-50cm) appear in summer with whorls of fine branches. Deciduous — dies back in autumn. Rhizome fragments regenerate.',
+    identification: 'Green stems jointed like bamboo with whorls of fine needle-like branches. Fertile stems brown, unbranched, with cone-like strobili at tip appearing in spring before vegetative stems. No true leaves — photosynthesis in stems and branches.',
+    crops_affected: ['cereals', 'potatoes', 'vegetables', 'grassland', 'gardens'],
+    risk_factors: 'Heavy clay soils, poor drainage, waterlogged areas, field margins near ditches, gardens with disturbed clay subsoil',
+    economic_impact: 'Minor direct yield impact but nearly impossible to eradicate. Resistant to all selective herbicides. Glyphosate gives temporary suppression. Repeated cultivation over years can gradually weaken the rhizome system. Drainage improvement helps.',
+    images_description: 'Jointed green horsetail stems with whorls of fine branches and brown fertile cone-tipped stem',
+  },
+
+  {
+    id: 'bracken',
+    name: 'Bracken',
+    common_names: ['Pteridium aquilinum'],
+    pest_type: 'weed',
+    description: 'Large fern (Pteridium aquilinum) that dominates upland grassland and moorland. Deep rhizomes make it extremely difficult to control. Contains carcinogens and is toxic to livestock. Covers an estimated 60,000 hectares in the UK.',
+    lifecycle: 'Perennial fern. Spreads by deep rhizomes (to 1m+) and spores. Fronds emerge April-May from underground, reaching 1-2m tall. Die back in autumn (brown standing dead fronds persist). Dense canopy shades out other vegetation. Litter builds up.',
+    identification: 'Large triangular fronds (1-2m tall) emerging as curled fiddleheads in spring. Three-times pinnate (tripinnate) with opposite pinnae. Dead brown fronds persist through winter. Underside of fertile fronds shows dark brown spore strips along pinna margins.',
+    crops_affected: ['grassland', 'moorland', 'upland pasture', 'young tree plantations'],
+    risk_factors: 'Upland areas, acidic soils, undergrazed land, unmanaged hill ground, light sandy or peaty soils',
+    economic_impact: 'Reduces grazing capacity by 50-100% in affected areas. Toxic to livestock (carcinogens, thiaminase). Tick reservoir. Control costs GBP 50-200/ha. Asulam (the only effective herbicide for bracken) has limited approval in the UK. Mechanical cutting twice yearly can suppress but not eradicate.',
+    images_description: 'Dense stand of tall bracken fronds covering upland hillside with curled fiddleheads emerging in spring',
+  },
+
+  // ── Expansion: Additional Weeds ────────────────────────────────
+
+  {
+    id: 'common-orache',
+    name: 'Common Orache',
+    common_names: ['Atriplex patula'],
+    pest_type: 'weed',
+    description: 'Annual weed (Atriplex patula) related to fat-hen. Found in arable fields on heavier soils. Triangular to hastate lower leaves. Grows later than fat-hen and can be competitive in spring-sown crops, especially sugar beet.',
+    lifecycle: 'Spring annual. Germinates March-June. Erect or spreading stems to 90cm. Variable leaf shape — lower leaves triangular with basal lobes. Tiny flowers in axillary and terminal clusters. Seeds enclosed in bracteoles. Seed bank persists 5-10 years.',
+    identification: 'Lower leaves triangular with two spreading basal lobes (hastate). Stems often reddish. Mealy texture on young leaves and stems. Distinguished from fat-hen by the more angular leaf shape and spreading basal lobes.',
+    crops_affected: ['sugar beet', 'potatoes', 'cereals', 'vegetables'],
+    risk_factors: 'Heavy clay soils, spring-sown crops, fertile conditions, minimum tillage',
+    economic_impact: 'Competitive in sugar beet and root crops. Yield losses of 3-8%. Controlled by most broadleaved herbicide programmes. Similar biology to fat-hen — often managed together.',
+    images_description: 'Common orache plant with triangular leaves having spreading basal lobes on reddish stem',
+  },
+
+  {
+    id: 'smooth-sowthistle',
+    name: 'Smooth Sow-thistle',
+    common_names: ['Sonchus oleraceus'],
+    pest_type: 'weed',
+    description: 'Annual weed (Sonchus oleraceus) found in arable land and gardens. Produces milky latex when cut. Yellow dandelion-like flowers. Can be competitive in open crops. Distinguished from perennial sow-thistle (S. arvensis) by annual habit and rounded leaf base lobes.',
+    lifecycle: 'Annual. Germinates year-round in mild conditions. Erect hollow stems to 100cm with milky sap. Yellow flower heads (20-25mm) in loose clusters. Seeds with white pappus, wind-dispersed. Rapid lifecycle — can produce several generations per year.',
+    identification: 'Hollow stems with milky sap when cut. Leaves softly spiny-margined, variable shape, upper leaves clasping stem with rounded auricles. Yellow composite flowers. Distinguished from prickly sow-thistle (S. asper) by softer spines and rounded (not curled) ear-shaped leaf bases.',
+    crops_affected: ['cereals', 'sugar beet', 'potatoes', 'vegetables', 'gardens'],
+    risk_factors: 'Disturbed fertile soils, gardens, field margins, year-round germination in mild areas, minimum tillage',
+    economic_impact: 'Minor competitor in cereals. More significant in vegetable crops and gardens due to rapid growth. Controlled by most broadleaved herbicides. Wind-dispersed seeds recolonise rapidly.',
+    images_description: 'Smooth sow-thistle with hollow stem showing milky sap and yellow dandelion-like flowers',
+  },
+
+  {
+    id: 'annual-nettle',
+    name: 'Small Nettle',
+    common_names: ['Urtica urens', 'Annual nettle'],
+    pest_type: 'weed',
+    description: 'Annual stinging nettle (Urtica urens) of arable land and gardens. Smaller than perennial nettle but with a more severe sting. Common on fertile phosphate-rich soils. Can form dense stands in root crops and vegetable fields.',
+    lifecycle: 'Annual. Germinates March-October. Rapid growth to 30-60cm. Smaller and more compact than perennial nettle. Stinging hairs present. Flowers and seeds continuously. Multiple generations per year. Seed bank persists 5-10 years.',
+    identification: 'Small (15-60cm) nettle with stinging hairs. Leaves deeply toothed, more rounded than perennial nettle. Plant monoecious (male and female flowers on same plant). Distinguished from perennial nettle by: smaller size, annual habit, and more deeply toothed leaves.',
+    crops_affected: ['potatoes', 'sugar beet', 'vegetables', 'cereals'],
+    risk_factors: 'Fertile soils high in phosphate, disturbed ground, vegetable fields, compost-enriched soils, farmyards',
+    economic_impact: 'Competitive in root crops and vegetables. Indicator of high phosphate fertility. Yield losses of 3-8% in sugar beet. Controlled by most broadleaved herbicides. Handling hazard due to stinging hairs.',
+    images_description: 'Small annual nettle with deeply toothed leaves and stinging hairs in vegetable field',
+  },
+
+  {
+    id: 'field-pennycress',
+    name: 'Field Pennycress',
+    common_names: ['Thlaspi arvense'],
+    pest_type: 'weed',
+    description: 'Annual weed of arable land with distinctive large round winged seed pods (siliculae) arranged along the stem. Strong garlic-like smell when crushed. Common on lighter soils. Can contaminate grain and affect the flavour of milk from grazing livestock.',
+    lifecycle: 'Winter or spring annual. Germinates August-November and February-April. Erect stems to 60cm. White four-petalled flowers. Large (10-15mm) round flat seed pods with broad papery wing — distinctive. Seeds viable 20+ years in soil.',
+    identification: 'Erect stems with clasping arrow-shaped upper leaves. Small white four-petalled flowers. Distinctive large round flat seed pods with wide papery wing margin arranged along the stem. Unpleasant garlic smell when crushed.',
+    crops_affected: ['cereals', 'oilseed rape', 'sugar beet'],
+    risk_factors: 'Lighter soils, winter cereals, minimum tillage, alkaline soils, proximity to field margins',
+    economic_impact: 'Grain contamination affects flavour. Can taint milk if grazed by livestock. Yield losses usually minor (2-5%). Controlled by most broadleaved herbicides. Long-lived seed bank means persistence. Characteristic smell aids field identification.',
+    images_description: 'Field pennycress with large round winged seed pods arranged along stem',
+  },
+
+  {
+    id: 'dove-foot-cranesbill',
+    name: "Dove's-foot Crane's-bill",
+    common_names: ['Geranium molle'],
+    pest_type: 'weed',
+    description: "Annual cranesbill (Geranium molle) found on light dry soils in arable land. Small pink flowers with notched petals. Less competitive than cut-leaved crane's-bill but can be locally abundant on sandy heathland soils.",
+    lifecycle: "Annual. Germinates autumn and spring. Low spreading stems to 30cm. Small pink flowers (6-10mm) with deeply notched petals. Seeds dispersed by explosive capsule dehiscence. Seed bank persists 5+ years.",
+    identification: "Low spreading hairy plant. Rounded leaves with 5-7 shallow lobes. Small pink flowers with deeply notched petals. Fruit: beak-shaped capsule. Distinguished from cut-leaved crane's-bill by round (not deeply divided) leaves and notched (not entire) petals.",
+    crops_affected: ['cereals', 'oilseed rape', 'grassland'],
+    risk_factors: 'Light sandy soils, dry heathland areas, spring-sown crops, minimum tillage, alkaline sandy loams',
+    economic_impact: "Minor competitor. Usually present at low densities. Can be locally abundant on sandy soils. Controlled by most broadleaved herbicides. Less problematic than cut-leaved crane's-bill.",
+    images_description: "Low spreading dove's-foot crane's-bill with rounded lobed leaves and small pink notched flowers",
+  },
+
+  {
+    id: 'perennial-ryegrass-weed',
+    name: 'Perennial Ryegrass (as arable weed)',
+    common_names: ['Lolium perenne (volunteer)'],
+    pest_type: 'weed',
+    description: 'Perennial ryegrass (Lolium perenne) as a weed of arable crops following grass leys. Volunteers from the ley persist through cultivation and compete with subsequent cereal and oilseed rape crops. Distinguished from Italian ryegrass by the perennial habit.',
+    lifecycle: 'Perennial tufted grass. Volunteers from grass leys regrow from root fragments after cultivation. Also establishes from seed shed before ley destruction. Dark green, glossy leaves with distinctive auricles clasping the stem. Flowers June-August.',
+    identification: 'Dark green glossy grass with folded young leaves (not rolled). Small auricles clasping stem at leaf junction. Flower spike with spikelets arranged alternately and edgeways to the stem (awnless — unlike Italian ryegrass which has awns).',
+    crops_affected: ['wheat', 'barley', 'oilseed rape', 'sugar beet'],
+    risk_factors: 'First arable crop after grass ley, minimum tillage, incomplete ley destruction, heavy clay soils',
+    economic_impact: 'Competitive volunteer — yield losses of 5-15% in first arable crop. Glyphosate before drilling is the primary control. In-crop graminicides (e.g., propaquizafop in oilseed rape) provide selective control. Ploughing buries root fragments.',
+    images_description: 'Dark green glossy ryegrass volunteers in wheat crop following old grass ley',
+  },
+
+  {
+    id: 'broad-leaved-plantain',
+    name: 'Broad-leaved Plantain',
+    common_names: ['Plantago major', 'Rat-tail plantain'],
+    pest_type: 'weed',
+    description: 'Perennial rosette-forming weed of grassland, lawns, and arable land. Broad oval leaves in a flat rosette tolerate trampling and mowing. Rat-tail flower spikes. Indicator of compaction. Common on paths, gateways, and overused grassland.',
+    lifecycle: 'Perennial. Rosette of broad oval leaves flat to the ground. Flower spikes (5-15cm) appear May-August. Wind-pollinated. Seeds small, produced in large numbers. Tolerant of trampling, compaction, and close mowing.',
+    identification: 'Flat rosette of broad oval leaves with prominent parallel veins (3-5 veins). Leaves tough and leathery. Narrow cylindrical flower spikes (rat-tails) on leafless stalks. Fibrous root system. Distinguished from ribwort plantain by broader leaves and longer flower spike.',
+    crops_affected: ['grassland', 'turf', 'amenity grass', 'cereals (headlands)'],
+    risk_factors: 'Compacted soils, overused grassland, field gateways, tramlines, amenity turf, heavy traffic areas',
+    economic_impact: 'Indicator of soil compaction. Reduces pasture quality. Unsightly in turf. Address compaction as root cause. MCPA or mecoprop in grassland. Resistant to close mowing and trampling.',
+    images_description: 'Flat rosette of broad oval leaves with parallel veins and narrow rat-tail flower spikes',
+  },
+
+  {
+    id: 'ribwort-plantain',
+    name: 'Ribwort Plantain',
+    common_names: ['Plantago lanceolata', 'Narrowleaf plantain'],
+    pest_type: 'weed',
+    description: 'Perennial weed of grassland and arable field margins with narrow lance-shaped ribbed leaves. Dark brown flower heads on long stalks with white stamens. More competitive than broad-leaved plantain. Sometimes sown as herbal ley component.',
+    lifecycle: 'Perennial. Rosette of narrow lance-shaped leaves with 3-5 prominent ribs. Dark oval flower heads on long grooved stalks May-August. White ring of anthers visible during flowering. Wind-pollinated. Seeds persistent in soil.',
+    identification: 'Rosette of narrow lance-shaped leaves (15-30cm) with strong ribs. Flower head short, dark brown, oval to cylindrical, on long grooved leafless stalk (20-50cm). Ring of white anthers around flower head during bloom. Distinguished from broad-leaved plantain by narrow leaves.',
+    crops_affected: ['grassland', 'hay', 'cereals (margins)', 'turf'],
+    risk_factors: 'Permanent grassland, field margins, poor sward management, lack of nitrogen, dry chalky soils',
+    economic_impact: 'Common in permanent grassland. Moderate feed value — sometimes included in herbal leys for mineral content. In pure grass swards reduces productivity. MCPA or mecoprop provide control. Responds to improved nitrogen management.',
+    images_description: 'Narrow lance-shaped ribbed leaves in rosette with dark oval flower heads on long stalks',
+  },
+
+  {
+    id: 'common-mouse-ear',
+    name: 'Common Mouse-ear',
+    common_names: ['Cerastium fontanum', 'Cerastium holosteoides'],
+    pest_type: 'weed',
+    description: 'Perennial weed (Cerastium fontanum) of grassland, turf, and arable field margins. Mat-forming plant with hairy stems and small white flowers with notched petals. Ubiquitous in UK grassland. Low competitive ability but very persistent.',
+    lifecycle: 'Perennial. Creeping and mat-forming with ascending flowering stems. Small white flowers (6-10mm) with deeply notched petals April-November. Seeds small, produced in curved capsules. Spreads by rooting at nodes of prostrate stems.',
+    identification: 'Mat-forming hairy plant. Opposite oval leaves covered in soft hairs. Small white flowers with five deeply notched petals (appear to be 10 petals). Curved cylindrical seed capsule. Distinguished from chickweed by: perennial habit, hairy stems, and capsule shape.',
+    crops_affected: ['grassland', 'turf', 'amenity grass'],
+    risk_factors: 'Thin swards, compacted grassland, overused turf, low-fertility areas, neglected margins',
+    economic_impact: 'Minor competitive impact. Indicator of thin sward. Improve sward density through reseeding, fertiliser, and grazing management. Rarely warrants herbicide treatment — improve the grass sward instead.',
+    images_description: 'Mat-forming hairy plant with small white notched flowers in thin grassland sward',
+  },
+
+  {
+    id: 'white-clover-weed',
+    name: 'White Clover (as arable weed)',
+    common_names: ['Trifolium repens (volunteer)'],
+    pest_type: 'weed',
+    description: 'White clover (Trifolium repens) as a weed of arable crops following grass-clover leys. Stoloniferous habit means it persists through cultivation and regrows. Competitive in cereal crops, particularly in minimum tillage systems following clover leys.',
+    lifecycle: 'Perennial. Spreads by surface stolons that root at nodes. Volunteers from previous clover ley persist after cultivation. Trefoil leaves with characteristic white chevron marking. White flower heads May-September. Fixes atmospheric nitrogen.',
+    identification: 'Trefoil leaves with white V-shaped chevron marking. Creeping stolons rooting at nodes. White to pinkish globular flower heads on long stalks. Distinguished from other clovers by the creeping stoloniferous habit and white flower heads.',
+    crops_affected: ['wheat', 'barley', 'oilseed rape'],
+    risk_factors: 'First arable crop after grass-clover ley, minimum tillage, incomplete ley destruction, mild winters',
+    economic_impact: 'Yield losses of 3-10% as a volunteer. Nitrogen-fixing ability means it thrives even in low-fertility conditions. Glyphosate before drilling and MCPA/clopyralid in-crop provide control. Ploughing buries stolons effectively.',
+    images_description: 'White clover volunteers with trefoil leaves and white flower heads in wheat crop',
+  },
+
+  {
+    id: 'hedge-mustard',
+    name: 'Hedge Mustard',
+    common_names: ['Sisymbrium officinale'],
+    pest_type: 'weed',
+    description: 'Annual or biennial weed of arable land, waste ground, and field margins. Erect plant with small yellow four-petalled flowers and rigid erect seed pods pressed tightly against the stem. A brassica family weed that can host brassica diseases.',
+    lifecycle: 'Annual or biennial. Germinates autumn and spring. Erect branching stem to 90cm. Small yellow flowers (3mm) from May onwards. Seed pods (siliquae) held erect and pressed tightly against the stem (distinctive). Seeds viable 5-10 years.',
+    identification: 'Erect stiff plant with spreading branches. Lower leaves deeply lobed with large terminal lobe. Upper leaves narrow. Small yellow four-petalled flowers. Seed pods narrow, erect, pressed tight to the stem (unique feature). Overall appearance stiff and angular.',
+    crops_affected: ['cereals', 'oilseed rape', 'vegetables', 'waste ground'],
+    risk_factors: 'Field margins, waste ground, disturbed soil, road verges, autumn and spring germination',
+    economic_impact: 'Minor competitor in crops. Significance as a host for brassica diseases (clubroot, Alternaria) near oilseed rape. Controlled by most broadleaved herbicides. Common on disturbed land and field edges.',
+    images_description: 'Hedge mustard with stiff erect seed pods pressed against stem and small yellow flowers',
   },
 ];
 
@@ -2783,6 +4155,458 @@ const SYMPTOMS: Symptom[] = [
   // Marsh Thistle
   { pest_id: 'marsh-thistle', symptom: 'Tall erect stems with continuous spiny wings and clusters of small purple flowers at top in wet grassland', plant_part: 'whole plant', timing: 'June to September', confidence: 'diagnostic' },
   { pest_id: 'marsh-thistle', symptom: 'Flat spiny rosette in wet poorly drained areas of grassland', plant_part: 'leaves', timing: 'year one', confidence: 'suggestive' },
+
+  // ── Expansion: New Disease Symptoms ────────────────────────────
+
+  // Wheat Streak Mosaic Virus
+  { pest_id: 'wheat-streak-mosaic-virus', symptom: 'Yellow to light green streaks running parallel to leaf veins', plant_part: 'leaves', timing: 'spring', confidence: 'diagnostic' },
+  { pest_id: 'wheat-streak-mosaic-virus', symptom: 'Stunted plants with poor tillering and chlorotic leaves', plant_part: 'whole plant', timing: 'spring', confidence: 'suggestive' },
+  { pest_id: 'wheat-streak-mosaic-virus', symptom: 'Mosaic pattern on young developing leaves', plant_part: 'leaves', timing: 'early spring', confidence: 'suggestive' },
+
+  // Barley Stripe
+  { pest_id: 'barley-stripe', symptom: 'Long pale yellow to brown stripes running the full length of barley leaf', plant_part: 'leaves', timing: 'spring', confidence: 'diagnostic' },
+  { pest_id: 'barley-stripe', symptom: 'Tissue splitting along darkened stripe with necrotic tissue', plant_part: 'leaves', timing: 'spring to early summer', confidence: 'diagnostic' },
+  { pest_id: 'barley-stripe', symptom: 'Stunted plants with ears failing to emerge from the boot', plant_part: 'ears', timing: 'summer', confidence: 'suggestive' },
+
+  // Halo Spot
+  { pest_id: 'halo-spot', symptom: 'Small circular pale spots with dark brown border and broader pale yellow halo', plant_part: 'leaves', timing: 'spring to summer', confidence: 'diagnostic' },
+  { pest_id: 'halo-spot', symptom: 'Pycnidia visible within older lesions under magnification', plant_part: 'leaves', timing: 'summer', confidence: 'diagnostic' },
+
+  // Tan Spot
+  { pest_id: 'tan-spot', symptom: 'Oval lens-shaped tan lesions with yellow border and dark centre spot on wheat leaves', plant_part: 'leaves', timing: 'spring to summer', confidence: 'diagnostic' },
+  { pest_id: 'tan-spot', symptom: 'Large necrotic areas from coalescing lesions on upper leaves', plant_part: 'leaves', timing: 'late spring', confidence: 'suggestive' },
+  { pest_id: 'tan-spot', symptom: 'Lesions starting on lower leaves and progressing upward through canopy', plant_part: 'leaves', timing: 'spring', confidence: 'associated' },
+
+  // Wheat Spindle Streak Mosaic Virus
+  { pest_id: 'wheat-spindle-streak-mosaic-virus', symptom: 'Spindle-shaped yellow streaks tapering at both ends on wheat leaves', plant_part: 'leaves', timing: 'March to April', confidence: 'diagnostic' },
+  { pest_id: 'wheat-spindle-streak-mosaic-virus', symptom: 'General yellowing and slight stunting during cool spring weather', plant_part: 'whole plant', timing: 'early spring', confidence: 'suggestive' },
+  { pest_id: 'wheat-spindle-streak-mosaic-virus', symptom: 'Symptoms fading and disappearing as temperatures rise above 20C', plant_part: 'leaves', timing: 'late spring', confidence: 'associated' },
+
+  // Soil-borne Wheat Mosaic Virus
+  { pest_id: 'soil-borne-wheat-mosaic-virus', symptom: 'Light green to yellow mosaic mottling on wheat leaves', plant_part: 'leaves', timing: 'spring', confidence: 'diagnostic' },
+  { pest_id: 'soil-borne-wheat-mosaic-virus', symptom: 'Irregular patches of pale and dark green in the crop canopy', plant_part: 'whole plant', timing: 'spring', confidence: 'suggestive' },
+
+  // Potato Virus Y
+  { pest_id: 'potato-virus-y', symptom: 'Leaf mosaic pattern of light and dark green patches on potato foliage', plant_part: 'leaves', timing: 'June to August', confidence: 'diagnostic' },
+  { pest_id: 'potato-virus-y', symptom: 'Necrotic ringspot — depressed necrotic rings on tuber surface (PVYNTN strain)', plant_part: 'tubers', timing: 'harvest', confidence: 'diagnostic' },
+  { pest_id: 'potato-virus-y', symptom: 'Leaf rugosity and crinkling with vein clearing', plant_part: 'leaves', timing: 'summer', confidence: 'suggestive' },
+
+  // Potato Leafroll Virus
+  { pest_id: 'potato-leafroll-virus', symptom: 'Upward rolling of upper leaflets giving a cupped appearance', plant_part: 'leaves', timing: 'summer', confidence: 'diagnostic' },
+  { pest_id: 'potato-leafroll-virus', symptom: 'Net necrosis — brown streaks visible when tuber is cut longitudinally', plant_part: 'tubers', timing: 'harvest and storage', confidence: 'diagnostic' },
+  { pest_id: 'potato-leafroll-virus', symptom: 'Leaflets become leathery and pale with purple-red discolouration', plant_part: 'leaves', timing: 'summer', confidence: 'suggestive' },
+
+  // Gangrene
+  { pest_id: 'gangrene', symptom: 'Depressed rounded areas on tuber surface with wrinkled skin above dry cavity', plant_part: 'tubers', timing: 'during storage (2-3 months after harvest)', confidence: 'diagnostic' },
+  { pest_id: 'gangrene', symptom: 'Well-defined dry powdery cavity when tuber is cut open — thumb-shaped', plant_part: 'tubers', timing: 'storage', confidence: 'diagnostic' },
+
+  // Dry Rot Potato
+  { pest_id: 'dry-rot-potato', symptom: 'Shrunken wrinkled area on tuber with concentric skin folds', plant_part: 'tubers', timing: 'storage', confidence: 'diagnostic' },
+  { pest_id: 'dry-rot-potato', symptom: 'Pastel-coloured fungal pustules (white, blue, or pink) on lesion surface', plant_part: 'tubers', timing: 'storage', confidence: 'diagnostic' },
+  { pest_id: 'dry-rot-potato', symptom: 'Internal dry brown to pink crumbly rot cavity', plant_part: 'tubers', timing: 'storage', confidence: 'suggestive' },
+
+  // Pink Rot
+  { pest_id: 'pink-rot', symptom: 'Cut tuber flesh turns distinctly salmon-pink within 15-30 minutes of cutting', plant_part: 'tubers', timing: 'harvest', confidence: 'diagnostic' },
+  { pest_id: 'pink-rot', symptom: 'Waterlogged glassy internal tissue with ammonia-like odour', plant_part: 'tubers', timing: 'harvest', confidence: 'suggestive' },
+
+  // Spraing (TRV)
+  { pest_id: 'spraing-tobacco-rattle-virus', symptom: 'Brown corky arcs rings and flecks scattered through tuber flesh when cut', plant_part: 'tubers', timing: 'harvest and storage', confidence: 'diagnostic' },
+  { pest_id: 'spraing-tobacco-rattle-virus', symptom: 'External tuber symptoms often absent — internal damage only visible when cut', plant_part: 'tubers', timing: 'harvest', confidence: 'associated' },
+  { pest_id: 'spraing-tobacco-rattle-virus', symptom: 'Spraing symptoms intensifying during storage', plant_part: 'tubers', timing: 'storage', confidence: 'suggestive' },
+
+  // Peach Leaf Curl
+  { pest_id: 'peach-leaf-curl', symptom: 'Leaves emerge thickened puckered and curled with red-purple discolouration', plant_part: 'leaves', timing: 'spring (March-May)', confidence: 'diagnostic' },
+  { pest_id: 'peach-leaf-curl', symptom: 'White powdery spore layer developing on affected leaf areas', plant_part: 'leaves', timing: 'late spring', confidence: 'diagnostic' },
+  { pest_id: 'peach-leaf-curl', symptom: 'Premature leaf drop with severe defoliation by June', plant_part: 'whole plant', timing: 'spring to early summer', confidence: 'suggestive' },
+
+  // Bacterial Canker Stone Fruit
+  { pest_id: 'bacterial-canker-stone-fruit', symptom: 'Dark sunken cankers on branches with amber or brown gum exuding', plant_part: 'stems', timing: 'year-round (most visible in winter)', confidence: 'diagnostic' },
+  { pest_id: 'bacterial-canker-stone-fruit', symptom: 'Shothole symptoms on leaves — circular necrotic spots that drop out', plant_part: 'leaves', timing: 'spring to summer', confidence: 'suggestive' },
+  { pest_id: 'bacterial-canker-stone-fruit', symptom: 'Dead buds in spring — branches fail to leaf out above canker', plant_part: 'stems', timing: 'spring', confidence: 'suggestive' },
+
+  // Pear Rust
+  { pest_id: 'pear-rust', symptom: 'Bright orange to red spots on upper surface of pear leaves', plant_part: 'leaves', timing: 'May to September', confidence: 'diagnostic' },
+  { pest_id: 'pear-rust', symptom: 'Horn-like projections (aecia) on underside of leaf spots producing orange spores', plant_part: 'leaves', timing: 'summer', confidence: 'diagnostic' },
+  { pest_id: 'pear-rust', symptom: 'Premature leaf fall from heavily infected trees', plant_part: 'leaves', timing: 'late summer', confidence: 'associated' },
+
+  // Brassica Dark Leaf Spot Alternaria
+  { pest_id: 'brassica-dark-leaf-spot-alternaria', symptom: 'Dark brown to black circular spots with concentric rings on brassica leaves', plant_part: 'leaves', timing: 'summer to autumn', confidence: 'diagnostic' },
+  { pest_id: 'brassica-dark-leaf-spot-alternaria', symptom: 'Yellowing of tissue surrounding dark target-board lesions', plant_part: 'leaves', timing: 'summer', confidence: 'suggestive' },
+  { pest_id: 'brassica-dark-leaf-spot-alternaria', symptom: 'Small dark spots on cauliflower curds reducing marketability', plant_part: 'fruit', timing: 'autumn', confidence: 'diagnostic' },
+
+  // Brassica White Mould
+  { pest_id: 'brassica-white-mould', symptom: 'Watery soft rot covered with dense white fluffy mycelium on brassica stems', plant_part: 'stems', timing: 'summer to autumn', confidence: 'diagnostic' },
+  { pest_id: 'brassica-white-mould', symptom: 'Hard black sclerotia (2-10mm) embedded in rotting tissue', plant_part: 'stems', timing: 'autumn', confidence: 'diagnostic' },
+  { pest_id: 'brassica-white-mould', symptom: 'Plants wilting above infected point with foul smell', plant_part: 'whole plant', timing: 'summer', confidence: 'suggestive' },
+
+  // Downy Mildew Brassica Veg
+  { pest_id: 'downy-mildew-brassica', symptom: 'Angular yellow patches on upper leaf surface bounded by leaf veins', plant_part: 'leaves', timing: 'spring to autumn', confidence: 'diagnostic' },
+  { pest_id: 'downy-mildew-brassica', symptom: 'White to grey downy growth on underside of yellowed leaf patches', plant_part: 'leaves', timing: 'spring to autumn', confidence: 'diagnostic' },
+  { pest_id: 'downy-mildew-brassica', symptom: 'Purpling and systemic infection in seedlings', plant_part: 'whole plant', timing: 'spring', confidence: 'suggestive' },
+
+  // Leek Rust
+  { pest_id: 'leek-rust', symptom: 'Bright orange urediniospore pustules on leek leaf surfaces', plant_part: 'leaves', timing: 'summer to autumn', confidence: 'diagnostic' },
+  { pest_id: 'leek-rust', symptom: 'Yellowing and dieback of leaf tips from severe infection', plant_part: 'leaves', timing: 'autumn', confidence: 'suggestive' },
+  { pest_id: 'leek-rust', symptom: 'Dark brown-black teliospore pustules in late season', plant_part: 'leaves', timing: 'late autumn', confidence: 'suggestive' },
+
+  // Celery Leaf Spot
+  { pest_id: 'celery-leaf-spot', symptom: 'Small brown spots with visible black pycnidia on celery leaves and petioles', plant_part: 'leaves', timing: 'summer to autumn', confidence: 'diagnostic' },
+  { pest_id: 'celery-leaf-spot', symptom: 'Spots coalescing causing leaf blight and petiole lesions', plant_part: 'leaves', timing: 'autumn', confidence: 'suggestive' },
+
+  // Parsnip Canker
+  { pest_id: 'parsnip-canker', symptom: 'Orange-brown to black sunken cankers on parsnip root shoulders', plant_part: 'roots', timing: 'autumn to winter', confidence: 'diagnostic' },
+  { pest_id: 'parsnip-canker', symptom: 'Canker lesions expanding during autumn storage in the ground', plant_part: 'roots', timing: 'winter', confidence: 'suggestive' },
+
+  // White Tip Leek
+  { pest_id: 'white-tip-leek', symptom: 'White papery drying of leek leaf tips extending downward', plant_part: 'leaves', timing: 'autumn to winter', confidence: 'diagnostic' },
+  { pest_id: 'white-tip-leek', symptom: 'Water-soaked margins at the boundary between green and bleached tissue', plant_part: 'leaves', timing: 'autumn', confidence: 'suggestive' },
+
+  // Powdery Scab Potato
+  { pest_id: 'powdery-scab-potato', symptom: 'Raised pustules on tuber surface rupturing to show powdery brown spore mass', plant_part: 'tubers', timing: 'harvest', confidence: 'diagnostic' },
+  { pest_id: 'powdery-scab-potato', symptom: 'Root galling visible on washed potato root system', plant_part: 'roots', timing: 'summer', confidence: 'suggestive' },
+
+  // Bunt Wheat
+  { pest_id: 'bunt-wheat', symptom: 'Dark grey-brown bunt balls replacing grain in wheat ears with rotten fish smell', plant_part: 'ears', timing: 'harvest', confidence: 'diagnostic' },
+  { pest_id: 'bunt-wheat', symptom: 'Ears slightly shorter and more upright than healthy ears', plant_part: 'ears', timing: 'pre-harvest', confidence: 'suggestive' },
+
+  // Cereal Cyst Nematode
+  { pest_id: 'cyst-nematode-cereals', symptom: 'Patchy stunting and yellowing in cereal crops on lighter soils', plant_part: 'whole plant', timing: 'spring to summer', confidence: 'suggestive' },
+  { pest_id: 'cyst-nematode-cereals', symptom: 'White to brown lemon-shaped cysts visible on roots in June-July', plant_part: 'roots', timing: 'June to July', confidence: 'diagnostic' },
+  { pest_id: 'cyst-nematode-cereals', symptom: 'Shortened bushy root systems in affected patches', plant_part: 'roots', timing: 'summer', confidence: 'suggestive' },
+
+  // Phytophthora Root Rot Peas
+  { pest_id: 'phytophthora-root-rot-peas', symptom: 'Brown to black discolouration of lower stem and roots of peas', plant_part: 'stems', timing: 'spring to summer', confidence: 'diagnostic' },
+  { pest_id: 'phytophthora-root-rot-peas', symptom: 'Plants wilt turn yellow and collapse in waterlogged patches', plant_part: 'whole plant', timing: 'summer', confidence: 'suggestive' },
+
+  // Rust of Field Beans
+  { pest_id: 'rust-beans', symptom: 'Dark brown raised powdery urediniospore pustules on bean leaves and stems', plant_part: 'leaves', timing: 'summer', confidence: 'diagnostic' },
+  { pest_id: 'rust-beans', symptom: 'Yellowing and defoliation from severe rust infection', plant_part: 'leaves', timing: 'late summer', confidence: 'suggestive' },
+
+  // Verticillium Wilt Strawberry
+  { pest_id: 'verticillium-wilt-strawberry', symptom: 'Outer leaves wilt turn brown and flatten around the crown', plant_part: 'leaves', timing: 'summer', confidence: 'diagnostic' },
+  { pest_id: 'verticillium-wilt-strawberry', symptom: 'Cut crown shows brown-black vascular discolouration', plant_part: 'roots', timing: 'summer', confidence: 'diagnostic' },
+  { pest_id: 'verticillium-wilt-strawberry', symptom: 'Inner leaves remain green while outer leaves collapse (rosette pattern)', plant_part: 'whole plant', timing: 'summer', confidence: 'suggestive' },
+
+  // Crown Rot Strawberry
+  { pest_id: 'crown-rot-strawberry', symptom: 'Sudden wilting of entire strawberry plant without outer-to-inner progression', plant_part: 'whole plant', timing: 'summer', confidence: 'suggestive' },
+  { pest_id: 'crown-rot-strawberry', symptom: 'Reddish-brown marbled discolouration in cut crown tissue', plant_part: 'roots', timing: 'summer', confidence: 'diagnostic' },
+
+  // Powdery Mildew Strawberry
+  { pest_id: 'powdery-mildew-strawberry', symptom: 'Leaves curl upward with purple-red discolouration on undersurface', plant_part: 'leaves', timing: 'spring to summer', confidence: 'diagnostic' },
+  { pest_id: 'powdery-mildew-strawberry', symptom: 'White powdery coating on fruit surface', plant_part: 'fruit', timing: 'summer', confidence: 'diagnostic' },
+
+  // Apple Canker
+  { pest_id: 'apple-canker', symptom: 'Sunken oval cankers with concentric rings of cracked bark on branches', plant_part: 'stems', timing: 'year-round', confidence: 'diagnostic' },
+  { pest_id: 'apple-canker', symptom: 'Small red perithecia visible at canker margins', plant_part: 'stems', timing: 'autumn to spring', confidence: 'diagnostic' },
+  { pest_id: 'apple-canker', symptom: 'Branch dieback above girdling cankers', plant_part: 'stems', timing: 'spring', confidence: 'suggestive' },
+
+  // Plum Rust
+  { pest_id: 'plum-rust', symptom: 'Angular yellow spots on upper plum leaf surface with cinnamon pustules beneath', plant_part: 'leaves', timing: 'summer to autumn', confidence: 'diagnostic' },
+  { pest_id: 'plum-rust', symptom: 'Premature leaf fall from heavily infected plum trees in August', plant_part: 'leaves', timing: 'late summer', confidence: 'suggestive' },
+
+  // ── Expansion: New Insect Pest Symptoms ────────────────────────
+
+  // Hessian Fly
+  { pest_id: 'hessian-fly', symptom: 'Stunted wheat tillers that fail to elongate with dark patches at nodes', plant_part: 'stems', timing: 'autumn and spring', confidence: 'diagnostic' },
+  { pest_id: 'hessian-fly', symptom: 'Brown flaxseed-shaped puparia at the base of leaf sheaths', plant_part: 'stems', timing: 'winter to spring', confidence: 'diagnostic' },
+  { pest_id: 'hessian-fly', symptom: 'Stems breaking at feeding sites when bent', plant_part: 'stems', timing: 'spring', confidence: 'suggestive' },
+
+  // Corn Ground Beetle
+  { pest_id: 'corn-ground-beetle', symptom: 'Ragged chewing of leaf tips on winter cereal seedlings', plant_part: 'leaves', timing: 'autumn to winter', confidence: 'suggestive' },
+  { pest_id: 'corn-ground-beetle', symptom: 'Leaf tips pulled into soil burrows with ragged ends visible', plant_part: 'leaves', timing: 'autumn to winter', confidence: 'diagnostic' },
+  { pest_id: 'corn-ground-beetle', symptom: 'Large black ground beetles (14-18mm) found beneath damaged plants', plant_part: 'whole plant', timing: 'autumn', confidence: 'diagnostic' },
+
+  // Click Beetle
+  { pest_id: 'click-beetle', symptom: 'Elongated brown beetles (7-10mm) found in pheromone traps in grassland before ploughing', plant_part: 'whole plant', timing: 'May to July', confidence: 'diagnostic' },
+  { pest_id: 'click-beetle', symptom: 'Beetle rights itself with audible click when placed on back', plant_part: 'whole plant', timing: 'spring to summer', confidence: 'diagnostic' },
+
+  // Potato Tuber Moth
+  { pest_id: 'potato-tuber-moth', symptom: 'Leaf mining visible as translucent blotch mines on potato foliage', plant_part: 'leaves', timing: 'summer', confidence: 'suggestive' },
+  { pest_id: 'potato-tuber-moth', symptom: 'Frass-filled tunnels in potato tubers starting at eyes', plant_part: 'tubers', timing: 'harvest and storage', confidence: 'diagnostic' },
+
+  // Willow-Carrot Aphid
+  { pest_id: 'willow-carrot-aphid', symptom: 'Small green aphids on carrot leaf stalks causing yellowing and curling', plant_part: 'leaves', timing: 'May to September', confidence: 'suggestive' },
+  { pest_id: 'willow-carrot-aphid', symptom: 'Red and yellow leaf discolouration from carrot motley dwarf virus', plant_part: 'leaves', timing: 'summer', confidence: 'diagnostic' },
+
+  // Leek Moth
+  { pest_id: 'leek-moth', symptom: 'Windows in leek leaf surface where larvae have mined', plant_part: 'leaves', timing: 'May to September', confidence: 'suggestive' },
+  { pest_id: 'leek-moth', symptom: 'Bore holes in leek shaft with frass and larvae visible inside', plant_part: 'stems', timing: 'summer to autumn', confidence: 'diagnostic' },
+  { pest_id: 'leek-moth', symptom: 'Lace-like pupation cocoons on plant surface', plant_part: 'whole plant', timing: 'summer', confidence: 'diagnostic' },
+
+  // Swede Midge
+  { pest_id: 'swede-midge', symptom: 'Swollen distorted growing points on brassica plants', plant_part: 'growing point', timing: 'spring to summer', confidence: 'diagnostic' },
+  { pest_id: 'swede-midge', symptom: 'Multiple growing points giving bushy appearance to brassica plant', plant_part: 'growing point', timing: 'summer', confidence: 'diagnostic' },
+  { pest_id: 'swede-midge', symptom: 'Blind or distorted heads in cauliflower and broccoli', plant_part: 'fruit', timing: 'summer to autumn', confidence: 'suggestive' },
+
+  // Brassica Flea Beetle Small
+  { pest_id: 'brassica-flea-beetle-small', symptom: 'Small round shot-holes in brassica cotyledons and young leaves', plant_part: 'leaves', timing: 'spring to summer', confidence: 'diagnostic' },
+  { pest_id: 'brassica-flea-beetle-small', symptom: 'Tiny shiny black beetles jumping when disturbed on seedlings', plant_part: 'leaves', timing: 'spring', confidence: 'diagnostic' },
+
+  // Turnip Moth
+  { pest_id: 'turnip-moth', symptom: 'Plants severed at ground level overnight', plant_part: 'stems', timing: 'summer', confidence: 'suggestive' },
+  { pest_id: 'turnip-moth', symptom: 'Grey-brown caterpillar curled in C-shape found in soil near severed stems', plant_part: 'stems', timing: 'summer', confidence: 'diagnostic' },
+  { pest_id: 'turnip-moth', symptom: 'Young roots tunnelled with irregular holes', plant_part: 'roots', timing: 'summer to autumn', confidence: 'suggestive' },
+
+  // Woolly Aphid
+  { pest_id: 'woolly-aphid', symptom: 'Dense white waxy wool on apple bark at pruning wounds and graft unions', plant_part: 'stems', timing: 'May to October', confidence: 'diagnostic' },
+  { pest_id: 'woolly-aphid', symptom: 'Galling and swelling of bark at feeding sites beneath the wool', plant_part: 'stems', timing: 'summer', confidence: 'diagnostic' },
+  { pest_id: 'woolly-aphid', symptom: 'Purple-brown aphids visible when wool is brushed away', plant_part: 'stems', timing: 'summer', confidence: 'diagnostic' },
+
+  // Gooseberry Sawfly
+  { pest_id: 'gooseberry-sawfly', symptom: 'Rapid defoliation of gooseberry starting from centre of bush', plant_part: 'leaves', timing: 'April to September', confidence: 'suggestive' },
+  { pest_id: 'gooseberry-sawfly', symptom: 'Pale green larvae with black spots feeding gregariously on leaf edges', plant_part: 'leaves', timing: 'spring to autumn', confidence: 'diagnostic' },
+
+  // Blackcurrant Gall Mite
+  { pest_id: 'blackcurrant-gall-mite', symptom: 'Swollen rounded big buds on blackcurrant (twice normal size)', plant_part: 'buds', timing: 'January to March', confidence: 'diagnostic' },
+  { pest_id: 'blackcurrant-gall-mite', symptom: 'Big buds failing to open normally in spring', plant_part: 'buds', timing: 'March to April', confidence: 'diagnostic' },
+
+  // Strawberry Blossom Weevil
+  { pest_id: 'strawberry-blossom-weevil', symptom: 'Flower buds hanging on partially severed stalks or fallen to ground', plant_part: 'flowers', timing: 'spring', confidence: 'diagnostic' },
+  { pest_id: 'strawberry-blossom-weevil', symptom: 'Small dark brown weevils (2-4mm) with long rostrum on flower buds', plant_part: 'flowers', timing: 'spring', confidence: 'diagnostic' },
+
+  // Apple Sawfly
+  { pest_id: 'apple-sawfly', symptom: 'Ribbon-like scar on apple fruitlet skin from early larval feeding', plant_part: 'fruit', timing: 'May to June', confidence: 'diagnostic' },
+  { pest_id: 'apple-sawfly', symptom: 'Premature fruitlet drop in June with entry hole near calyx', plant_part: 'fruit', timing: 'June', confidence: 'suggestive' },
+  { pest_id: 'apple-sawfly', symptom: 'Pale cream larvae inside fallen fruitlets when cut open', plant_part: 'fruit', timing: 'June', confidence: 'diagnostic' },
+
+  // Winter Moth
+  { pest_id: 'winter-moth', symptom: 'Pale green inchworm caterpillars on opening buds and blossom', plant_part: 'flowers', timing: 'March to May', confidence: 'diagnostic' },
+  { pest_id: 'winter-moth', symptom: 'Holes in young leaves and destroyed blossom clusters', plant_part: 'leaves', timing: 'spring', confidence: 'suggestive' },
+  { pest_id: 'winter-moth', symptom: 'Wingless female moths climbing tree trunks November to January', plant_part: 'stems', timing: 'winter', confidence: 'diagnostic' },
+
+  // Tortrix Moth
+  { pest_id: 'tortrix-moth', symptom: 'Leaves spun together with silk containing green caterpillar inside', plant_part: 'leaves', timing: 'spring to summer', confidence: 'diagnostic' },
+  { pest_id: 'tortrix-moth', symptom: 'Shallow irregular grazing marks on fruit surface', plant_part: 'fruit', timing: 'summer to autumn', confidence: 'diagnostic' },
+
+  // Cherry Blackfly
+  { pest_id: 'cherry-blackfly', symptom: 'Dense black aphid colonies on cherry shoot tips with severe leaf curling', plant_part: 'leaves', timing: 'April to June', confidence: 'diagnostic' },
+  { pest_id: 'cherry-blackfly', symptom: 'Sticky honeydew and black sooty mould on leaves and fruit below colonies', plant_part: 'fruit', timing: 'summer', confidence: 'suggestive' },
+
+  // Pear Midge
+  { pest_id: 'pear-midge', symptom: 'Fruitlets swelling abnormally — rounder and larger than normal at early stage', plant_part: 'fruit', timing: 'May', confidence: 'diagnostic' },
+  { pest_id: 'pear-midge', symptom: 'Fruitlets blackening and cracking at calyx end then dropping', plant_part: 'fruit', timing: 'late May to June', confidence: 'diagnostic' },
+  { pest_id: 'pear-midge', symptom: 'Orange-white larvae inside fallen fruitlets when cut open', plant_part: 'fruit', timing: 'June', confidence: 'diagnostic' },
+
+  // Mussel Scale
+  { pest_id: 'mussel-scale', symptom: 'Grey-brown mussel-shaped scales aligned along twigs and branches', plant_part: 'stems', timing: 'year-round', confidence: 'diagnostic' },
+  { pest_id: 'mussel-scale', symptom: 'Branch dieback in severe infestations with encrusted bark', plant_part: 'stems', timing: 'year-round', confidence: 'suggestive' },
+
+  // Fruit Tree Red Spider Mite
+  { pest_id: 'fruit-tree-red-spider-mite', symptom: 'Fine pale stippling on upper leaf surface progressing to bronzing', plant_part: 'leaves', timing: 'summer', confidence: 'diagnostic' },
+  { pest_id: 'fruit-tree-red-spider-mite', symptom: 'Red overwintering eggs visible on bark and bud bases in winter', plant_part: 'stems', timing: 'winter', confidence: 'diagnostic' },
+  { pest_id: 'fruit-tree-red-spider-mite', symptom: 'Tiny red-brown mites with white spots visible on leaf underside with hand lens', plant_part: 'leaves', timing: 'summer', confidence: 'diagnostic' },
+
+  // Chafer Grubs
+  { pest_id: 'chafer-grubs', symptom: 'C-shaped white grubs with brown head found 2-5cm deep in soil under yellowing turf', plant_part: 'roots', timing: 'autumn to spring', confidence: 'diagnostic' },
+  { pest_id: 'chafer-grubs', symptom: 'Turf lifting easily from soil like a carpet in affected patches', plant_part: 'roots', timing: 'autumn to spring', confidence: 'suggestive' },
+  { pest_id: 'chafer-grubs', symptom: 'Crows rooks and badgers digging up turf to feed on grubs', plant_part: 'whole plant', timing: 'autumn to spring', confidence: 'associated' },
+
+  // Field Voles
+  { pest_id: 'field-voles', symptom: 'Surface runways (3-4cm wide) visible in long grass', plant_part: 'whole plant', timing: 'year-round', confidence: 'diagnostic' },
+  { pest_id: 'field-voles', symptom: 'Bark gnawing at the base of young trees to bare wood', plant_part: 'stems', timing: 'winter', confidence: 'diagnostic' },
+  { pest_id: 'field-voles', symptom: 'Piles of chopped grass stems at feeding stations along runways', plant_part: 'whole plant', timing: 'year-round', confidence: 'suggestive' },
+
+  // New Zealand Flatworm
+  { pest_id: 'new-zealand-flatworm', symptom: 'Flat purple-brown worm (5-15cm) found under stones and surface objects', plant_part: 'whole plant', timing: 'year-round', confidence: 'diagnostic' },
+  { pest_id: 'new-zealand-flatworm', symptom: 'Reduced earthworm populations in garden and grassland soil', plant_part: 'roots', timing: 'year-round', confidence: 'suggestive' },
+
+  // Crow/Rook Damage
+  { pest_id: 'crow-rook-damage', symptom: 'Seedlings pulled up with seed still attached at base in rows', plant_part: 'whole plant', timing: 'autumn (drilling) and spring', confidence: 'diagnostic' },
+  { pest_id: 'crow-rook-damage', symptom: 'Ragged ears with grain removed before harvest', plant_part: 'ears', timing: 'late summer', confidence: 'suggestive' },
+  { pest_id: 'crow-rook-damage', symptom: 'Patches of grassland torn up by birds feeding on soil invertebrates', plant_part: 'whole plant', timing: 'spring', confidence: 'suggestive' },
+
+  // Cabbage Moth
+  { pest_id: 'cabbage-moth', symptom: 'Holes in outer brassica leaves from young caterpillar feeding', plant_part: 'leaves', timing: 'summer', confidence: 'suggestive' },
+  { pest_id: 'cabbage-moth', symptom: 'Bore holes into cabbage hearts with frass-producing caterpillars inside', plant_part: 'fruit', timing: 'late summer to autumn', confidence: 'diagnostic' },
+
+  // Carrot-Willow Aphid
+  { pest_id: 'carrot-willow-aphid', symptom: 'Green aphids on carrot foliage with red-yellow virus discolouration of outer leaves', plant_part: 'leaves', timing: 'May to September', confidence: 'diagnostic' },
+  { pest_id: 'carrot-willow-aphid', symptom: 'Stunted carrot plants with curled yellowed foliage', plant_part: 'whole plant', timing: 'summer', confidence: 'suggestive' },
+
+  // Mangold Fly
+  { pest_id: 'mangold-fly', symptom: 'Pale blister-like mines in sugar beet leaves with dark larval shapes visible inside', plant_part: 'leaves', timing: 'May to August', confidence: 'diagnostic' },
+  { pest_id: 'mangold-fly', symptom: 'Brown papery patches on beet leaves from mined and dried-out tissue', plant_part: 'leaves', timing: 'summer', confidence: 'suggestive' },
+
+  // Celery Fly
+  { pest_id: 'celery-fly', symptom: 'Brown blotch mines expanding across celery leaflets', plant_part: 'leaves', timing: 'April to September', confidence: 'diagnostic' },
+  { pest_id: 'celery-fly', symptom: 'White maggots (5-7mm) visible through mine surface on celery', plant_part: 'leaves', timing: 'summer', confidence: 'diagnostic' },
+
+  // Onion Thrips
+  { pest_id: 'onion-thrips', symptom: 'Silver-white streaks and patches on onion leaves from cell emptying', plant_part: 'leaves', timing: 'summer', confidence: 'diagnostic' },
+  { pest_id: 'onion-thrips', symptom: 'Tiny yellow to brown insects between inner onion leaves', plant_part: 'leaves', timing: 'July to August', confidence: 'diagnostic' },
+
+  // Raspberry Cane Midge
+  { pest_id: 'raspberry-cane-midge', symptom: 'Tiny orange-pink larvae beneath bark splits on raspberry primocanes', plant_part: 'stems', timing: 'April to August', confidence: 'diagnostic' },
+  { pest_id: 'raspberry-cane-midge', symptom: 'Dark brown to black cane blight spreading from bark split entry points', plant_part: 'stems', timing: 'summer to autumn', confidence: 'suggestive' },
+
+  // Pea Leaf Weevil
+  { pest_id: 'pea-leaf-weevil', symptom: 'Distinctive U-shaped notches along pea and bean leaf margins', plant_part: 'leaves', timing: 'spring', confidence: 'diagnostic' },
+  { pest_id: 'pea-leaf-weevil', symptom: 'Grey-brown weevils (4-5mm) feigning death when disturbed on plants', plant_part: 'whole plant', timing: 'spring', confidence: 'diagnostic' },
+  { pest_id: 'pea-leaf-weevil', symptom: 'Brown hollowed-out root nodules from larval feeding', plant_part: 'roots', timing: 'summer', confidence: 'suggestive' },
+
+  // Flea Beetle Root Crops
+  { pest_id: 'flea-beetle-root-crops', symptom: 'Shot-hole damage on sugar beet and spinach cotyledons from tiny jumping beetles', plant_part: 'leaves', timing: 'April to June', confidence: 'diagnostic' },
+  { pest_id: 'flea-beetle-root-crops', symptom: 'Seedlings killed in hot dry weather when growth cannot outpace feeding', plant_part: 'whole plant', timing: 'spring', confidence: 'suggestive' },
+
+  // Large Narcissus Fly
+  { pest_id: 'large-narcissus-fly', symptom: 'Soft light narcissus bulbs that fail to produce shoots in spring', plant_part: 'roots', timing: 'spring', confidence: 'suggestive' },
+  { pest_id: 'large-narcissus-fly', symptom: 'Large cream grub (15-20mm) inside hollowed-out bulb when cut', plant_part: 'roots', timing: 'autumn to spring', confidence: 'diagnostic' },
+
+  // Glasshouse Whitefly
+  { pest_id: 'glasshouse-whitefly', symptom: 'Clouds of tiny white-winged insects flying up when plants are disturbed', plant_part: 'leaves', timing: 'year-round under glass', confidence: 'diagnostic' },
+  { pest_id: 'glasshouse-whitefly', symptom: 'Flat oval pale green nymphs on leaf undersurface with honeydew and sooty mould', plant_part: 'leaves', timing: 'year-round under glass', confidence: 'diagnostic' },
+
+  // Western Flower Thrips
+  { pest_id: 'western-flower-thrips', symptom: 'Silver scarring on fruit surface from thrips feeding', plant_part: 'fruit', timing: 'summer', confidence: 'diagnostic' },
+  { pest_id: 'western-flower-thrips', symptom: 'Tiny yellow insects visible when flowers are tapped over white paper', plant_part: 'flowers', timing: 'year-round under glass', confidence: 'diagnostic' },
+  { pest_id: 'western-flower-thrips', symptom: 'Distorted flowers and streaked petals', plant_part: 'flowers', timing: 'year-round under glass', confidence: 'suggestive' },
+
+  // Badger Damage
+  { pest_id: 'badger-damage', symptom: 'Cone-shaped snuffle holes (5-10cm deep) in grassland and turf', plant_part: 'whole plant', timing: 'autumn to spring', confidence: 'diagnostic' },
+  { pest_id: 'badger-damage', symptom: 'Sweetcorn cobs pulled down and stripped of kernels', plant_part: 'fruit', timing: 'late summer to autumn', confidence: 'diagnostic' },
+  { pest_id: 'badger-damage', symptom: 'Well-worn paths between woodland and crop field', plant_part: 'whole plant', timing: 'year-round', confidence: 'associated' },
+
+  // Cabbage Stem Weevil
+  { pest_id: 'cabbage-stem-weevil', symptom: 'Small round feeding holes on oilseed rape leaves from adult weevils', plant_part: 'leaves', timing: 'March to April', confidence: 'suggestive' },
+  { pest_id: 'cabbage-stem-weevil', symptom: 'White legless grubs inside split petioles and stems of oilseed rape', plant_part: 'stems', timing: 'May to June', confidence: 'diagnostic' },
+
+  // ── Expansion: New Weed Symptoms ───────────────────────────────
+
+  // Red Dead-nettle
+  { pest_id: 'red-dead-nettle', symptom: 'Square stems with opposite heart-shaped purplish leaves and pink-purple flowers', plant_part: 'whole plant', timing: 'March to October', confidence: 'diagnostic' },
+  { pest_id: 'red-dead-nettle', symptom: 'Dense patches in autumn-sown crops on fertile soils', plant_part: 'whole plant', timing: 'autumn to spring', confidence: 'suggestive' },
+
+  // Field Forget-me-not
+  { pest_id: 'field-forget-me-not', symptom: 'Small blue flowers with yellow centre on hairy stems in arable crops', plant_part: 'whole plant', timing: 'April to September', confidence: 'diagnostic' },
+  { pest_id: 'field-forget-me-not', symptom: 'Basal rosette of hairy oval leaves overwintering in cereal crops', plant_part: 'leaves', timing: 'autumn to spring', confidence: 'suggestive' },
+
+  // Corn Marigold
+  { pest_id: 'corn-marigold', symptom: 'Bright yellow daisy-like flowers (35-65mm) with bluish-green fleshy foliage', plant_part: 'whole plant', timing: 'June to October', confidence: 'diagnostic' },
+  { pest_id: 'corn-marigold', symptom: 'Dense stands in cereal crops on acidic sandy soils', plant_part: 'whole plant', timing: 'summer', confidence: 'suggestive' },
+
+  // Scented Mayweed
+  { pest_id: 'scented-mayweed', symptom: 'White daisy flowers with conical hollow yellow centre and sweet chamomile scent when crushed', plant_part: 'whole plant', timing: 'May to August', confidence: 'diagnostic' },
+  { pest_id: 'scented-mayweed', symptom: 'Finely divided feathery leaves in cereal and root crops', plant_part: 'leaves', timing: 'spring to summer', confidence: 'suggestive' },
+
+  // Shepherd's Purse
+  { pest_id: 'shepherds-purse', symptom: 'Distinctive heart-shaped seed pods along slender flowering stems', plant_part: 'whole plant', timing: 'year-round', confidence: 'diagnostic' },
+  { pest_id: 'shepherds-purse', symptom: 'Basal rosette of deeply lobed variable-shaped leaves', plant_part: 'leaves', timing: 'year-round', confidence: 'suggestive' },
+
+  // Groundsel
+  { pest_id: 'groundsel', symptom: 'Clusters of small cylindrical yellow flower heads without ray florets', plant_part: 'whole plant', timing: 'year-round', confidence: 'diagnostic' },
+  { pest_id: 'groundsel', symptom: 'White pappus for wind dispersal visible on mature seed heads', plant_part: 'whole plant', timing: 'year-round', confidence: 'suggestive' },
+
+  // Knotgrass
+  { pest_id: 'knotgrass', symptom: 'Prostrate wiry stems with small lance-shaped leaves and silvery sheath at each node', plant_part: 'whole plant', timing: 'spring to autumn', confidence: 'diagnostic' },
+  { pest_id: 'knotgrass', symptom: 'Flat mats on compacted soil at field gateways and tramlines', plant_part: 'whole plant', timing: 'summer', confidence: 'suggestive' },
+
+  // Black Bindweed
+  { pest_id: 'black-bindweed', symptom: 'Annual twining stems with heart-shaped leaves climbing cereal stems', plant_part: 'whole plant', timing: 'May to September', confidence: 'diagnostic' },
+  { pest_id: 'black-bindweed', symptom: 'Small greenish-white flowers in clusters and hard angular black seeds', plant_part: 'whole plant', timing: 'summer to autumn', confidence: 'diagnostic' },
+
+  // Pale Persicaria
+  { pest_id: 'pale-persicaria', symptom: 'Pale pink to white nodding flower spikes on erect stems with glandular-dotted leaves', plant_part: 'whole plant', timing: 'June to October', confidence: 'diagnostic' },
+  { pest_id: 'pale-persicaria', symptom: 'Plants concentrated in wet areas and ditch margins of fields', plant_part: 'whole plant', timing: 'summer', confidence: 'suggestive' },
+
+  // Redshank
+  { pest_id: 'redshank', symptom: 'Erect pink flower spikes and lance-shaped leaves with dark central blotch', plant_part: 'whole plant', timing: 'June to October', confidence: 'diagnostic' },
+  { pest_id: 'redshank', symptom: 'Reddish stems and swollen nodes in arable crops', plant_part: 'stems', timing: 'summer', confidence: 'suggestive' },
+
+  // Yorkshire Fog
+  { pest_id: 'yorkshire-fog', symptom: 'Very hairy grass with velvet-like feel and pink-white fluffy flower panicle', plant_part: 'whole plant', timing: 'May to August', confidence: 'diagnostic' },
+  { pest_id: 'yorkshire-fog', symptom: 'Grey-green broad soft leaves in poorly managed grassland', plant_part: 'leaves', timing: 'year-round', confidence: 'suggestive' },
+
+  // Soft Brome
+  { pest_id: 'soft-brome', symptom: 'Compact nodding panicle of broad softly hairy spikelets with short awns', plant_part: 'whole plant', timing: 'May to July', confidence: 'diagnostic' },
+  { pest_id: 'soft-brome', symptom: 'Softly hairy grass plants competing in winter wheat on minimum tillage', plant_part: 'whole plant', timing: 'spring', confidence: 'suggestive' },
+
+  // Onion Couch
+  { pest_id: 'onion-couch', symptom: 'Chain of swollen onion-like bulbs at stem base when plant pulled up', plant_part: 'roots', timing: 'year-round', confidence: 'diagnostic' },
+  { pest_id: 'onion-couch', symptom: 'Tall grass with conspicuous bent-awned panicle on field margins', plant_part: 'whole plant', timing: 'June to August', confidence: 'suggestive' },
+
+  // Creeping Bent
+  { pest_id: 'creeping-bent', symptom: 'Dense grass mat with surface stolons rooting at nodes on wet ground', plant_part: 'whole plant', timing: 'year-round', confidence: 'diagnostic' },
+  { pest_id: 'creeping-bent', symptom: 'Fine-leaved grass smothering crop seedlings in wet field patches', plant_part: 'whole plant', timing: 'autumn to spring', confidence: 'suggestive' },
+
+  // Horsetail
+  { pest_id: 'horsetail', symptom: 'Jointed green stems with whorls of fine needle-like branches', plant_part: 'whole plant', timing: 'spring to autumn', confidence: 'diagnostic' },
+  { pest_id: 'horsetail', symptom: 'Brown unbranched fertile stems with cone-like strobili appearing in spring before green stems', plant_part: 'whole plant', timing: 'March to April', confidence: 'diagnostic' },
+
+  // Bracken
+  { pest_id: 'bracken', symptom: 'Large triangular fronds (1-2m) emerging as curled fiddleheads covering upland ground', plant_part: 'whole plant', timing: 'April to May', confidence: 'diagnostic' },
+  { pest_id: 'bracken', symptom: 'Dense canopy shading out all other vegetation with dead brown fronds persisting through winter', plant_part: 'whole plant', timing: 'year-round', confidence: 'diagnostic' },
+
+  // Common Orache
+  { pest_id: 'common-orache', symptom: 'Triangular leaves with spreading basal lobes and mealy texture on reddish stems', plant_part: 'whole plant', timing: 'spring to autumn', confidence: 'diagnostic' },
+  { pest_id: 'common-orache', symptom: 'Competitive patches in sugar beet on heavier soils', plant_part: 'whole plant', timing: 'summer', confidence: 'suggestive' },
+
+  // Smooth Sow-thistle
+  { pest_id: 'smooth-sowthistle', symptom: 'Hollow stems with milky sap and yellow dandelion-like flowers in loose clusters', plant_part: 'whole plant', timing: 'year-round in mild conditions', confidence: 'diagnostic' },
+  { pest_id: 'smooth-sowthistle', symptom: 'Softly spiny-margined leaves clasping stem with rounded auricles', plant_part: 'leaves', timing: 'spring to autumn', confidence: 'suggestive' },
+
+  // Annual Nettle
+  { pest_id: 'annual-nettle', symptom: 'Small stinging nettle (15-60cm) with deeply toothed rounded leaves on fertile soil', plant_part: 'whole plant', timing: 'March to October', confidence: 'diagnostic' },
+  { pest_id: 'annual-nettle', symptom: 'Dense stands in vegetable fields and high-phosphate soils', plant_part: 'whole plant', timing: 'summer', confidence: 'suggestive' },
+
+  // Field Pennycress
+  { pest_id: 'field-pennycress', symptom: 'Large round flat seed pods with wide papery wing along stem with garlic smell when crushed', plant_part: 'whole plant', timing: 'spring to summer', confidence: 'diagnostic' },
+  { pest_id: 'field-pennycress', symptom: 'White four-petalled flowers and clasping arrow-shaped upper leaves', plant_part: 'whole plant', timing: 'spring', confidence: 'suggestive' },
+
+  // Dove's-foot Crane's-bill
+  { pest_id: 'dove-foot-cranesbill', symptom: 'Small pink flowers with deeply notched petals and rounded lobed leaves on sandy soil', plant_part: 'whole plant', timing: 'April to September', confidence: 'diagnostic' },
+  { pest_id: 'dove-foot-cranesbill', symptom: 'Low spreading hairy plant on dry light sandy soils in arable crops', plant_part: 'whole plant', timing: 'spring to autumn', confidence: 'suggestive' },
+
+  // Perennial Ryegrass Weed
+  { pest_id: 'perennial-ryegrass-weed', symptom: 'Dark green glossy grass with folded leaves and small auricles persisting after ley destruction', plant_part: 'whole plant', timing: 'year-round', confidence: 'diagnostic' },
+  { pest_id: 'perennial-ryegrass-weed', symptom: 'Awnless flower spikes with spikelets edgeways to stem in first arable crop', plant_part: 'whole plant', timing: 'June to August', confidence: 'diagnostic' },
+
+  // Broad-leaved Plantain
+  { pest_id: 'broad-leaved-plantain', symptom: 'Flat rosette of broad oval leaves with prominent parallel veins on compacted ground', plant_part: 'whole plant', timing: 'year-round', confidence: 'diagnostic' },
+  { pest_id: 'broad-leaved-plantain', symptom: 'Narrow cylindrical rat-tail flower spikes on leafless stalks', plant_part: 'whole plant', timing: 'May to August', confidence: 'diagnostic' },
+
+  // Ribwort Plantain
+  { pest_id: 'ribwort-plantain', symptom: 'Rosette of narrow lance-shaped leaves with strong ribs and dark oval flower heads on long stalks', plant_part: 'whole plant', timing: 'year-round', confidence: 'diagnostic' },
+  { pest_id: 'ribwort-plantain', symptom: 'Ring of white anthers around dark flower head during bloom', plant_part: 'whole plant', timing: 'May to August', confidence: 'diagnostic' },
+
+  // Common Mouse-ear
+  { pest_id: 'common-mouse-ear', symptom: 'Mat-forming hairy plant with small white deeply notched flowers in thin sward', plant_part: 'whole plant', timing: 'April to November', confidence: 'diagnostic' },
+  { pest_id: 'common-mouse-ear', symptom: 'Curved cylindrical seed capsule on prostrate hairy stems', plant_part: 'whole plant', timing: 'summer', confidence: 'suggestive' },
+
+  // White Clover Weed
+  { pest_id: 'white-clover-weed', symptom: 'Trefoil leaves with white V-shaped chevron and creeping stolons in arable crop', plant_part: 'whole plant', timing: 'spring to autumn', confidence: 'diagnostic' },
+  { pest_id: 'white-clover-weed', symptom: 'White globular flower heads on long stalks amongst cereal crop', plant_part: 'whole plant', timing: 'May to September', confidence: 'suggestive' },
+
+  // Hedge Mustard
+  { pest_id: 'hedge-mustard', symptom: 'Narrow erect seed pods pressed tightly against stiff stem', plant_part: 'whole plant', timing: 'summer to autumn', confidence: 'diagnostic' },
+  { pest_id: 'hedge-mustard', symptom: 'Small yellow four-petalled flowers on angular branching stems', plant_part: 'whole plant', timing: 'May to September', confidence: 'suggestive' },
+
+  // ── Additional symptoms for depth ──────────────────────────────
+
+  // Extra symptoms for diseases with only 2
+  { pest_id: 'gangrene', symptom: 'Skin wrinkling over depressed area with firm dry powdery brown-black tissue beneath', plant_part: 'tubers', timing: 'mid to late storage', confidence: 'suggestive' },
+  { pest_id: 'pink-rot', symptom: 'Tuber skin appears normal or slightly darkened externally despite severe internal rot', plant_part: 'tubers', timing: 'harvest', confidence: 'associated' },
+  { pest_id: 'soil-borne-wheat-mosaic-virus', symptom: 'Slight stunting of wheat plants in patches on heavy clay soils', plant_part: 'whole plant', timing: 'spring', confidence: 'associated' },
+  { pest_id: 'white-tip-leek', symptom: 'Rot extending into leek shaft in severe cases from initial leaf tip die-back', plant_part: 'stems', timing: 'late autumn', confidence: 'associated' },
+  { pest_id: 'powdery-scab-potato', symptom: 'Raised pustule edge remaining after spore mass has been rubbed off — distinct from common scab', plant_part: 'tubers', timing: 'harvest', confidence: 'suggestive' },
+  { pest_id: 'bunt-wheat', symptom: 'Strong rotten fish (trimethylamine) odour released when bunt ball is crushed', plant_part: 'ears', timing: 'harvest', confidence: 'diagnostic' },
+  { pest_id: 'phytophthora-root-rot-peas', symptom: 'Roots rotted and plants pull from soil easily without resistance', plant_part: 'roots', timing: 'summer', confidence: 'suggestive' },
+  { pest_id: 'crown-rot-strawberry', symptom: 'Roots may appear healthy despite internal crown discolouration and wilting', plant_part: 'roots', timing: 'summer', confidence: 'associated' },
+
+  // Extra symptoms for pests with only 2
+  { pest_id: 'click-beetle', symptom: 'High pheromone trap catches in grassland planned for conversion to arable indicate future wireworm risk', plant_part: 'whole plant', timing: 'May to July', confidence: 'associated' },
+  { pest_id: 'potato-tuber-moth', symptom: 'Small grey-brown moths (15mm wingspan) active around potato foliage at dusk', plant_part: 'whole plant', timing: 'summer', confidence: 'suggestive' },
+  { pest_id: 'cabbage-moth', symptom: 'Brown-grey noctuid moths (40-45mm wingspan) with kidney-shaped wing markings at light traps', plant_part: 'whole plant', timing: 'May to September', confidence: 'suggestive' },
+  { pest_id: 'mangold-fly', symptom: 'Stunted young sugar beet plants with most leaf area lost to mining', plant_part: 'whole plant', timing: 'May to June', confidence: 'associated' },
+  { pest_id: 'new-zealand-flatworm', symptom: 'Dark shiny egg capsules (5-10mm) found in soil near flatworm hiding places', plant_part: 'roots', timing: 'year-round', confidence: 'suggestive' },
+  { pest_id: 'cabbage-stem-weevil', symptom: 'Exit holes on oilseed rape stem surface where mature larvae have left', plant_part: 'stems', timing: 'June', confidence: 'suggestive' },
+  { pest_id: 'blackcurrant-gall-mite', symptom: 'Reversion virus symptoms — flowers with magenta colour and extra petals on infested bushes', plant_part: 'flowers', timing: 'spring', confidence: 'associated' },
+  { pest_id: 'mussel-scale', symptom: 'White eggs or shrivelled female body visible when scale cover is lifted', plant_part: 'stems', timing: 'winter', confidence: 'diagnostic' },
+  { pest_id: 'raspberry-cane-midge', symptom: 'Brittle canes snapping at points of cane blight infection originating from midge wounds', plant_part: 'stems', timing: 'autumn to winter', confidence: 'suggestive' },
+  { pest_id: 'celery-fly', symptom: 'Brown papery leaves on severely attacked celery plants reducing crop marketability', plant_part: 'leaves', timing: 'summer to autumn', confidence: 'associated' },
+  { pest_id: 'onion-thrips', symptom: 'Black frass spots visible on silvered leaf areas', plant_part: 'leaves', timing: 'summer', confidence: 'suggestive' },
+  { pest_id: 'flea-beetle-root-crops', symptom: 'Tiny shiny bronze-coloured beetles (Chaetocnema concinna) on sugar beet seedlings', plant_part: 'leaves', timing: 'spring', confidence: 'diagnostic' },
+  { pest_id: 'large-narcissus-fly', symptom: 'Bumblebee-like hoverfly adults visiting flowers near narcissus plantings in May-June', plant_part: 'whole plant', timing: 'May to June', confidence: 'associated' },
+  { pest_id: 'glasshouse-whitefly', symptom: 'Eggs on short stalks visible on leaf undersurface with hand lens', plant_part: 'leaves', timing: 'year-round under glass', confidence: 'suggestive' },
 ];
 
 // ── Treatments ──────────────────────────────────────────────────
@@ -3183,6 +5007,324 @@ const TREATMENTS: Treatment[] = [
   // Marsh Thistle
   { pest_id: 'marsh-thistle', approach: 'chemical', treatment: 'MCPA or 2,4-D on rosettes in grassland', active_substance: 'MCPA or 2,4-D', timing: 'Rosette stage in spring', dose_rate: 'See product label', efficacy_notes: 'Apply to rosettes in spring. Biennial — cut flowering stems before seed set prevents seed bank build-up. Drainage improvement is the long-term solution as marsh thistle indicates waterlogging.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'AHDB' },
   { pest_id: 'marsh-thistle', approach: 'cultural', treatment: 'Drainage improvement and cutting before flowering', active_substance: null, timing: 'Before flowering (June-July)', dose_rate: null, efficacy_notes: 'Marsh thistle is an indicator of poor drainage — address underlying drainage problems. Cut before seed set. Biennial life cycle means preventing seed production over 2-3 years depletes the population.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // ── Expansion: New Disease Treatments ──────────────────────────
+
+  // Wheat Streak Mosaic Virus
+  { pest_id: 'wheat-streak-mosaic-virus', approach: 'cultural', treatment: 'Destroy volunteer wheat and grass bridges before drilling', active_substance: null, timing: 'Pre-drilling (August-September)', dose_rate: null, efficacy_notes: 'Eliminate volunteer wheat within 2 weeks of new crop emergence. Break the green bridge between old and new crops. No chemical control available for virus.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+  { pest_id: 'wheat-streak-mosaic-virus', approach: 'cultural', treatment: 'Delay drilling to reduce mite transmission window', active_substance: null, timing: 'October onwards', dose_rate: null, efficacy_notes: 'Later drilling reduces overlap with wheat curl mite activity. Avoid drilling near recently harvested wheat fields with volunteer regrowth.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Barley Stripe
+  { pest_id: 'barley-stripe', approach: 'chemical', treatment: 'Seed treatment with systemic fungicide', active_substance: 'fludioxonil + sedaxane', timing: 'Seed treatment before drilling', dose_rate: 'See product label', efficacy_notes: 'Seed treatment provides near-complete control of seed-borne barley stripe. Use certified seed or treat farm-saved seed.', resistance_risk: 'No known resistance to seed treatments.', approval_status: 'approved', source: 'CRD' },
+  { pest_id: 'barley-stripe', approach: 'cultural', treatment: 'Use certified seed and avoid farm-saved seed from infected crops', active_substance: null, timing: 'Seed selection', dose_rate: null, efficacy_notes: 'Certified seed carries negligible seed-borne disease. If using farm-saved seed, test for infection levels before drilling.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Halo Spot
+  { pest_id: 'halo-spot', approach: 'chemical', treatment: 'Foliar fungicide — usually controlled incidentally by main programme', active_substance: 'prothioconazole', timing: 'T1-T2 timing in barley', dose_rate: 'See product label', efficacy_notes: 'Rarely justifies specific treatment. Usually controlled by fungicides applied for net blotch and rhynchosporium.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'AHDB' },
+
+  // Tan Spot
+  { pest_id: 'tan-spot', approach: 'chemical', treatment: 'Foliar fungicide at T1-T2', active_substance: 'prothioconazole + bixafen', timing: 'T1 (GS30-32) and T2 (GS39-49)', dose_rate: 'See product label', efficacy_notes: 'Responds to same fungicide programmes used for Septoria. Azole + SDHI mixtures effective.', resistance_risk: 'No specific resistance concerns separate from Septoria management.', approval_status: 'approved', source: 'AHDB' },
+  { pest_id: 'tan-spot', approach: 'cultural', treatment: 'Ploughing to bury infected stubble and break continuous wheat', active_substance: null, timing: 'Post-harvest', dose_rate: null, efficacy_notes: 'Ploughing buries pseudothecia and reduces ascospore inoculum. Break from continuous wheat reduces disease pressure significantly.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Wheat Spindle Streak Mosaic Virus
+  { pest_id: 'wheat-spindle-streak-mosaic-virus', approach: 'cultural', treatment: 'Variety resistance and avoid continuous wheat on heavy clay', active_substance: null, timing: 'Variety selection', dose_rate: null, efficacy_notes: 'No chemical control. Choose resistant varieties. Break wheat rotation on infested fields. Improve drainage on heavy soils.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Soil-borne Wheat Mosaic Virus
+  { pest_id: 'soil-borne-wheat-mosaic-virus', approach: 'cultural', treatment: 'Resistant varieties and rotation on infested land', active_substance: null, timing: 'Variety selection and rotation', dose_rate: null, efficacy_notes: 'No chemical control — virus vector (Polymyxa graminis) persists in soil for 20+ years. Resistant varieties available. Avoid continuous wheat on known infested fields.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Potato Virus Y
+  { pest_id: 'potato-virus-y', approach: 'cultural', treatment: 'Certified virus-free seed and early haulm destruction', active_substance: null, timing: 'Seed selection and July-August', dose_rate: null, efficacy_notes: 'Use certified seed with low PVY tolerance. Destroy haulm early in seed crops to limit within-season spread. Non-persistent virus — insecticides do not prevent transmission.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+  { pest_id: 'potato-virus-y', approach: 'cultural', treatment: 'Mineral oil sprays to reduce aphid transmission', active_substance: 'mineral oil', timing: 'Regular spray programme in seed crops', dose_rate: '10 L/ha every 7-10 days', efficacy_notes: 'Mineral oil interferes with non-persistent virus acquisition by aphids. Reduces PVY spread by 50-70% in seed crops. Must be applied regularly.', resistance_risk: null, approval_status: 'approved', source: 'AHDB' },
+
+  // Potato Leafroll Virus
+  { pest_id: 'potato-leafroll-virus', approach: 'chemical', treatment: 'Aphicide spray to control Myzus persicae vector', active_substance: 'flonicamid or pirimicarb', timing: 'When aphids detected (persistent virus — insecticides effective)', dose_rate: 'See product label', efficacy_notes: 'PLRV is transmitted persistently — aphids need prolonged feeding. Insecticides can reduce transmission by killing aphids before virus transfer. Monitor regularly.', resistance_risk: 'Myzus persicae resistance to pyrethroids is widespread.', approval_status: 'approved', source: 'AHDB' },
+  { pest_id: 'potato-leafroll-virus', approach: 'cultural', treatment: 'Certified virus-free seed and early haulm destruction', active_substance: null, timing: 'Seed selection', dose_rate: null, efficacy_notes: 'Use certified seed. Destroy haulm early in seed crops. Remove groundkeeper (volunteer) potatoes which harbour virus.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Gangrene
+  { pest_id: 'gangrene', approach: 'cultural', treatment: 'Minimise harvest damage and allow wound healing (suberisation)', active_substance: null, timing: 'Harvest and early storage', dose_rate: null, efficacy_notes: 'Careful harvesting reduces entry points. Hold tubers at 12-15C for 14 days after harvest for wound healing before cooling to storage temperature.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Dry Rot Potato
+  { pest_id: 'dry-rot-potato', approach: 'cultural', treatment: 'Minimise harvest damage and maintain low storage temperature', active_substance: null, timing: 'Harvest and storage', dose_rate: null, efficacy_notes: 'Minimise mechanical damage during harvest. Suberise wounds at 12-15C. Store at 3-4C. Inspect seed tubers before planting.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Pink Rot
+  { pest_id: 'pink-rot', approach: 'cultural', treatment: 'Improve field drainage and avoid waterlogged soils', active_substance: null, timing: 'Field selection and drainage', dose_rate: null, efficacy_notes: 'No effective chemical control. Avoid planting potatoes in waterlogged areas. Long rotations. Improve field drainage. Avoid harvesting waterlogged areas.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Spraing (TRV)
+  { pest_id: 'spraing-tobacco-rattle-virus', approach: 'chemical', treatment: 'Nematicide to control trichodorid nematode vectors', active_substance: 'fosthiazate', timing: 'At planting', dose_rate: 'See product label', efficacy_notes: 'Partially effective at reducing trichodorid nematode populations and spraing incidence. Not always economic. Combine with variety choice and field selection.', resistance_risk: null, approval_status: 'approved', source: 'CRD' },
+  { pest_id: 'spraing-tobacco-rattle-virus', approach: 'cultural', treatment: 'Avoid high-risk fields and use tolerant varieties', active_substance: null, timing: 'Field and variety selection', dose_rate: null, efficacy_notes: 'Avoid fields with known spraing history. Choose varieties with good spraing tolerance. Light sandy soils carry highest risk.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Peach Leaf Curl
+  { pest_id: 'peach-leaf-curl', approach: 'chemical', treatment: 'Copper fungicide spray before bud swell', active_substance: 'copper oxychloride', timing: 'Mid-January to mid-February before bud swell', dose_rate: 'See product label', efficacy_notes: 'Apply before buds swell. Two applications — mid-January and late February. Must be applied before infection occurs during bud swell.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'AHDB' },
+  { pest_id: 'peach-leaf-curl', approach: 'cultural', treatment: 'Rain cover (polythene shelter) from January to May', active_substance: null, timing: 'January to May', dose_rate: null, efficacy_notes: 'Open-sided rain cover prevents rain-borne spores reaching buds. Near-complete control. The best method for garden trees.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Bacterial Canker Stone Fruit
+  { pest_id: 'bacterial-canker-stone-fruit', approach: 'chemical', treatment: 'Copper spray at leaf fall', active_substance: 'copper oxychloride', timing: 'Leaf fall (October-November) — three sprays 2 weeks apart', dose_rate: 'See product label', efficacy_notes: 'Copper protects leaf scars from bacterial infection. Apply as leaves fall to protect each scar as it forms. Partial control only.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'AHDB' },
+  { pest_id: 'bacterial-canker-stone-fruit', approach: 'cultural', treatment: 'Prune in summer only (dry conditions) and remove cankers', active_substance: null, timing: 'June to August', dose_rate: null, efficacy_notes: 'Summer pruning in dry weather minimises infection risk. Cut 30cm below canker margin. Destroy prunings. Avoid autumn/winter pruning.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Pear Rust
+  { pest_id: 'pear-rust', approach: 'cultural', treatment: 'Remove nearby juniper plants to break the disease cycle', active_substance: null, timing: 'Any time', dose_rate: null, efficacy_notes: 'Pear rust requires juniper as alternate host. Removing juniper within 500m eliminates the disease. No specific fungicide approved for garden use on pear rust.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Brassica Dark Leaf Spot Alternaria
+  { pest_id: 'brassica-dark-leaf-spot-alternaria', approach: 'chemical', treatment: 'Fungicide spray on brassica vegetables', active_substance: 'azoxystrobin', timing: 'When symptoms first appear', dose_rate: 'See product label', efficacy_notes: 'Preventative application more effective than curative. Hot-water seed treatment (50C for 30 minutes) reduces seed-borne inoculum.', resistance_risk: 'QoI resistance possible — alternate modes of action.', approval_status: 'approved', source: 'CRD' },
+  { pest_id: 'brassica-dark-leaf-spot-alternaria', approach: 'cultural', treatment: 'Hot-water seed treatment and crop debris removal', active_substance: null, timing: 'Pre-sowing and post-harvest', dose_rate: null, efficacy_notes: 'Hot-water seed treatment (50C for 30 minutes) eliminates seed-borne Alternaria. Remove crop debris to reduce soil-borne inoculum.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Brassica White Mould
+  { pest_id: 'brassica-white-mould', approach: 'cultural', treatment: 'Long rotation (4+ years) away from susceptible crops', active_substance: null, timing: 'Rotation planning', dose_rate: null, efficacy_notes: 'Sclerotia survive 5+ years in soil. Long rotations away from oilseed rape, beans, and brassicas reduce soil inoculum. No specific vegetable fungicide programme.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Downy Mildew Brassica
+  { pest_id: 'downy-mildew-brassica', approach: 'chemical', treatment: 'Metalaxyl-M seed treatment for seedlings', active_substance: 'metalaxyl-M', timing: 'Seed treatment', dose_rate: 'See product label', efficacy_notes: 'Seed treatment protects seedlings during the most vulnerable stage. Foliar metalaxyl-M in transplant modules provides additional protection.', resistance_risk: 'Phenylamide resistance reported — use as part of an integrated programme.', approval_status: 'approved', source: 'CRD' },
+  { pest_id: 'downy-mildew-brassica', approach: 'cultural', treatment: 'Good air circulation and avoid overhead irrigation', active_substance: null, timing: 'Growing season', dose_rate: null, efficacy_notes: 'Reduce humidity around seedlings. Avoid overcrowding in modules. Use clean transplant stock. Remove infected plants promptly.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Leek Rust
+  { pest_id: 'leek-rust', approach: 'chemical', treatment: 'Tebuconazole foliar spray', active_substance: 'tebuconazole', timing: 'When first pustules appear', dose_rate: 'See product label', efficacy_notes: 'Provides moderate control. Repeat applications may be needed. Variety resistance is the most effective long-term strategy.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+  { pest_id: 'leek-rust', approach: 'cultural', treatment: 'Resistant varieties and balanced nitrogen nutrition', active_substance: null, timing: 'Variety selection', dose_rate: null, efficacy_notes: 'Some leek varieties have good field resistance. Avoid excessive nitrogen which promotes soft growth. Wider spacing improves air circulation.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Celery Leaf Spot
+  { pest_id: 'celery-leaf-spot', approach: 'chemical', treatment: 'Fungicide programme based on azoxystrobin', active_substance: 'azoxystrobin', timing: 'Preventative from first signs of disease', dose_rate: 'See product label', efficacy_notes: 'Preventative application before symptoms appear is most effective. Hot-water seed treatment eliminates seed-borne inoculum.', resistance_risk: 'QoI resistance possible.', approval_status: 'approved', source: 'CRD' },
+  { pest_id: 'celery-leaf-spot', approach: 'cultural', treatment: 'Hot-water seed treatment (48C for 30 minutes)', active_substance: null, timing: 'Pre-sowing', dose_rate: null, efficacy_notes: 'Hot-water treatment eliminates seed-borne Septoria apiicola. The single most effective control measure. Dry seed thoroughly after treatment.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Parsnip Canker
+  { pest_id: 'parsnip-canker', approach: 'cultural', treatment: 'Canker-resistant varieties and carrot fly control', active_substance: null, timing: 'Variety selection and growing season', dose_rate: null, efficacy_notes: 'Resistant varieties (Javelin, Gladiator) reduce canker incidence significantly. Control carrot fly to reduce entry points. Sow later (May) for smaller shoulders.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // White Tip Leek
+  { pest_id: 'white-tip-leek', approach: 'cultural', treatment: 'Improve drainage and avoid waterlogged conditions', active_substance: null, timing: 'Field preparation', dose_rate: null, efficacy_notes: 'No specific fungicide available. Improve field drainage. Wider spacing for air circulation. Avoid overhead irrigation in autumn.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Powdery Scab Potato
+  { pest_id: 'powdery-scab-potato', approach: 'cultural', treatment: 'Long rotation and resistant varieties on wet soils', active_substance: null, timing: 'Rotation planning', dose_rate: null, efficacy_notes: 'No chemical control. 6+ year rotation on infested fields. Use certified seed. Resistant varieties. Improve drainage.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Bunt Wheat
+  { pest_id: 'bunt-wheat', approach: 'chemical', treatment: 'Seed treatment with fludioxonil-based product', active_substance: 'fludioxonil', timing: 'Seed treatment', dose_rate: 'See product label', efficacy_notes: 'Complete control from seed treatment. All certified seed is treated. For organic production, hot water seed treatment (52C for 10 minutes) provides control.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Cereal Cyst Nematode
+  { pest_id: 'cyst-nematode-cereals', approach: 'cultural', treatment: 'Break crop in rotation — one non-cereal year', active_substance: null, timing: 'Rotation planning', dose_rate: null, efficacy_notes: 'One non-cereal break crop year reduces populations significantly. Oilseed rape, peas, beans all effective breaks. No nematicide available for cereals.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Phytophthora Root Rot Peas
+  { pest_id: 'phytophthora-root-rot-peas', approach: 'chemical', treatment: 'Metalaxyl-M seed treatment on high-risk sites', active_substance: 'metalaxyl-M', timing: 'Seed treatment', dose_rate: 'See product label', efficacy_notes: 'Provides some protection on high-risk sites. Not a complete solution — drainage improvement essential. Long pea rotations (6+ years).', resistance_risk: 'Phenylamide resistance possible.', approval_status: 'approved', source: 'CRD' },
+
+  // Rust Beans
+  { pest_id: 'rust-beans', approach: 'chemical', treatment: 'Tebuconazole foliar spray', active_substance: 'tebuconazole', timing: 'When first pustules detected', dose_rate: 'See product label', efficacy_notes: 'Apply at first sign of rust. Moderate control. Early harvest of mature crops avoids late-season build-up.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Verticillium Wilt Strawberry
+  { pest_id: 'verticillium-wilt-strawberry', approach: 'cultural', treatment: 'Certified disease-free planting material and raised bed production', active_substance: null, timing: 'Planting', dose_rate: null, efficacy_notes: 'No in-crop treatment. Use certified runners. Raised substrate (table-top) production avoids soil-borne inoculum. Long rotations (6+ years). Avoid following potatoes or brassicas.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Crown Rot Strawberry
+  { pest_id: 'crown-rot-strawberry', approach: 'chemical', treatment: 'Metalaxyl-M drench at planting on high-risk sites', active_substance: 'metalaxyl-M', timing: 'At planting', dose_rate: 'See product label', efficacy_notes: 'Protective but not curative. Certified planting material is the primary control. Rapid removal of affected plants limits spread.', resistance_risk: 'Phenylamide resistance reported in some populations.', approval_status: 'approved', source: 'CRD' },
+
+  // Powdery Mildew Strawberry
+  { pest_id: 'powdery-mildew-strawberry', approach: 'chemical', treatment: 'Myclobutanil or penconazole programme', active_substance: 'myclobutanil', timing: 'Preventative from first flowers', dose_rate: 'See product label', efficacy_notes: 'Preventative programme during flowering and fruiting. Alternate fungicide groups. Sulfur as multi-site option.', resistance_risk: 'DMI resistance developing — alternate modes of action.', approval_status: 'approved', source: 'CRD' },
+  { pest_id: 'powdery-mildew-strawberry', approach: 'cultural', treatment: 'Polytunnel ventilation and resistant varieties', active_substance: null, timing: 'Growing season', dose_rate: null, efficacy_notes: 'Open tunnel sides to reduce humidity. Choose varieties with field resistance. Avoid dense planting. Remove old leaves.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Apple Canker
+  { pest_id: 'apple-canker', approach: 'chemical', treatment: 'Copper spray at leaf fall and wound paint', active_substance: 'copper oxychloride', timing: 'Leaf fall (October-November)', dose_rate: 'See product label', efficacy_notes: 'Copper protects leaf scars from infection. Wound paint on large pruning cuts. Three sprays during leaf fall.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'AHDB' },
+  { pest_id: 'apple-canker', approach: 'cultural', treatment: 'Canker removal — prune 30cm below visible canker margin', active_substance: null, timing: 'Winter pruning', dose_rate: null, efficacy_notes: 'Cut well below the canker. Destroy prunings. Paint wounds on larger branches. Improve drainage on wet sites.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Plum Rust
+  { pest_id: 'plum-rust', approach: 'cultural', treatment: 'Remove anemone (alternate host) near orchards', active_substance: null, timing: 'Any time', dose_rate: null, efficacy_notes: 'Removing anemone plants within 500m breaks the life cycle. No fungicide usually economic. Tolerant on established trees in most years.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // ── Expansion: New Insect Pest Treatments ──────────────────────
+
+  // Hessian Fly
+  { pest_id: 'hessian-fly', approach: 'cultural', treatment: 'Delay drilling and plough stubble to destroy puparia', active_substance: null, timing: 'Post-harvest and pre-drilling', dose_rate: null, efficacy_notes: 'Delayed drilling (late October) avoids autumn generation. Ploughing after harvest destroys puparia in stubble.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Corn Ground Beetle
+  { pest_id: 'corn-ground-beetle', approach: 'cultural', treatment: 'Plough after harvest to destroy eggs', active_substance: null, timing: 'Post-harvest', dose_rate: null, efficacy_notes: 'Ploughing after harvest destroys eggs laid in stubble. Break from continuous cereals. No specific insecticide approved.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Click Beetle
+  { pest_id: 'click-beetle', approach: 'cultural', treatment: 'Pheromone trap monitoring before ploughing old grassland', active_substance: null, timing: 'May to July before grass destruction', dose_rate: null, efficacy_notes: 'Set pheromone traps (Agriotes lineatus) in grassland planned for ploughing. If catches exceed threshold, consider seed treatment or avoid potatoes.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Potato Tuber Moth
+  { pest_id: 'potato-tuber-moth', approach: 'cultural', treatment: 'Deep ridging and cold storage', active_substance: null, timing: 'Growing season and storage', dose_rate: null, efficacy_notes: 'Maintain soil cover over tubers (deep ridging). Store at below 10C. Not currently established in the UK — report suspect finds.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Willow-Carrot Aphid
+  { pest_id: 'willow-carrot-aphid', approach: 'chemical', treatment: 'Pyrethroid spray at first migration', active_substance: 'lambda-cyhalothrin', timing: 'When first aphids detected (May-June)', dose_rate: 'See product label', efficacy_notes: 'Time spray to coincide with first migration from willow. Reduces virus spread. Monitor with yellow sticky traps.', resistance_risk: 'No major resistance concerns.', approval_status: 'approved', source: 'CRD' },
+
+  // Leek Moth
+  { pest_id: 'leek-moth', approach: 'chemical', treatment: 'Spinosad spray when larvae detected', active_substance: 'spinosad', timing: 'When larvae or mines first detected', dose_rate: 'See product label', efficacy_notes: 'Effective on young larvae before they bore into shaft. Two spray timings coinciding with egg hatch of each generation.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+  { pest_id: 'leek-moth', approach: 'cultural', treatment: 'Fleece or mesh crop covers to prevent egg-laying', active_substance: null, timing: 'Cover crops April to September', dose_rate: null, efficacy_notes: 'Insect-proof mesh (0.6mm) excludes egg-laying moths. The most reliable control method. Pheromone traps for flight timing.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Swede Midge
+  { pest_id: 'swede-midge', approach: 'cultural', treatment: 'Crop rotation (3+ year brassica break) and fleece covers', active_substance: null, timing: 'Rotation planning', dose_rate: null, efficacy_notes: 'No specific insecticide recommended. Minimum 3-year break from brassicas. Fleece covers on high-value crops.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Brassica Flea Beetle Small
+  { pest_id: 'brassica-flea-beetle-small', approach: 'chemical', treatment: 'Pyrethroid spray at seedling stage', active_substance: 'lambda-cyhalothrin', timing: 'When shot-holing first detected on seedlings', dose_rate: 'See product label', efficacy_notes: 'Apply when cotyledons show significant shot-holing. Repeat if needed. Most effective in warm conditions when beetles are active.', resistance_risk: 'No major resistance concerns on vegetable flea beetles.', approval_status: 'approved', source: 'CRD' },
+  { pest_id: 'brassica-flea-beetle-small', approach: 'cultural', treatment: 'Fleece covers and irrigation to promote rapid seedling growth', active_substance: null, timing: 'Sowing to 4-leaf stage', dose_rate: null, efficacy_notes: 'Fleece covers exclude adults. Irrigation promotes rapid growth past the vulnerable cotyledon stage. Transplants less vulnerable than direct-drilled.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Turnip Moth
+  { pest_id: 'turnip-moth', approach: 'cultural', treatment: 'Weed-free seedbeds and irrigation to firm soil surface', active_substance: null, timing: 'Pre-planting and growing season', dose_rate: null, efficacy_notes: 'Remove weeds before planting (adult moths attracted to weedy fields for egg-laying). Irrigating firms the soil surface, reducing cutworm surface movement.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Woolly Aphid
+  { pest_id: 'woolly-aphid', approach: 'chemical', treatment: 'Spirotetramat systemic spray', active_substance: 'spirotetramat', timing: 'When colonies first detected (May-June)', dose_rate: 'See product label', efficacy_notes: 'Systemic — moves to feeding sites beneath wool. Apply early before waxy wool becomes dense. Natural enemy Aphelinus mali provides excellent biological control in many orchards.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+  { pest_id: 'woolly-aphid', approach: 'biological', treatment: 'Conservation of Aphelinus mali parasitoid', active_substance: null, timing: 'Year-round', dose_rate: null, efficacy_notes: 'The parasitoid wasp Aphelinus mali provides good natural control. Blackened mummified aphids indicate parasitism. Avoid broad-spectrum insecticides that kill the parasitoid.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Gooseberry Sawfly
+  { pest_id: 'gooseberry-sawfly', approach: 'chemical', treatment: 'Spinosad or pyrethrum spray when larvae first detected', active_substance: 'spinosad', timing: 'When larvae first seen (check centres weekly from mid-April)', dose_rate: 'See product label', efficacy_notes: 'Most effective on young larvae. Inspect bush centres weekly from mid-April. Hand-picking effective on small bushes.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Blackcurrant Gall Mite
+  { pest_id: 'blackcurrant-gall-mite', approach: 'cultural', treatment: 'Hand-remove big buds in winter and use certified planting material', active_substance: null, timing: 'January to March (hand-picking)', dose_rate: null, efficacy_notes: 'Pick and destroy enlarged buds during winter. Use certified pest-free plants. Replace heavily infested bushes with resistant varieties (Ben Hope).', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Strawberry Blossom Weevil
+  { pest_id: 'strawberry-blossom-weevil', approach: 'chemical', treatment: 'Pyrethroid spray before flowering', active_substance: 'deltamethrin', timing: 'At green bud stage before first flowers open', dose_rate: 'See product label', efficacy_notes: 'Apply before weevils begin cutting flower stalks. Time using trap catches. Repeat if needed. Avoid spraying open flowers to protect pollinators.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Apple Sawfly
+  { pest_id: 'apple-sawfly', approach: 'chemical', treatment: 'Insecticide spray at petal fall', active_substance: 'deltamethrin', timing: 'Petal fall', dose_rate: 'See product label', efficacy_notes: 'Single spray at petal fall targets newly hatched larvae before they bore into fruitlets. White sticky traps during blossom to monitor adult flight.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Winter Moth
+  { pest_id: 'winter-moth', approach: 'chemical', treatment: 'Diflubenzuron spray at egg hatch or grease bands on trunks', active_substance: 'diflubenzuron', timing: 'Bud burst (March-April)', dose_rate: 'See product label', efficacy_notes: 'Diflubenzuron (insect growth regulator) at early caterpillar stage. Bacillus thuringiensis for organic systems. Grease bands on trunks in October trap wingless females.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+  { pest_id: 'winter-moth', approach: 'cultural', treatment: 'Grease bands on tree trunks from October', active_substance: null, timing: 'October to December', dose_rate: null, efficacy_notes: 'Sticky grease band around trunk traps wingless females climbing to lay eggs. Apply by mid-October. Check and refresh throughout winter.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Tortrix Moth
+  { pest_id: 'tortrix-moth', approach: 'chemical', treatment: 'Spinosad or diflubenzuron at egg hatch', active_substance: 'spinosad', timing: 'When pheromone trap catches indicate egg hatch', dose_rate: 'See product label', efficacy_notes: 'Time application using pheromone trap flight data plus degree-day model to predict egg hatch. Mating disruption dispensers in larger orchards.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Cherry Blackfly
+  { pest_id: 'cherry-blackfly', approach: 'chemical', treatment: 'Pre-blossom pyrethroid or post-blossom acetamiprid', active_substance: 'acetamiprid', timing: 'Pre-blossom or post-blossom when colonies visible', dose_rate: 'See product label', efficacy_notes: 'Pre-blossom spray is most effective before leaf curling protects colonies. Fatty acid sprays for organic systems. Severely curled leaves protect aphids from contact sprays.', resistance_risk: 'No major resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Pear Midge
+  { pest_id: 'pear-midge', approach: 'chemical', treatment: 'Insecticide spray at white bud stage', active_substance: 'deltamethrin', timing: 'White bud to early blossom', dose_rate: 'See product label', efficacy_notes: 'Must be applied before egg-laying in open flowers. Once eggs are laid inside buds, larvae are protected. Shake blossoms over white tray to detect adults.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+  { pest_id: 'pear-midge', approach: 'cultural', treatment: 'Cultivate soil under trees in autumn to disrupt pupae', active_substance: null, timing: 'Autumn', dose_rate: null, efficacy_notes: 'Shallow cultivation (5-10cm) under the tree canopy disrupts pupating larvae. Remove and destroy blackened fruitlets before larvae drop to soil.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Mussel Scale
+  { pest_id: 'mussel-scale', approach: 'chemical', treatment: 'Winter petroleum oil spray to smother eggs', active_substance: 'petroleum spray oil', timing: 'Dormant season (December-February)', dose_rate: 'See product label', efficacy_notes: 'Petroleum oil smothers overwintering eggs beneath scales. Crawler-stage sprays (July) with spirotetramat as alternative.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Fruit Tree Red Spider Mite
+  { pest_id: 'fruit-tree-red-spider-mite', approach: 'biological', treatment: 'Conservation of predatory mite Typhlodromus pyri', active_substance: null, timing: 'Year-round', dose_rate: null, efficacy_notes: 'Typhlodromus pyri provides excellent biological control in IPM orchards. Avoid broad-spectrum insecticides that kill predatory mites. Winter wash with petroleum oil reduces overwintering eggs.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+  { pest_id: 'fruit-tree-red-spider-mite', approach: 'chemical', treatment: 'Winter petroleum oil wash against overwintering eggs', active_substance: 'petroleum spray oil', timing: 'Dormant season', dose_rate: 'See product label', efficacy_notes: 'Smothers red overwintering eggs on bark. Apply thoroughly to bark surfaces. Reduces spring emergence.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Chafer Grubs
+  { pest_id: 'chafer-grubs', approach: 'biological', treatment: 'Nematode drench (Heterorhabditis bacteriophora) in late summer', active_substance: 'Heterorhabditis bacteriophora', timing: 'July to September when soil temperature above 12C', dose_rate: '500,000 per m2', efficacy_notes: 'Apply to moist turf in late summer when grubs are in the upper soil. Water in well. Soil temperature must be above 12C.', resistance_risk: null, approval_status: 'exempt (biological agent)', source: 'AHDB' },
+
+  // Field Voles
+  { pest_id: 'field-voles', approach: 'cultural', treatment: 'Tree guards and short grass around tree bases', active_substance: null, timing: 'At planting and year-round', dose_rate: null, efficacy_notes: 'Spiral tree guards protect bark from gnawing. Keep grass short (5cm) for 50cm around tree bases to remove cover. Raptor perches encourage natural predation.', resistance_risk: null, approval_status: null, source: 'Forestry Commission' },
+
+  // New Zealand Flatworm
+  { pest_id: 'new-zealand-flatworm', approach: 'cultural', treatment: 'Prevent spread by avoiding movement of infested soil and plants', active_substance: null, timing: 'Year-round', dose_rate: null, efficacy_notes: 'No chemical control. Check bought-in plants and soil for flatworms. Report sightings outside known range. Trap under damp carpet or matting and destroy.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Crow/Rook Damage
+  { pest_id: 'crow-rook-damage', approach: 'cultural', treatment: 'Bird scarers and deeper drilling', active_substance: null, timing: 'At drilling and crop emergence', dose_rate: null, efficacy_notes: 'Gas cannons, kites, laser deterrents, and distress calls provide temporary deterrence. Deeper drilling reduces seed exposure. Move scarer positions regularly. Maize at risk needs protection for 3-4 weeks post-drilling.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Cabbage Moth
+  { pest_id: 'cabbage-moth', approach: 'chemical', treatment: 'Bacillus thuringiensis on young larvae before they bore', active_substance: 'Bacillus thuringiensis var. kurstaki', timing: 'When young larvae detected on outer leaves', dose_rate: 'See product label', efficacy_notes: 'Must be applied before larvae bore into hearts where they are protected from sprays. Weekly inspections for eggs and young larvae. Spinosad as alternative.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Carrot-Willow Aphid
+  { pest_id: 'carrot-willow-aphid', approach: 'chemical', treatment: 'Pyrethroid spray timed to first willow migration', active_substance: 'lambda-cyhalothrin', timing: 'May to June when first aphids detected', dose_rate: 'See product label', efficacy_notes: 'Time spray to first migration from willow using yellow sticky traps. Reduces virus spread if applied promptly.', resistance_risk: 'No major resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Mangold Fly
+  { pest_id: 'mangold-fly', approach: 'cultural', treatment: 'Rapid crop establishment and tolerate mining on established plants', active_substance: null, timing: 'Sowing', dose_rate: null, efficacy_notes: 'Established plants (6+ leaves) compensate for mining damage. First generation on young plants is most damaging. Vigorous early growth through good seedbed and nutrition.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Celery Fly
+  { pest_id: 'celery-fly', approach: 'chemical', treatment: 'Spinosad spray when mines first detected', active_substance: 'spinosad', timing: 'When first mines appear', dose_rate: 'See product label', efficacy_notes: 'Effective if applied early. Fleece covers prevent egg-laying on high-value celery crops.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Onion Thrips
+  { pest_id: 'onion-thrips', approach: 'chemical', treatment: 'Spinosad or lambda-cyhalothrin spray', active_substance: 'spinosad', timing: 'When thrips detected between leaves (July-August)', dose_rate: 'See product label', efficacy_notes: 'Difficult to reach thrips between leaves. High-volume spray for better coverage. Repeat applications needed. Blue sticky traps for monitoring.', resistance_risk: 'Resistance to some insecticides developing.', approval_status: 'approved', source: 'CRD' },
+
+  // Raspberry Cane Midge
+  { pest_id: 'raspberry-cane-midge', approach: 'cultural', treatment: 'Reduce primocane number and prophylactic fungicide at bark split', active_substance: null, timing: 'Spring and summer', dose_rate: null, efficacy_notes: 'Thin primocanes to reduce bark splitting. Apply fungicide spray at bark-split stage to prevent cane blight infection at midge feeding wounds.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Pea Leaf Weevil
+  { pest_id: 'pea-leaf-weevil', approach: 'chemical', treatment: 'Lambda-cyhalothrin spray at seedling threshold', active_substance: 'lambda-cyhalothrin', timing: 'When >50% of seedling plants have leaf notching', dose_rate: 'See product label', efficacy_notes: 'Spray only when seedlings are small and heavily notched. Well-established crops compensate for leaf notching without yield loss.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Flea Beetle Root Crops
+  { pest_id: 'flea-beetle-root-crops', approach: 'chemical', treatment: 'Lambda-cyhalothrin spray at seedling stage', active_substance: 'lambda-cyhalothrin', timing: 'When shot-holing threatens seedling survival', dose_rate: 'See product label', efficacy_notes: 'Apply in hot dry conditions when seedling growth cannot outpace beetle feeding. Seed treatment with neonicotinoids where still approved.', resistance_risk: 'No major resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Large Narcissus Fly
+  { pest_id: 'large-narcissus-fly', approach: 'cultural', treatment: 'Hot water treatment of bulbs (44.4C for 3 hours)', active_substance: null, timing: 'Post-harvest before planting', dose_rate: null, efficacy_notes: 'Hot water treatment kills larvae inside bulbs but stresses bulbs. Cover soil surface at foliage die-back to prevent egg-laying.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Glasshouse Whitefly
+  { pest_id: 'glasshouse-whitefly', approach: 'biological', treatment: 'Encarsia formosa parasitoid wasp release', active_substance: 'Encarsia formosa', timing: 'Preventative introduction from first planting', dose_rate: '2-4 per m2 weekly', efficacy_notes: 'Standard commercial biological control. Introduce early and regularly. Parasitised scales turn black. Maintain above 18C for parasitoid activity.', resistance_risk: null, approval_status: 'exempt (biological agent)', source: 'AHDB' },
+
+  // Western Flower Thrips
+  { pest_id: 'western-flower-thrips', approach: 'biological', treatment: 'Amblyseius cucumeris predatory mite release', active_substance: 'Amblyseius cucumeris', timing: 'Preventative from crop establishment', dose_rate: 'Slow-release sachets or bulk application', efficacy_notes: 'Standard commercial biological control. Supplement with Orius laevigatus in flower crops. Blue sticky traps for monitoring. Insecticide resistance makes biological control essential.', resistance_risk: null, approval_status: 'exempt (biological agent)', source: 'AHDB' },
+
+  // Badger Damage
+  { pest_id: 'badger-damage', approach: 'cultural', treatment: 'Electric fencing around vulnerable crops', active_substance: null, timing: 'Before crop damage begins', dose_rate: null, efficacy_notes: 'Two-strand electric fence (15cm and 30cm height) provides deterrence for sweetcorn and strawberries. Protected species — lethal control not permitted.', resistance_risk: null, approval_status: null, source: 'Natural England' },
+
+  // Cabbage Stem Weevil
+  { pest_id: 'cabbage-stem-weevil', approach: 'chemical', treatment: 'Pyrethroid spray at migration threshold (rarely justified)', active_substance: 'lambda-cyhalothrin', timing: 'March-April at adult migration', dose_rate: 'See product label', efficacy_notes: 'Rarely justified economically unless on high-value brassica vegetables. Often present below treatment threshold. Monitor with water traps.', resistance_risk: 'No major resistance in this species.', approval_status: 'approved', source: 'CRD' },
+
+  // ── Expansion: New Weed Treatments ─────────────────────────────
+
+  // Red Dead-nettle
+  { pest_id: 'red-dead-nettle', approach: 'chemical', treatment: 'Broadleaved herbicide in cereals (florasulam, MCPA)', active_substance: 'florasulam', timing: 'Spring post-emergence', dose_rate: 'See product label', efficacy_notes: 'Controlled by most standard broadleaved herbicide programmes. Usually below economic threshold in cereals.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Field Forget-me-not
+  { pest_id: 'field-forget-me-not', approach: 'chemical', treatment: 'ALS herbicide in cereals (florasulam, metsulfuron-methyl)', active_substance: 'florasulam', timing: 'Spring post-emergence', dose_rate: 'See product label', efficacy_notes: 'Good susceptibility to most broadleaved herbicide programmes. Rarely requires specific treatment.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Corn Marigold
+  { pest_id: 'corn-marigold', approach: 'chemical', treatment: 'Standard broadleaved herbicide programme', active_substance: 'fluroxypyr + florasulam', timing: 'Spring post-emergence', dose_rate: 'See product label', efficacy_notes: 'Good susceptibility to most herbicides. Rarely a problem in conventional systems. Valued in conservation headlands.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Scented Mayweed
+  { pest_id: 'scented-mayweed', approach: 'chemical', treatment: 'ALS or growth regulator herbicide in cereals', active_substance: 'fluroxypyr + florasulam', timing: 'Spring post-emergence', dose_rate: 'See product label', efficacy_notes: 'Good control from most ALS and growth regulator herbicides. More competitive on lighter soils where it can reach high densities.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Shepherd's Purse
+  { pest_id: 'shepherds-purse', approach: 'chemical', treatment: 'Most broadleaved herbicides effective', active_substance: 'fluroxypyr', timing: 'Autumn or spring post-emergence', dose_rate: 'See product label', efficacy_notes: 'Good susceptibility. Year-round germination means repeat treatment may be needed. Important to control in oilseed rape as a disease host.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Groundsel
+  { pest_id: 'groundsel', approach: 'chemical', treatment: 'Contact or residual herbicide', active_substance: 'fluroxypyr', timing: 'When present', dose_rate: 'See product label', efficacy_notes: 'Good susceptibility but rapid re-establishment from wind-blown seed. Repeat treatment often needed.', resistance_risk: 'Some triazine resistance reported in horticultural situations.', approval_status: 'approved', source: 'CRD' },
+
+  // Knotgrass
+  { pest_id: 'knotgrass', approach: 'chemical', treatment: 'Broadleaved herbicide in cereals', active_substance: 'fluroxypyr + florasulam', timing: 'Spring post-emergence', dose_rate: 'See product label', efficacy_notes: 'Good susceptibility to most programmes. Presence indicates soil compaction — address root cause.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+  { pest_id: 'knotgrass', approach: 'cultural', treatment: 'Alleviate soil compaction with subsoiling', active_substance: null, timing: 'Autumn', dose_rate: null, efficacy_notes: 'Knotgrass is an indicator of compaction. Subsoiling or mole ploughing to break compacted layers improves soil structure and reduces weed pressure.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Black Bindweed
+  { pest_id: 'black-bindweed', approach: 'chemical', treatment: 'Post-emergence broadleaved herbicide in cereals', active_substance: 'fluroxypyr + florasulam', timing: 'Spring post-emergence', dose_rate: 'See product label', efficacy_notes: 'Most broadleaved herbicides provide good control. Important to control before twining around crop stems causes lodging.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Pale Persicaria
+  { pest_id: 'pale-persicaria', approach: 'chemical', treatment: 'Broadleaved herbicide in cereals', active_substance: 'fluroxypyr + MCPA', timing: 'Spring post-emergence', dose_rate: 'See product label', efficacy_notes: 'Good susceptibility. Most competitive in wet areas of fields. Addressing drainage reduces weed pressure.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Redshank
+  { pest_id: 'redshank', approach: 'chemical', treatment: 'Standard broadleaved herbicide programme', active_substance: 'florasulam', timing: 'Spring post-emergence', dose_rate: 'See product label', efficacy_notes: 'Good susceptibility but very long-lived seed bank means persistence despite treatment. Rarely above economic threshold.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Yorkshire Fog
+  { pest_id: 'yorkshire-fog', approach: 'chemical', treatment: 'Glyphosate before drilling in arable', active_substance: 'glyphosate', timing: 'Pre-drilling', dose_rate: 'See product label', efficacy_notes: 'Glyphosate before drilling is most effective. In grassland, improve management: lime, fertilise, reseed to outcompete.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+  { pest_id: 'yorkshire-fog', approach: 'cultural', treatment: 'Improve grassland management with lime and fertiliser', active_substance: null, timing: 'Autumn (lime) and spring (fertiliser)', dose_rate: null, efficacy_notes: 'Yorkshire fog indicates low fertility and poor management. Liming to pH 6+, nitrogen fertiliser, and improved grazing pressure reduce dominance.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Soft Brome
+  { pest_id: 'soft-brome', approach: 'chemical', treatment: 'Pre-emergence flufenacet-based herbicide in wheat', active_substance: 'flufenacet + diflufenican', timing: 'Pre-emergence to early post-emergence', dose_rate: 'See product label', efficacy_notes: 'Partial control from pre-emergence herbicides. Short-lived seed bank means ploughing provides good control by burying seed too deep to emerge.', resistance_risk: 'Less of a resistance concern than blackgrass.', approval_status: 'approved', source: 'CRD' },
+  { pest_id: 'soft-brome', approach: 'cultural', treatment: 'Ploughing to bury seed below emergence depth', active_substance: null, timing: 'Post-harvest', dose_rate: null, efficacy_notes: 'Short-lived seed bank (2-3 years). Ploughing buries seed too deep to germinate. Very effective in rotational ploughing systems.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Onion Couch
+  { pest_id: 'onion-couch', approach: 'chemical', treatment: 'Repeated glyphosate applications before drilling', active_substance: 'glyphosate', timing: 'Pre-drilling (multiple applications)', dose_rate: 'See product label', efficacy_notes: 'Bulbs survive single glyphosate application. Repeated treatments over 2-3 seasons required. Ploughing redistributes bulbs but does not kill them.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Creeping Bent
+  { pest_id: 'creeping-bent', approach: 'chemical', treatment: 'Glyphosate before drilling and graminicide in OSR', active_substance: 'glyphosate', timing: 'Pre-drilling', dose_rate: 'See product label', efficacy_notes: 'Glyphosate effective but stolon fragments re-establish. Repeated cultivation + glyphosate combination. Drainage improvement critical.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Horsetail
+  { pest_id: 'horsetail', approach: 'cultural', treatment: 'Repeated cultivation over years and drainage improvement', active_substance: null, timing: 'Year-round', dose_rate: null, efficacy_notes: 'Resistant to all selective herbicides. Glyphosate gives temporary suppression. Repeated cutting and cultivation over many years gradually weakens rhizome system. Improve drainage.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Bracken
+  { pest_id: 'bracken', approach: 'chemical', treatment: 'Asulam aerial or knapsack application (limited approval)', active_substance: 'asulam', timing: 'Full frond expansion (July-August)', dose_rate: 'See product label', efficacy_notes: 'The only herbicide effective on bracken. Limited approval in the UK — check current status. Two consecutive annual treatments needed. Aerial application for large areas.', resistance_risk: 'No known resistance.', approval_status: 'restricted approval', source: 'HSE' },
+  { pest_id: 'bracken', approach: 'cultural', treatment: 'Mechanical cutting twice per year (June and August)', active_substance: null, timing: 'June (first cut) and August (second cut)', dose_rate: null, efficacy_notes: 'Two cuts per year for 3-5 years gradually weakens rhizome system. Single annual cut is insufficient. Follow up with overseeding to establish competing vegetation.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // Common Orache
+  { pest_id: 'common-orache', approach: 'chemical', treatment: 'Same herbicide programme as fat-hen in sugar beet', active_substance: 'metamitron + ethofumesate', timing: 'Post-emergence in sugar beet', dose_rate: 'See product label', efficacy_notes: 'Managed alongside fat-hen in the standard sugar beet herbicide programme. Sequential low-dose applications.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Smooth Sow-thistle
+  { pest_id: 'smooth-sowthistle', approach: 'chemical', treatment: 'Broadleaved herbicide in cereals', active_substance: 'fluroxypyr', timing: 'Spring post-emergence', dose_rate: 'See product label', efficacy_notes: 'Good susceptibility to most broadleaved herbicides. Wind-blown seeds mean rapid recolonisation.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Annual Nettle
+  { pest_id: 'annual-nettle', approach: 'chemical', treatment: 'Broadleaved herbicide in arable crops', active_substance: 'MCPA', timing: 'Spring post-emergence', dose_rate: 'See product label', efficacy_notes: 'Good susceptibility. Most competitive in high-phosphate vegetable soils. Indicator of fertile conditions.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Field Pennycress
+  { pest_id: 'field-pennycress', approach: 'chemical', treatment: 'Broadleaved herbicide in cereals', active_substance: 'florasulam', timing: 'Autumn or spring post-emergence', dose_rate: 'See product label', efficacy_notes: 'Good susceptibility. Important to control near oilseed rape fields as it can host brassica diseases.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Dove's-foot Crane's-bill
+  { pest_id: 'dove-foot-cranesbill', approach: 'chemical', treatment: 'Broadleaved herbicide programme', active_substance: 'fluroxypyr + florasulam', timing: 'Spring post-emergence', dose_rate: 'See product label', efficacy_notes: 'Good susceptibility. Usually present at low densities. Less problematic than cut-leaved crane\'s-bill.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Perennial Ryegrass Weed
+  { pest_id: 'perennial-ryegrass-weed', approach: 'chemical', treatment: 'Glyphosate before drilling and graminicide in-crop', active_substance: 'glyphosate', timing: 'Pre-drilling', dose_rate: 'See product label', efficacy_notes: 'Glyphosate before drilling is primary control. In oilseed rape, graminicide (propaquizafop, cycloxydim) provides selective control.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Broad-leaved Plantain
+  { pest_id: 'broad-leaved-plantain', approach: 'chemical', treatment: 'MCPA or mecoprop in grassland', active_substance: 'MCPA', timing: 'Spring when actively growing', dose_rate: 'See product label', efficacy_notes: 'Good susceptibility. Address soil compaction as root cause — plantain tolerates compaction better than grass.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Ribwort Plantain
+  { pest_id: 'ribwort-plantain', approach: 'chemical', treatment: 'MCPA or mecoprop in grassland', active_substance: 'MCPA', timing: 'Spring when actively growing', dose_rate: 'See product label', efficacy_notes: 'Good susceptibility. Sometimes included in herbal leys for mineral content. Control only needed in pure grass swards.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Common Mouse-ear
+  { pest_id: 'common-mouse-ear', approach: 'cultural', treatment: 'Improve sward density through reseeding and fertiliser', active_substance: null, timing: 'Autumn (reseed) and spring (fertiliser)', dose_rate: null, efficacy_notes: 'Indicator of thin sward. Improving grass sward density through overseeding, fertiliser, and grazing management is more effective than herbicide.', resistance_risk: null, approval_status: null, source: 'AHDB' },
+
+  // White Clover Weed
+  { pest_id: 'white-clover-weed', approach: 'chemical', treatment: 'MCPA or clopyralid in cereals', active_substance: 'MCPA', timing: 'Spring post-emergence', dose_rate: 'See product label', efficacy_notes: 'MCPA and clopyralid both effective. Glyphosate before drilling for dense volunteer stands. Ploughing buries stolons.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
+
+  // Hedge Mustard
+  { pest_id: 'hedge-mustard', approach: 'chemical', treatment: 'Standard broadleaved herbicide', active_substance: 'florasulam', timing: 'Autumn or spring post-emergence', dose_rate: 'See product label', efficacy_notes: 'Good susceptibility. Minor competitor but relevant as a brassica disease host near oilseed rape.', resistance_risk: 'No known resistance.', approval_status: 'approved', source: 'CRD' },
 ];
 
 // ── IPM Guidance ────────────────────────────────────────────────
@@ -3278,6 +5420,41 @@ const IPM_GUIDANCE: IpmGuidance[] = [
 
   // Soft Fruit x Vine Weevil
   { crop_id: 'strawberries', pest_id: 'vine-weevil', threshold: 'Zero tolerance for larvae in containerised production. Monitor for adult leaf notching from April. Apply nematode drench preventatively in autumn.', monitoring_method: 'Inspect leaf margins for adult notching from April-May. Night inspection with torch to find adults (active 21:00-02:00). Check root balls of wilting plants for larvae. Monitor bought-in plants.', cultural_controls: 'Inspect all bought-in plants. Use clean growing media. Physical barriers on bench legs. Remove daytime hiding places.', prevention: 'Preventative nematode drench in autumn before larval damage occurs. Steinernema kraussei at soil temperature above 5C. Inspect plant root balls before planting.', decision_guide: 'In containerised strawberry production: apply S. kraussei nematodes in September as standard preventative. If adults detected in spring, apply H. megidis or S. feltiae in April-May. Combine biological control with cultural hygiene.', source: 'AHDB' },
+
+  // ── Expansion: Additional IPM Guidance ─────────────────────────
+
+  // Winter Wheat x Tan Spot
+  { crop_id: 'winter-wheat', pest_id: 'tan-spot', threshold: 'Lesions on lower leaves by GS30 in continuous wheat with minimum tillage. Risk increases with visible stubble residue on soil surface.', monitoring_method: 'Inspect lower leaves from GS25. Look for distinctive oval lesions with yellow border and dark centre. Most likely in second or continuous wheat after minimum tillage.', cultural_controls: 'Break from continuous wheat. Ploughing buries inoculum. Resistant varieties where available.', prevention: 'Avoid second wheat in minimum tillage. Ploughing after wheat reduces inoculum by 90%. Check stubble for pseudothecia in autumn.', decision_guide: 'Tan spot responds to same fungicide programme as Septoria. In high-risk situations (continuous wheat + min-till), consider earlier T1 timing.', source: 'AHDB' },
+
+  // Potatoes x Late Blight + PVY
+  { crop_id: 'potatoes', pest_id: 'potato-virus-y', threshold: 'Zero tolerance in seed crops. In ware crops, manage aphid populations to slow spread. All plants showing virus symptoms should be rogued in seed crops.', monitoring_method: 'Inspect for mosaic symptoms from June. ELISA testing of tuber samples for official certification. Aphid monitoring with suction traps (Rothamsted Insect Survey) and yellow water traps in field.', cultural_controls: 'Certified virus-tested seed. Remove volunteer potatoes. Mineral oil sprays in seed crops. Haulm destruction before harvest.', prevention: 'Use certified seed with lowest available PVY tolerance. Rogue symptomatic plants in seed crops. Apply mineral oil programme in seed production areas.', decision_guide: 'In seed crops: mineral oil every 7-10 days from 50% emergence. Rogue all mosaic plants. Destroy haulm early (mid-August). In ware crops: lower priority — yield impact depends on virus strain and variety tolerance.', source: 'AHDB' },
+
+  // Leeks x Leek Rust
+  { crop_id: 'grassland', pest_id: 'leek-rust', threshold: 'First orange pustules on outer leaves. Economic threshold depends on market specification — any rust reduces marketability of fresh-market leeks.', monitoring_method: 'Weekly inspection of outer leaves from July. Record pustule density and percentage of plants affected. More frequent in warm humid conditions.', cultural_controls: 'Resistant varieties, balanced nitrogen, wider spacing for air movement, early harvest of mature crops', prevention: 'Variety choice is the primary tool. Avoid excessive nitrogen. Remove infected crop debris. Long rotation between allium crops.', decision_guide: 'Apply tebuconazole at first sign of pustules on marketable crops. Repeat at 14-21 day intervals if conditions remain favourable. Stop application before harvest interval. Consider early harvest if rust escalates rapidly.', source: 'AHDB' },
+
+  // Apples x Winter Moth
+  { crop_id: 'apples', pest_id: 'winter-moth', threshold: 'More than 2 caterpillars per blossom cluster at pink bud stage, or more than 40 caterpillars per 100 beating tray sample.', monitoring_method: 'Beat branches over a white tray from bud burst (March). Count caterpillars per 100 tray samples across the orchard. Grease band checks from October for wingless female moths.', cultural_controls: 'Grease bands on trunks October-December, encourage natural enemies (blue tits, parasitoids)', prevention: 'Apply grease bands to trunk and any stakes by mid-October. Check and refresh grease throughout winter. Bands must form a complete seal — caterpillars can squeeze through gaps.', decision_guide: 'If beating tray counts exceed 2 per cluster at pink bud: Bacillus thuringiensis spray (organic) or diflubenzuron (IPM). Spray at first caterpillar emergence before flowers open. Do not spray during flowering.', source: 'AHDB' },
+
+  // Pears x Pear Midge
+  { crop_id: 'apples', pest_id: 'pear-midge', threshold: 'Any detection of pear midge adults at white bud stage justifies treatment. Previous year infestation indicates high risk.', monitoring_method: 'Tap blossom trusses over white paper at white bud to detect tiny (2mm) adults. Inspect fruitlets for abnormal swelling from petal fall. Cut suspect fruitlets to check for larvae.', cultural_controls: 'Cultivate under trees in autumn to disrupt soil pupae, remove blackened fruitlets before larvae drop', prevention: 'Autumn cultivation under canopy reduces pupal population. Picking off blackened fruitlets before larvae exit breaks the cycle on small-scale plantings.', decision_guide: 'If adults detected at white bud: spray deltamethrin before first flowers open. One spray only — application must be complete before egg-laying begins in open flowers.', source: 'AHDB' },
+
+  // Strawberries x Powdery Mildew
+  { crop_id: 'strawberries', pest_id: 'powdery-mildew-strawberry', threshold: 'First white powdery growth on leaf undersurface or fruit. Zero tolerance on fruit — any infection reduces marketability.', monitoring_method: 'Inspect leaf undersurfaces weekly from flowering. Check for upward leaf curling with purple discolouration. Examine fruit for white powdery coating.', cultural_controls: 'Polytunnel ventilation, avoid dense planting, remove old infected leaves, resistant varieties', prevention: 'Choose varieties with field resistance (Elsanta is very susceptible). Open tunnel sides in warm weather to reduce humidity. Do not allow fungicide programme to lapse during peak risk.', decision_guide: 'Preventative programme from first open flower: myclobutanil or penconazole alternated with sulfur. Apply every 10-14 days during flowering and fruiting. Increase ventilation. Remove badly affected leaves.', source: 'AHDB' },
+
+  // Protected Crops x Whitefly
+  { crop_id: 'strawberries', pest_id: 'glasshouse-whitefly', threshold: 'More than 1 adult per plant in the first 2 weeks of trapping, or rising yellow sticky trap catches despite biological control releases.', monitoring_method: 'Yellow sticky traps (1 per 100m2) checked weekly. Direct plant inspection: count adults per leaf on marked plants. Check for parasitised (black) scales to confirm Encarsia activity.', cultural_controls: 'Weed-free glasshouse floor, insect-proof screens on vents, clean propagation material', prevention: 'Introduce Encarsia formosa preventatively from planting at 2-4 per m2 weekly. Maintain glasshouse hygiene. Screen vents to exclude wild whitefly.', decision_guide: 'Biological first: maintain Encarsia introductions. If trap catches rise despite Encarsia, supplement with Amblyseius swirskii or compatible chemical (fatty acid spray). Avoid broad-spectrum chemicals that kill biological agents.', source: 'AHDB' },
+
+  // Brassicas x Flea Beetle
+  { crop_id: 'winter-osr', pest_id: 'brassica-flea-beetle-small', threshold: 'More than 25% of cotyledon area lost on direct-drilled seedlings in hot dry weather. Threshold lower on slow-growing crops.', monitoring_method: 'Assess shot-hole damage as percentage of cotyledon area. Count seedlings per metre row with significant damage. Assess in warmest part of the day when beetles are most active.', cultural_controls: 'Transplants rather than direct drilling, fleece covers, irrigation to promote growth', prevention: 'Transplants are larger and grow faster past the vulnerable stage. Direct-drilled crops in hot dry weather are most at risk. Water to promote growth.', decision_guide: 'Spray only when cotyledon loss threatens seedling survival in hot dry weather. Well-watered, fast-growing crops usually outpace beetle feeding. Foliar pyrethroid if more than 25% cotyledon area lost on small seedlings.', source: 'AHDB' },
+
+  // Grassland x Chafer Grubs
+  { crop_id: 'grassland', pest_id: 'chafer-grubs', threshold: 'More than 5 grubs per 30x30cm turf sample lifted. Secondary damage from birds and mammals may be worse than direct root feeding.', monitoring_method: 'Lift 30x30cm turf samples to 10cm depth. Count C-shaped white grubs. Survey from August (after egg hatch) to October. In spring, check for yellowing patches and turf that lifts easily.', cultural_controls: 'Maintain strong sward to tolerate some root feeding, reseed bare patches promptly, roll to firm loose turf', prevention: 'Biological control with nematode drench (Heterorhabditis bacteriophora) in late summer when grubs are near the surface. Soil temperature must exceed 12C for nematode activity.', decision_guide: 'If grub counts exceed threshold (>5 per sample): apply H. bacteriophora nematodes July-September. Apply to moist soil, water in well, apply in evening. In amenity turf, consider autumn application as routine preventative.', source: 'AHDB' },
+
+  // Potatoes x Spraing (TRV)
+  { crop_id: 'potatoes', pest_id: 'spraing-tobacco-rattle-virus', threshold: 'Any spraing above contract tolerance (usually 5% of tubers showing internal defects). Pre-plant soil sampling for trichodorid nematodes to assess risk.', monitoring_method: 'Pre-plant: soil nematode sampling using extraction from cores (specialist lab). Post-harvest: cut sample of 100 tubers lengthwise to check for spraing symptoms. Symptoms may intensify in storage.', cultural_controls: 'Avoid high-risk fields (light sandy soils with nematode history), choose tolerant varieties, long rotation', prevention: 'Soil sampling before planting identifies fields with high trichodorid populations. Variety tolerance testing. Nematicide at planting on high-risk sites.', decision_guide: 'Field avoidance is more reliable than treatment. If high-risk field must be used: nematicide (fosthiazate) at planting + tolerant variety. Check contract spraing tolerance carefully.', source: 'AHDB' },
+
+  // Carrots x Carrot-Willow Aphid
+  { crop_id: 'potatoes', pest_id: 'willow-carrot-aphid', threshold: 'First colonising aphids detected on crop — spray promptly to reduce virus spread. Monitor from mid-May.', monitoring_method: 'Yellow water traps in crop from May. Weekly plant inspection for aphid colonies on petioles. Watch for red-yellow virus symptoms as indicator of established infection.', cultural_controls: 'Remove nearby willow if possible, crop covers in high-risk areas, control self-sown umbellifers (virus reservoirs)', prevention: 'Site carrot fields away from willow hedgerows. Control wild umbellifers (cow parsley, hogweed) that harbour virus. Fleece covers exclude migrating aphids.', decision_guide: 'Spray at first detection of colonising aphids. Pyrethroid (lambda-cyhalothrin) timed to first migration provides best reduction in virus spread. Once virus symptoms appear on plants, spraying is too late for those plants.', source: 'AHDB' },
 ];
 
 // ── Approved Products ───────────────────────────────────────────
@@ -3385,6 +5562,41 @@ const APPROVED_PRODUCTS: ApprovedProduct[] = [
 
   // Mating disruption
   { product_name: 'Isomate-CLR', active_substance: 'codlemone (codling moth pheromone)', target_pests: 'Codling moth (mating disruption)', approved_crops: 'apples, pears', approval_expiry: '2028-12-31', registration_number: 'MAPP 17332', source: 'CRD' },
+
+  // ── Expansion: Additional Approved Products ─────────────────────
+
+  // Fungicides — additional active substances
+  { product_name: 'Amistar Opti', active_substance: 'azoxystrobin + chlorothalonil', target_pests: 'Septoria, net blotch, rhynchosporium, ramularia, powdery mildew', approved_crops: 'wheat, barley', approval_expiry: '2027-12-31', registration_number: 'MAPP 15385', source: 'CRD' },
+  { product_name: 'Ceriax', active_substance: 'fluxapyroxad + epoxiconazole + pyraclostrobin', target_pests: 'Septoria, rusts, net blotch, ramularia, rhynchosporium', approved_crops: 'wheat, barley', approval_expiry: '2027-06-30', registration_number: 'MAPP 17643', source: 'CRD' },
+  { product_name: 'Venture', active_substance: 'fluazinam', target_pests: 'Sclerotinia in oilseed rape, potato blight (protectant)', approved_crops: 'oilseed rape, potatoes', approval_expiry: '2027-06-30', registration_number: 'MAPP 12822', source: 'CRD' },
+  { product_name: 'Bumble', active_substance: 'prochloraz', target_pests: 'Eyespot, ear diseases (Fusarium), Alternaria, Helminthosporium', approved_crops: 'wheat, barley', approval_expiry: '2027-10-31', registration_number: 'MAPP 11177', source: 'CRD' },
+  { product_name: 'Corbel', active_substance: 'fenpropimorph', target_pests: 'Powdery mildew, rusts, rhynchosporium', approved_crops: 'wheat, barley', approval_expiry: '2027-04-30', registration_number: 'MAPP 11134', source: 'CRD' },
+  { product_name: 'Cymbal 45WG', active_substance: 'cymoxanil', target_pests: 'Potato late blight (curative, translaminar)', approved_crops: 'potatoes', approval_expiry: '2027-12-31', registration_number: 'MAPP 13422', source: 'CRD' },
+  { product_name: 'Curzate M WG', active_substance: 'cymoxanil + mancozeb', target_pests: 'Potato late blight (protectant + curative combination)', approved_crops: 'potatoes', approval_expiry: '2028-01-31', registration_number: 'MAPP 14528', source: 'CRD' },
+  { product_name: 'Dithane NT Dry Flowable', active_substance: 'mancozeb', target_pests: 'Potato blight, rusts, Septoria (multi-site protectant)', approved_crops: 'potatoes, wheat, barley', approval_expiry: '2028-01-31', registration_number: 'MAPP 12510', source: 'CRD' },
+  { product_name: 'Twist', active_substance: 'trifloxystrobin', target_pests: 'Powdery mildew, net blotch, rhynchosporium', approved_crops: 'barley', approval_expiry: '2028-04-30', registration_number: 'MAPP 12597', source: 'CRD' },
+  { product_name: 'Torch', active_substance: 'spiroxamine', target_pests: 'Powdery mildew in barley (rapid curative)', approved_crops: 'barley', approval_expiry: '2027-08-31', registration_number: 'MAPP 12845', source: 'CRD' },
+
+  // Herbicides — additional active substances
+  { product_name: 'Avadex Excel 15G', active_substance: 'tri-allate', target_pests: 'Blackgrass, wild oats (pre-emergence granular)', approved_crops: 'wheat, barley', approval_expiry: '2028-06-30', registration_number: 'MAPP 12063', source: 'CRD' },
+  { product_name: 'Asulox', active_substance: 'asulam', target_pests: 'Bracken (the only effective bracken herbicide), docks', approved_crops: 'bracken control on grassland and moorland', approval_expiry: '2027-12-31 (restricted approval)', registration_number: 'MAPP 11522', source: 'CRD' },
+  { product_name: 'Duplosan KV', active_substance: 'mecoprop-P', target_pests: 'Cleavers, chickweed, plantains, mouse-ear in cereals and grassland', approved_crops: 'wheat, barley, oats, grassland', approval_expiry: '2028-03-31', registration_number: 'MAPP 13092', source: 'CRD' },
+  { product_name: 'Foundation', active_substance: 'flufenacet + metribuzin', target_pests: 'Annual broadleaved weeds in potatoes', approved_crops: 'potatoes', approval_expiry: '2028-06-30', registration_number: 'MAPP 16774', source: 'CRD' },
+  { product_name: 'Lentagran WP', active_substance: 'pyridate', target_pests: 'Broadleaved weeds in cereals and brassicas', approved_crops: 'wheat, barley, Brussels sprouts, cauliflower', approval_expiry: '2027-12-31', registration_number: 'MAPP 12456', source: 'CRD' },
+
+  // Molluscicides
+  { product_name: 'Carakol', active_substance: 'ferric phosphate', target_pests: 'Slugs and snails — organic approved', approved_crops: 'all crops', approval_expiry: '2029-03-31', registration_number: 'MAPP 18233', source: 'CRD' },
+
+  // Insecticides — additional
+  { product_name: 'Calypso', active_substance: 'thiacloprid', target_pests: 'Aphids, apple sawfly, pear sucker on fruit', approved_crops: 'apples, pears, cherries', approval_expiry: '2027-04-30', registration_number: 'MAPP 13606', source: 'CRD' },
+  { product_name: 'Gazelle SG', active_substance: 'acetamiprid', target_pests: 'Aphids, whitefly, leafhoppers on fruit and vegetables', approved_crops: 'apples, pears, potatoes, brassicas', approval_expiry: '2028-08-31', registration_number: 'MAPP 15891', source: 'CRD' },
+  { product_name: 'Conserve', active_substance: 'spinosad', target_pests: 'Thrips, leaf miners, caterpillars on ornamentals and vegetables', approved_crops: 'ornamentals, herbs, lettuce, tomatoes', approval_expiry: '2028-09-30', registration_number: 'MAPP 13808', source: 'CRD' },
+  { product_name: 'Movento SC 100', active_substance: 'spirotetramat', target_pests: 'Woolly aphid, scale insects, psyllids (two-directional systemic)', approved_crops: 'apples, pears, hops', approval_expiry: '2028-05-31', registration_number: 'MAPP 15982', source: 'CRD' },
+
+  // Biological control — additional
+  { product_name: 'Orius laevigatus', active_substance: 'Orius laevigatus (predatory bug)', target_pests: 'Western flower thrips, aphids in protected crops (biological control)', approved_crops: 'peppers, strawberries, ornamentals under glass', approval_expiry: 'exempt (biological agent)', registration_number: 'N/A — biological agent', source: 'AHDB' },
+  { product_name: 'Atheta coriaria', active_substance: 'Atheta coriaria (predatory beetle)', target_pests: 'Sciarid fly larvae, shore fly, thrips pupae (biological control)', approved_crops: 'all protected crops', approval_expiry: 'exempt (biological agent)', registration_number: 'N/A — biological agent', source: 'AHDB' },
+  { product_name: 'Heterorhabditis bacteriophora', active_substance: 'Heterorhabditis bacteriophora (entomopathogenic nematode)', target_pests: 'Chafer grubs in turf and grassland (biological control)', approved_crops: 'turf, grassland, amenity', approval_expiry: 'exempt (biological agent)', registration_number: 'N/A — biological agent', source: 'AHDB' },
 ];
 
 // ── Ingestion ───────────────────────────────────────────────────
