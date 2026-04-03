@@ -1,17 +1,48 @@
 {
+  "schema_version": "1.0",
   "mcp_name": "UK Pest Management MCP",
   "jurisdiction": "GB",
   "build_date": "2026-04-03",
-  "pests": {
-    "total": 338,
+  "sources": [
+    {
+      "name": "AHDB Knowledge Library",
+      "url": "https://ahdb.org.uk/knowledge-library",
+      "description": "Pest, disease, and weed profiles for UK arable and horticultural crops",
+      "record_count": 338,
+      "licence": "Crown Copyright / Open Government Licence"
+    },
+    {
+      "name": "HSE CRD Pesticide Register",
+      "url": "https://www.hse.gov.uk/pesticides/databases/",
+      "description": "Approved crop protection products for UK use",
+      "record_count": 114,
+      "licence": "Crown Copyright / Open Government Licence"
+    },
+    {
+      "name": "AHDB IPM Guidance",
+      "url": "https://ahdb.org.uk/ipm",
+      "description": "Integrated pest management thresholds, monitoring methods, and cultural controls",
+      "record_count": 40,
+      "licence": "Crown Copyright / Open Government Licence"
+    }
+  ],
+  "summary": {
+    "pests_total": 338,
     "diseases": 135,
     "insect_pests": 131,
-    "weeds": 72
+    "weeds": 72,
+    "symptoms": 854,
+    "treatments": 396,
+    "ipm_guidance_entries": 40,
+    "approved_products": 114,
+    "fts_entries": 1192
   },
-  "symptoms": 854,
-  "treatments": 396,
-  "ipm_guidance": 40,
-  "approved_products": 114,
-  "fts_entries": 1192,
+  "gaps": [
+    "Ornamental/amenity pests partially covered",
+    "Forestry pests not included",
+    "Some rare quarantine organisms may be missing",
+    "CRD register has 2000+ products, only 114 most common included",
+    "No resistance testing data"
+  ],
   "source_hash": "76f26c560db3a22b"
 }

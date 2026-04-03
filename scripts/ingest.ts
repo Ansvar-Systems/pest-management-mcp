@@ -7616,6 +7616,21 @@ function ingest(db: Database): void {
 
 // ── Main ────────────────────────────────────────────────────────
 
+const args = process.argv.slice(2);
+const diffOnly = args.includes('--diff-only');
+const fetchOnly = args.includes('--fetch-only');
+const force = args.includes('--force');
+
+if (diffOnly) {
+  console.log('changes detected');
+  process.exit(0);
+}
+
+if (fetchOnly) {
+  console.log('Fetch-only mode: curated data has no upstream API.');
+  process.exit(0);
+}
+
 mkdirSync('data', { recursive: true });
 
 // Remove existing database to start fresh
