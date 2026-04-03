@@ -1,5 +1,6 @@
 {
   "name": "@ansvar/uk-pest-management-mcp",
+  "mcpName": "io.github.ansvar-systems/uk-pest-management",
   "version": "0.1.0",
   "description": "UK pest, disease, and weed management via MCP -- identification, treatment, IPM guidance, symptom diagnosis",
   "type": "module",
