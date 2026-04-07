@@ -1,4 +1,5 @@
 import { buildMeta } from '../metadata.js';
+import { buildCitation } from '../citation.js';
 import { validateJurisdiction } from '../jurisdiction.js';
 import type { Database } from '../db.js';
 
@@ -130,5 +131,12 @@ export function handleIdentifyFromSymptoms(db: Database, args: IdentifyFromSympt
     results_count: ranked.length,
     diagnoses: ranked,
     _meta: buildMeta({ source_url: 'https://ahdb.org.uk/knowledge-library' }),
+    _citation: buildCitation(
+      `UK Pest Diagnosis`,
+      `Pest identification from symptoms (${jv.jurisdiction})`,
+      'identify_from_symptoms',
+      { symptoms: args.symptoms, ...(args.plant_part && { plant_part: args.plant_part }) },
+      'https://ahdb.org.uk/knowledge-library',
+    ),
   };
 }

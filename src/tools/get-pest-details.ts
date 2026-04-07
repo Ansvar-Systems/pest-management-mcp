@@ -1,4 +1,5 @@
 import { buildMeta } from '../metadata.js';
+import { buildCitation } from '../citation.js';
 import { validateJurisdiction } from '../jurisdiction.js';
 import type { Database } from '../db.js';
 
@@ -48,5 +49,11 @@ export function handleGetPestDetails(db: Database, args: GetPestDetailsArgs) {
     crops_affected: parseJsonArray(pest.crops_affected),
     symptoms,
     _meta: buildMeta(),
+    _citation: buildCitation(
+      `UK Pest: ${pest.name}`,
+      `${pest.name} — ${pest.pest_type} (${jv.jurisdiction})`,
+      'get_pest_details',
+      { pest_id: args.pest_id },
+    ),
   };
 }
