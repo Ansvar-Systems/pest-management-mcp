@@ -1,4 +1,5 @@
 import { buildMeta } from '../metadata.js';
+import { buildCitation } from '../citation.js';
 import { validateJurisdiction } from '../jurisdiction.js';
 import type { Database } from '../db.js';
 
@@ -41,5 +42,11 @@ export function handleGetIpmGuidance(db: Database, args: GetIpmGuidanceArgs) {
       source: g.source,
     })),
     _meta: buildMeta(),
+    _citation: buildCitation(
+      `UK IPM Guidance: ${args.crop_id}`,
+      `Integrated pest management guidance for ${args.crop_id} (${jv.jurisdiction})`,
+      'get_ipm_guidance',
+      { crop_id: args.crop_id, ...(args.pest_id && { pest_id: args.pest_id }) },
+    ),
   };
 }
